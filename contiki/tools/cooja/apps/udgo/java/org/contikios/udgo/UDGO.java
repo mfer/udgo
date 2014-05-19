@@ -67,6 +67,15 @@ import org.contikios.udgo.ChannelModel.TxPair;
  * @author Manassés Ferreira Neto
  * This file was greatly inspired/based in MRM.java of author Fredrik Osterlind
  * link: https://github.com/contiki-os/contiki/blob/master/tools/cooja/apps/mrm/java/org/contikios/mrm/MRM.java
+ * More at
+ *   Osterlind, F.; Dunkels, A.; Eriksson, J.; Finne, N.; Voigt, T., 
+ *   "Cross-Level Sensor Network Simulation with COOJA," Local Computer Networks, Proceedings 2006 31st IEEE 
+ *   Conference on , vol., no., pp.641,648, 14-16 Nov. 2006 doi: 10.1109/LCN.2006.322172 
+ *   keywords: {digital simulation;telecommunication computing;wireless sensor networks;COOJA simulator;
+ *   Contiki sensor node operating system;cross-level sensor network simulation;holistic simultaneous simulation;
+ *   wireless sensor network simulation;Computational modeling;Computer science;Computer simulation;Hardware;Java;
+ *   Operating systems;Programming;Sensor systems;Software systems;Wireless sensor networks},
+ *   URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4116633&isnumber=4116490
  */
 @ClassDescription("UnitDiskGraphObstructed (udgo)")
 public class UDGO extends UDGM {
