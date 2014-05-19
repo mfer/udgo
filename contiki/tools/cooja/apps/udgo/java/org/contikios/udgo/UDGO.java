@@ -100,7 +100,7 @@ public class UDGO extends UDGM {
   private SettingsObservable settingsObservable = new SettingsObservable();
 
   /**
-   * Creates a new Multi-path Ray-tracing Medium (udgo).
+   * Creates a new UnitDiskGraphObstructed Medium (udgo).
    */
   public UDGO(Simulation simulation) {
     super(simulation);
