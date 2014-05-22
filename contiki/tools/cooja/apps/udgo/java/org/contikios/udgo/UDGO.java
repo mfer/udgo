@@ -206,10 +206,10 @@ public class UDGO extends UDGM {
       double recvSignalStrength = probData[1];
       if (recvProb == 1.0 || random.nextDouble() < recvProb) {
         /* Yes, the receiver *may* receive this packet (it's strong enough) */
-       if (!recv.isRadioOn()) {
+        if (!recv.isRadioOn()) {
           newConnection.addInterfered(recv);
           recv.interfereAnyReception();
-       } else if (recv.isInterfered()) {
+        } else if (recv.isInterfered()) {
        //    if (WITH_CAPTURE_EFFECT) {
        //      /* XXX TODO Implement me:
        //       * If the new transmission is both stronger and the SFD has not
@@ -225,9 +225,9 @@ public class UDGO extends UDGM {
        //      /* Was interfered: keep interfering */
            newConnection.addInterfered(recv, recvSignalStrength);
        //    }
-       } else if (recv.isTransmitting()) {
-         newConnection.addInterfered(recv, recvSignalStrength);
-       } else if (recv.isReceiving()) {
+        } else if (recv.isTransmitting()) {
+          newConnection.addInterfered(recv, recvSignalStrength);
+        } else if (recv.isReceiving()) {
        //    /* Was already receiving: start interfering.
        //     * Assuming no continuous preambles checking */
        //   if (!WITH_CAPTURE_EFFECT) {
@@ -272,7 +272,7 @@ public class UDGO extends UDGM {
        //        }
        //      }
        //    }
-       } else {
+        } else {
           /* Success: radio starts receiving */
           newConnection.addDestination(recv, recvSignalStrength);
        // }
@@ -286,6 +286,7 @@ public class UDGO extends UDGM {
       //           /* TODO Implement new type: newConnection.addNoise()?
       //    * Currently, this connection will never disturb this radio... */
       //   }
+        }
       }
     }
 
