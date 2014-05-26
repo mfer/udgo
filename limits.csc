@@ -174,10 +174,10 @@
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>280</width>
-    <z>3</z>
+    <z>0</z>
     <height>160</height>
-    <location_x>995</location_x>
-    <location_y>644</location_y>
+    <location_x>922</location_x>
+    <location_y>620</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.Visualizer
@@ -191,7 +191,7 @@
       <viewport>99.08095275670263 0.0 0.0 99.08095275670263 73.68796816687397 96.71337586195776</viewport>
     </plugin_config>
     <width>708</width>
-    <z>1</z>
+    <z>3</z>
     <height>714</height>
     <location_x>53</location_x>
     <location_y>47</location_y>
@@ -246,30 +246,41 @@
   <plugin>
     org.contikios.udgo.AreaViewer
     <plugin_config>
-      <selected mote="1" />
       <controls_visible>false</controls_visible>
-      <zoom_x>92.74806445278794</zoom_x>
-      <zoom_y>92.74806445278794</zoom_y>
-      <pan_x>0.877200368850906</pan_x>
-      <pan_y>0.383556343992126</pan_y>
+      <zoom_x>69.89023852928267</zoom_x>
+      <zoom_y>69.89023852928267</zoom_y>
+      <pan_x>1.1482125104289467</pan_x>
+      <pan_y>1.152237413421062</pan_y>
       <show_background>true</show_background>
       <show_obstacles>true</show_obstacles>
       <show_channel>true</show_channel>
       <show_radios>true</show_radios>
       <show_arrow>true</show_arrow>
       <vis_type>signalStrengthButton</vis_type>
-      <background_image>/home/mfer/udgo/obstacle.png</background_image>
-      <back_start_x>0.0</back_start_x>
-      <back_start_y>0.0</back_start_y>
-      <back_width>100.0</back_width>
-      <back_height>100.0</back_height>
       <resolution>100</resolution>
     </plugin_config>
-    <width>627</width>
+    <width>500</width>
     <z>2</z>
-    <height>588</height>
-    <location_x>847</location_x>
-    <location_y>18</location_y>
+    <height>500</height>
+    <location_x>789</location_x>
+    <location_y>72</location_y>
+  </plugin>
+  <plugin>
+    org.contikios.cooja.plugins.ScriptRunner
+    <plugin_config>
+      <script>TIMEOUT(600000);&#xD;
+&#xD;
+while (true) {&#xD;
+  log.log(time + ":" + id + ":" + msg + "\n");&#xD;
+  YIELD();&#xD;
+}</script>
+      <active>false</active>
+    </plugin_config>
+    <width>600</width>
+    <z>1</z>
+    <height>661</height>
+    <location_x>1312</location_x>
+    <location_y>85</location_y>
   </plugin>
 </simconf>
 

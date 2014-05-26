@@ -85,6 +85,8 @@ public class UDGO extends UDGM {
     sim = simulation;
     random = simulation.getRandomGenerator();
     currentChannelModel = new ChannelModel(sim);
+    setTxRange(5);
+    setInterferenceRange(6);
     sim.getCooja().registerPlugin(AreaViewer.class);
     Visualizer.registerVisualizerSkin(UDGOVisualizerSkin.class);
   }
