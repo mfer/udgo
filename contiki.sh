@@ -11,6 +11,7 @@ git submodule update --init
 \cp ../udgo/contiki/tools/cooja/config/cooja.html tools/cooja/config/
 \cp ../udgo/contiki/tools/cooja/config/cooja_applet.config tools/cooja/config/
 \cp ../udgo/contiki/tools/cooja/config/external_tools.config tools/cooja/config/
+\cp ../udgo/contiki/tools/cooja/java/org/contikios/cooja/radiomediums/UDGM.java tools/cooja/java/org/contikios/cooja/radiomediums/
 
 mkdir tools/cooja/apps/udgo
 cd tools/cooja/apps/udgo
