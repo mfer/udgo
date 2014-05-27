@@ -98,7 +98,7 @@ public class ChannelModel {
   private Vector<Point2D> calculatedVisibleSidesSources = new Vector<Point2D>();
   private Vector<Line2D> calculatedVisibleSidesLines = new Vector<Line2D>();
   private Vector<AngleInterval> calculatedVisibleSidesAngleIntervals = new Vector<AngleInterval>();
-  private static int maxSavedVisibleSides = 1000; // Max size of lists above
+  private static int maxSavedVisibleSides = 10000; // Max size of lists above
 
   /**
    * Notifies observers when this channel model has changed settings.
@@ -544,7 +544,7 @@ public class ChannelModel {
 
     if (intersectingLinePoints.size() != 2) {
       // We should have 2 line points!
-      logger.warn("Intersecting points != 2");
+      //logger.warn("Intersecting points != 2");
       return null;
     }
 
