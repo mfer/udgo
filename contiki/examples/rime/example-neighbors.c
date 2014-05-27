@@ -95,10 +95,6 @@ struct neighbor {
      this neighbor. */
   uint8_t last_seqno;
 
-  /* The ->avg_gap contains the average seqno gap that we have seen
-     from this neighbor. */
-  uint32_t avg_seqno_gap;
-
 };
 
 /* This #define defines the maximum amount of neighbors we can remember. */
@@ -167,8 +163,6 @@ broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 
     /* Initialize the fields. */
     linkaddr_copy(&n->addr, from);
-    n->last_seqno = m->seqno - 1;
-    n->avg_seqno_gap = SEQNO_EWMA_UNITY;
 
     /* Place the neighbor on the neighbor list. */
     list_add(neighbors_list, n);
@@ -196,8 +190,8 @@ PROCESS_THREAD(broadcast_process, ev, data)
 
   while(1) {
 
-    /* Send a broadcast every 12 - 24 seconds */
-    etimer_set(&et, CLOCK_SECOND * 12 + random_rand() % (CLOCK_SECOND * 24));
+    /* Send a broadcast every 8 - 16 seconds */
+    etimer_set(&et, CLOCK_SECOND * 8 + random_rand() % (CLOCK_SECOND * 8));
 
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 
