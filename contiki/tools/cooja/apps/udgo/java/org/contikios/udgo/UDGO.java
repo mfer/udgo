@@ -96,7 +96,7 @@ public class UDGO extends UDGM {
     sim = simulation;
     random = simulation.getRandomGenerator();
     currentChannelModel = new ChannelModel(sim);
-<<<<<<< HEAD
+
 
     WITH_CAPTURE_EFFECT = currentChannelModel.getParameterBooleanValue(ChannelModel.Parameter.captureEffect);
     CAPTURE_EFFECT_THRESHOLD = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectSignalTreshold);
@@ -111,10 +111,10 @@ public class UDGO extends UDGM {
     });
 
     currentChannelModel = new ChannelModel(sim);
-=======
+
     setTxRange(5);
     setInterferenceRange(6);
->>>>>>> 5f83cc968886283b1c45247a5195cf8a9af9b62c
+
     sim.getCooja().registerPlugin(AreaViewer.class);
     sim.getCooja().registerPlugin(FormulaViewer.class);
     Visualizer.registerVisualizerSkin(UDGOVisualizerSkin.class);
