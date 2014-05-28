@@ -12,30 +12,33 @@ class Position {
         Integer g = Integer.parseInt(args[0]);
         Integer mu = Integer.parseInt(args[1]);
         Double eps = Double.parseDouble(args[2]);
-        Double seg_size = 10.0;
+        Double seg_size = 100.0;
 
         Integer segs = 2 * g * (g - 1 );
         Integer N = mu * segs;
         Integer streets = 2*g;
-        Integer nps = N/streets; //or mu*(g-1) //Nodes per Streets
+        Integer sps = N/streets; //or mu*(g-1) //Sensors Per Street divided by 2 --> half vertical half horizontal
 
 		Double Min = 0.0;
 		Double Max = (g-1)*seg_size;
+		System.out.println(Max);
 		Double x,y;
 
 		Double sig = seg_size - 2*eps;
         
 		try {
+			//TODO: treat the possibility of same coordinate repitition
+
 			PrintWriter pw_sensor = new PrintWriter(sensor_filename, "UTF-8");
 			pw_sensor.println(N);
-	        for (int street = 0; street < streets; street++){
+	        for (int street = 0; street < g; street++){
 	        	//vertical
-		        for(int sensor = 0; sensor < nps; sensor++){
+		        for(int sensor = 0; sensor < sps; sensor++){
 		        	y = Min + (Math.random() * (Max - Min));
 		        	pw_sensor.println(seg_size*street+" "+y+" 0.0");
 		        }
 		        //horizontal
-		        for(int sensor = 0; sensor < nps; sensor++){
+		        for(int sensor = 0; sensor < sps; sensor++){
 		        	x = Min + (Math.random() * (Max - Min));
 		        	pw_sensor.println(x+" "+seg_size*street+" 0.0");
 		        }
@@ -44,12 +47,11 @@ class Position {
 
 
 			PrintWriter pw_obstacle = new PrintWriter(obstacle_filename, "UTF-8");
-			pw_obstacle.println(N);
 			// I choose street_state and street_indian to honor my hometown BH
-	        for (int street_indian = 0; street_indian < g; street_indian++){
-		        for(int street_state = 0; street_state < g; street_state++){
-		        	x = seg_size*street_state;
-		        	y = seg_size*street_indian;		        	
+	        for (int street_indian = 0; street_indian < g-1; street_indian++){
+		        for(int street_state = 0; street_state < g-1; street_state++){
+		        	x = seg_size*street_state + eps;
+		        	y = seg_size*street_indian + eps;
 		        	pw_obstacle.println(x+" "+y+" "+sig+" "+sig);
 		        }
 		    }
