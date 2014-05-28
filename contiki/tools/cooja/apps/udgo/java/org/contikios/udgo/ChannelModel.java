@@ -188,7 +188,7 @@ public class ChannelModel {
       case rt_scatt_coefficient:
         return new Double(-20);
       case obstacle_attenuation:
-        return new Double(-100000);
+        return new Double(-800);
       case captureEffect:
         return true;
       case captureEffectPreambleDuration:

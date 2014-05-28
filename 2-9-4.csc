@@ -8,7 +8,6 @@
     <motedelay_us>1000000</motedelay_us>
     <radiomedium>
       org.contikios.udgo.UDGO
-      <obstacle_attenuation value="-1000.0" />
       <obstacles>
         <obst>0.9;0.9;8.2;8.2</obst>
         <obst>0.9;10.9;8.2;8.2</obst>
@@ -270,7 +269,7 @@
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>280</width>
-    <z>6</z>
+    <z>4</z>
     <height>160</height>
     <location_x>152</location_x>
     <location_y>595</location_y>
@@ -301,7 +300,7 @@
       <coloring />
     </plugin_config>
     <width>248</width>
-    <z>9</z>
+    <z>3</z>
     <height>796</height>
     <location_x>1550</location_x>
     <location_y>12</location_y>
@@ -331,7 +330,7 @@
       <zoomfactor>500.0</zoomfactor>
     </plugin_config>
     <width>1920</width>
-    <z>10</z>
+    <z>2</z>
     <height>166</height>
     <location_x>0</location_x>
     <location_y>832</location_y>
@@ -354,7 +353,7 @@
       <resolution>100</resolution>
     </plugin_config>
     <width>500</width>
-    <z>8</z>
+    <z>1</z>
     <height>500</height>
     <location_x>720</location_x>
     <location_y>20</location_y>
@@ -371,7 +370,7 @@ while (true) {&#xD;
       <active>false</active>
     </plugin_config>
     <width>639</width>
-    <z>7</z>
+    <z>0</z>
     <height>221</height>
     <location_x>535</location_x>
     <location_y>571</location_y>

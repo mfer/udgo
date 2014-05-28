@@ -109,7 +109,6 @@ static void
 broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 {
   struct neighbor *n;
-  struct broadcast_message *m;
 
   /* Check if we already know this neighbor. */
   for(n = list_head(neighbors_list); n != NULL; n = list_item_next(n)) {
