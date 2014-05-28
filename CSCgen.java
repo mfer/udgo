@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,8 +6,6 @@ import java.util.StringTokenizer;
 
 class CSCgen {
     public static void main(String[] args) {
-		Random r = new Random();
-
 		String sensor_filename = args[0]+"-"+args[1]+"-"+args[2]+".sensor";
 		String obstacle_filename = args[0]+"-"+args[1]+"-"+args[2]+".obstacle";
 		String csc_filename = args[0]+"-"+args[1]+"-"+args[2]+".csc";
@@ -51,13 +48,6 @@ class CSCgen {
 				pw_csc.println("\t\t\t\t</interface_config>\n\t\t\t\t<interface_config>\n\t\t\t\t\torg.contikios.cooja.mspmote.interfaces.MspMoteID\n\t\t\t\t\t<id>"+sensor+"</id>\n\t\t\t\t</interface_config>\n\t\t\t<motetype_identifier>sky1</motetype_identifier>\n\t\t</mote>");
 				sensor++;
 			}
-    /*
-        <x>20.00693426304649</x>
-        <y>3.2385721031035146</y>
-        <z>0.0</z>
-        */
-      
-
 
 //------------------------------------------------------------------------------------//
 
@@ -78,9 +68,3 @@ class CSCgen {
 		}
     }
 }
-
-
-
- 
-		
- 

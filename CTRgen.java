@@ -1,72 +1,65 @@
-import java.util.Random;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
+import gaal.Point3d;
 
 class CTRgen {
     public static void main(String[] args) {
-		Random r = new Random();
-
-		String sensor_filename = args[0]+"-"+args[1]+"-"+args[2]+".sensor";
-		String obstacle_filename = args[0]+"-"+args[1]+"-"+args[2]+".obstacle";
-		String csc_filename = args[0]+"-"+args[1]+"-"+args[2]+".csc";
+		String ctr_filename = args[0]+"-"+args[1]+"-"+args[2]+".ctr";
 		BufferedReader br = null;
-		String str = null;
+		String testlog_filename = args[0]+"-"+args[1]+"-"+args[2]+".testlog";
+		String sensor_filename = args[0]+"-"+args[1]+"-"+args[2]+".sensor";
+		String ctr ="\n";
+		Integer s1, s2;
 
-		try {
- 			PrintWriter pw_csc = new PrintWriter(csc_filename, "UTF-8");
-			String sCurrentLine;
- 
-			br = new BufferedReader(new FileReader("template_1.csc"));
-			while ((sCurrentLine = br.readLine()) != null) {
-				pw_csc.println(sCurrentLine);
-			}
-//------------------------------------------------------------------------------------//
-			br = new BufferedReader(new FileReader(obstacle_filename));
-			while ((sCurrentLine = br.readLine()) != null) {
-				str = sCurrentLine.replace(" ", ";");
-				pw_csc.println("\t\t\t\t<obst>"+str+"</obst>");
-			}
-
-//------------------------------------------------------------------------------------//
-
-			br = new BufferedReader(new FileReader("template_2.csc"));
-			while ((sCurrentLine = br.readLine()) != null) {
-				pw_csc.println(sCurrentLine);
-			}
-
-//------------------------------------------------------------------------------------//
+		try { 			
+			String sCurrentLine; 
 			br = new BufferedReader(new FileReader(sensor_filename));
 			Integer N = Integer.parseInt(br.readLine());
-			Integer sensor = 1;
-			System.out.println(N);
+			Point3d sensors[] = new Point3d[N];
+			Integer sensor = 0, links = 0;
+
 			while ((sCurrentLine = br.readLine()) != null) {
 				StringTokenizer st = new StringTokenizer(sCurrentLine);
-				pw_csc.println("\t\t<mote>\n\t\t\t<breakpoints />\n\t\t\t\t<interface_config>\n\t\t\t\t\torg.contikios.cooja.interfaces.Position");
-         		pw_csc.println("\t\t\t\t\t<x>"+st.nextToken()+"</x>");
-         		pw_csc.println("\t\t\t\t\t<y>"+st.nextToken()+"</y>");
-         		pw_csc.println("\t\t\t\t\t<z>"+st.nextToken()+"</z>");
-				pw_csc.println("\t\t\t\t</interface_config>\n\t\t\t\t<interface_config>\n\t\t\t\t\torg.contikios.cooja.mspmote.interfaces.MspMoteID\n\t\t\t\t\t<id>"+sensor+"</id>\n\t\t\t\t</interface_config>\n\t\t\t<motetype_identifier>sky1</motetype_identifier>\n\t\t</mote>");
+				sensors[sensor] = new Point3d(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
 				sensor++;
 			}
-    /*
-        <x>20.00693426304649</x>
-        <y>3.2385721031035146</y>
-        <z>0.0</z>
-        */
-      
+			//System.out.println(sensors[1].x+" "+sensors[1].y+" "+sensors[1].z+" ");
+			//System.out.println(sensors[2].x+" "+sensors[2].y+" "+sensors[2].z+" ");
+			//System.out.println(sensors[2].distance(sensors[1]));
 
+			for (int i=0; i < N; i++){
+				if (sensors[i] == null) System.out.println("Hey not everybody emit a radio. Or there is an isolated node.");
 
-//------------------------------------------------------------------------------------//
-
-			br = new BufferedReader(new FileReader("template_3.csc"));
-			while ((sCurrentLine = br.readLine()) != null) {
-				pw_csc.println(sCurrentLine);
 			}
 
- 			pw_csc.close(); 
+
+			br = new BufferedReader(new FileReader(testlog_filename));
+			while ((sCurrentLine = br.readLine()) != null) {				
+				if (sCurrentLine.length() < 21){
+					StringTokenizer st = new StringTokenizer(sCurrentLine,":");
+				
+					st.nextToken(); //to skip the timeStamp
+					s1 = Integer.parseInt(st.nextToken());
+					s2 = Integer.parseInt(st.nextToken());
+
+					s1--;
+					s2--;
+
+					if (s1 < s2) {
+						ctr += s1+" "+s2+" "+sensors[s1].distance(sensors[s2])+"\n";
+						links++;
+					}
+				}
+			}		
+
+
+			PrintWriter pw_ctr = new PrintWriter(ctr_filename, "UTF-8");
+			pw_ctr.println(N+"\n"+links+ctr);
+ 			pw_ctr.close();
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -76,7 +69,7 @@ class CTRgen {
 				ex.printStackTrace();
 			}
 		}
-    }
+    }    
 }
 
 

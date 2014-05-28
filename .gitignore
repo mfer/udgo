@@ -1,3 +1,4 @@
+*.ctr
 *.sensor
 *.obstacle
 *.class

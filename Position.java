@@ -27,7 +27,7 @@ class Position {
 		Double sig = seg_size - 2*eps;
         
 		try {
-			//TODO: treat the possibility of same coordinate repitition
+			//TODO: treat the possibility of same coordinate repetition
 
 			PrintWriter pw_sensor = new PrintWriter(sensor_filename, "UTF-8");
 			pw_sensor.println(N);
