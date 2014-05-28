@@ -20,4 +20,3 @@ ln -s ../../../../../udgo/contiki/tools/cooja/apps/udgo/* .
 
 
 cd ../../../../tools/cooja/
-ant run_bigmem

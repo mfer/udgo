@@ -70,12 +70,6 @@ struct unicast_message {
   uint8_t type;
 };
 
-/* These are the types of unicast messages that we can send. */
-enum {
-  UNICAST_TYPE_PING,
-  UNICAST_TYPE_PONG
-};
-
 /* This structure holds information about neighbors. */
 struct neighbor {
   /* The ->next pointer is needed since we are placing these on a
@@ -84,16 +78,6 @@ struct neighbor {
 
   /* The ->addr field holds the Rime address of the neighbor. */
   linkaddr_t addr;
-
-  /* The ->last_rssi and ->last_lqi fields hold the Received Signal
-     Strength Indicator (RSSI) and CC2420 Link Quality Indicator (LQI)
-     values that are received for the incoming broadcast packets. */
-  uint16_t last_rssi, last_lqi;
-
-  /* Each broadcast packet contains a sequence number (seqno). The
-     ->last_seqno field holds the last sequenuce number we saw from
-     this neighbor. */
-  uint8_t last_seqno;
 
 };
 
@@ -111,11 +95,6 @@ LIST(neighbors_list);
 /* These hold the broadcast and unicast structures, respectively. */
 static struct broadcast_conn broadcast;
 
-/* These two defines are used for computing the moving average for the
-   broadcast sequence number gaps. */
-#define SEQNO_EWMA_UNITY 0x100
-#define SEQNO_EWMA_ALPHA 0x040
-
 /*---------------------------------------------------------------------------*/
 /* We first declare our two processes. */
 PROCESS(broadcast_process, "Broadcast process");
@@ -131,11 +110,6 @@ broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 {
   struct neighbor *n;
   struct broadcast_message *m;
-  uint8_t seqno_gap;
-
-  /* The packetbuf_dataptr() returns a pointer to the first data byte
-     in the received packet. */
-  m = packetbuf_dataptr();
 
   /* Check if we already know this neighbor. */
   for(n = list_head(neighbors_list); n != NULL; n = list_item_next(n)) {

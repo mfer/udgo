@@ -112,8 +112,8 @@ public class UDGO extends UDGM {
 
     currentChannelModel = new ChannelModel(sim);
 
-    setTxRange(5);
-    setInterferenceRange(6);
+    setTxRange(2);
+    setInterferenceRange(0);
 
     sim.getCooja().registerPlugin(AreaViewer.class);
     sim.getCooja().registerPlugin(FormulaViewer.class);
@@ -152,11 +152,6 @@ public class UDGO extends UDGM {
     UDGORadioConnection newConnection = new UDGORadioConnection(sender);
     final Position senderPos = sender.getPosition();
 
-    /* Fail radio transmission randomly - no radios will hear this transmission */
-    if (getTxSuccessProbability(sender) < 1.0 && random.nextDouble() > getTxSuccessProbability(sender)) {
-      return newConnection;
-    }
-
     /* Calculate ranges: grows with radio output power */
     double moteTransmissionRange = TRANSMITTING_RANGE
     * ((double) sender.getCurrentOutputPowerIndicator() / (double) sender.getOutputPowerIndicatorMax());
@@ -164,16 +159,27 @@ public class UDGO extends UDGM {
     * ((double) sender.getCurrentOutputPowerIndicator() / (double) sender.getOutputPowerIndicatorMax());
 
 
-    /* Get all potential destination radios */
-    DestinationRadio[] potentialDestinations = dgrm.getPotentialDestinations(sender);
-    if (potentialDestinations == null) {
-      return newConnection;
-    }
-
     /* TODO : dgrm needs to be public at UDGM */
+
+    /* TODO Cache potential destination like in DGRM */    
+    /* Fail radio transmission randomly - no radios will hear this transmission */
+    //if (getTxSuccessProbability(sender) < 1.0 && random.nextDouble() > getTxSuccessProbability(sender)) {
+    //  return newConnection;
+    //}
+    /* Get all potential destination radios */
+    //DestinationRadio[] potentialDestinations = dgrm.getPotentialDestinations(sender);
+    //if (potentialDestinations == null) {
+    //  return newConnection;
+    //}
+    //for (DestinationRadio dest: potentialDestinations) {
+
+
     /* Loop through all potential destinations */
-    for (DestinationRadio dest: potentialDestinations) {
-      Radio recv = dest.radio;
+    for (Radio recv: getRegisteredRadios()) {
+      //Radio recv = dest.radio;
+      if (sender == recv) {
+        continue;
+      }
 
       /* Fail if radios are on different (but configured) channels */ 
       if (sender.getChannel() >= 0 &&
@@ -181,8 +187,8 @@ public class UDGO extends UDGM {
           sender.getChannel() != recv.getChannel()) {
         continue;
       }
-
       final Radio recvFinal = recv;
+      
       /* Calculate receive probability */
       TxPair txPair = new RadioPair() {
         public Radio getFromRadio() {
