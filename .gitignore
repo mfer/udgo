@@ -1,3 +1,4 @@
+*.csc
 *.ctr
 *.sensor
 *.obstacle

@@ -112,7 +112,7 @@ public class UDGO extends UDGM {
 
     currentChannelModel = new ChannelModel(sim);
 
-    setTxRange(20);
+    setTxRange(70);
     setInterferenceRange(0);
 
     sim.getCooja().registerPlugin(AreaViewer.class);
