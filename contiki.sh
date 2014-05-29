@@ -20,4 +20,6 @@ ln -s ../../../../../udgo/contiki/tools/cooja/apps/udgo/* .
 
 
 cd ../../../../tools/cooja/
-#tail -n +2 2-16-20.testlog | head -n -3 > 2-16-20.testlog.new && mv 2-16-20.testlog.new 2-16-20.testlog
+# tail -n +2 2-16-20.testlog | head -n -3 > 2-16-20.testlog.new && mv 2-16-20.testlog.new 2-16-20.testlog
+# mv build/COOJA.testlog ~/udgo/3-5-10.testlog
+# 
