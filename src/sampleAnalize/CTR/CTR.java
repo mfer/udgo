@@ -1,7 +1,7 @@
 
 /******************************************************************************
- *  Compilation:  javac CRT.java
- *  Execution:    java CRT filename.txt
+ *  Compilation:  javac CTR.java
+ *  Execution:    java CTR filename.txt
  *  Dependencies: PrimMST.java EdgeWeightedGraph.java Edge.java
  *                IndexMinPQ.java In.java StdOut.java
  *
@@ -17,12 +17,12 @@
 *      submit the graph to PRIM algorithm 
 *          to produce the MST : minimum spanning tree
 *  output
-*      CRT : critical range transmission
+*      CTR : critical range transmission
 *          that is the maximum distance between nodes in the MST
 *  @author sudolshw@gmail.com
 */
 
-public class CRT {
+public class CTR {
 
     public static void main(String[] args) {
         In in = new In(args[0]);
