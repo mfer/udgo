@@ -16,7 +16,7 @@ class CSCgen {
  			PrintWriter pw_csc = new PrintWriter(csc_filename, "UTF-8");
 			String sCurrentLine;
  
-			br = new BufferedReader(new FileReader("template_1.csc"));
+			br = new BufferedReader(new FileReader("template_1"));
 			while ((sCurrentLine = br.readLine()) != null) {
 				pw_csc.println(sCurrentLine);
 			}
@@ -29,7 +29,7 @@ class CSCgen {
 
 //------------------------------------------------------------------------------------//
 
-			br = new BufferedReader(new FileReader("template_2.csc"));
+			br = new BufferedReader(new FileReader("template_2"));
 			while ((sCurrentLine = br.readLine()) != null) {
 				pw_csc.println(sCurrentLine);
 			}
@@ -51,7 +51,7 @@ class CSCgen {
 
 //------------------------------------------------------------------------------------//
 
-			br = new BufferedReader(new FileReader("template_3.csc"));
+			br = new BufferedReader(new FileReader("template_3"));
 			while ((sCurrentLine = br.readLine()) != null) {
 				pw_csc.println(sCurrentLine);
 			}
