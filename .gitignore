@@ -102,7 +102,7 @@ contiki-cc2530dk.lib
 
 # Ignore the build and lib dirs
 build
-#lib/*
+lib/*
 
 # Ignore any executables
 bin/*
