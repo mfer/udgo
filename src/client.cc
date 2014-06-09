@@ -109,7 +109,7 @@ send_msg_and_wait_response(int maisuma, int sfd, char msg[BUF_SIZE])
 				}else{
 					response = 1;
 					//printf("Received %ld bytes: %s\n", (long) nread, buf);
-					sprintf(msg, buf);
+					sprintf(msg, "%s", buf);
 				}				
 			}else{
 				printf("No reponse, try %d more times.\n",maisuma);
@@ -200,7 +200,7 @@ main(int argc, char *argv[])
 				std::istringstream iss(str);
 				std::string token;
 				getline(iss, token, ',');
-				sprintf(sid,token.c_str());
+				sprintf(sid,"%s",token.c_str());
 				getline(iss, token, ',');
 				BigInteger bmin = stringToBigInteger(token);
 				getline(iss, token, ',');
