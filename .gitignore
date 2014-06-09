@@ -1,5 +1,3 @@
-src/server
-src/client
 *.o
 
 *.ctr
