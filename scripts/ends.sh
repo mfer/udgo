@@ -1,16 +1,21 @@
 #!/bin/bash
-#parameter 1 g
-#parameter 2 mu
-#parameter 3 eps
+#parameter 1 dir_name
+#parameter 2 g
+#parameter 3 mu
+#parameter 4 eps
 
-cd
-cp contiki/tools/cooja/build/COOJA.testlog udgo/sampleAnalize/$1-$2-$3.testlog
-cd udgo/sampleAnalize
-tail -n +$1 $1-$2-$3.testlog | head -n -3 > $1-$2-$3.testlog.new
-mv $1-$2-$3.testlog.new $1-$2-$3.testlog
-javac CTRgen.java
-java CTRgen $1 $2 $3
-mv $1-$2-$3.ctr CRT/
-cd CRT
-javac CRT.java
-java CRT $1-$2-$3.ctr >> $1-$2-$3.ctrs
+if [ $# -eq 4 ]
+  then
+    cp ../build/$1/contiki/tools/cooja/build/COOJA.testlog ../src/sample/analize/$2-$3-$4.testlog
+    cd ../src/sample/analize
+    tail -n +$2 $2-$3-$4.testlog | head -n -3 > $2-$3-$4.testlog.new
+    mv $2-$3-$4.testlog.new $2-$3-$4.testlog
+    javac CTRgen.java
+    java CTRgen $2 $3 $4
+    mv $2-$3-$4.ctr CTR/
+    cd CTR
+    javac CTR.java
+    java CTR $2-$3-$4.ctr >> $2-$3-$4.ctrs
+  else
+    echo "No arguments supplied: usage: ./setup-contiki.sh dir_name g mu eps"
+fi

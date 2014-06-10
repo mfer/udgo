@@ -100,6 +100,7 @@ contiki-cc2530dk.lib
 
 # Ignore the build and lib dirs
 build
+src/sample
 lib/*
 
 # Ignore any executables

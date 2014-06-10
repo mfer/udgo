@@ -32,7 +32,6 @@ class CTRgen {
 
 			for (int i=0; i < N; i++){
 				if (sensors[i] == null) System.out.println("Hey not everybody emit a radio. Or there is an isolated node.");
-
 			}
 
 

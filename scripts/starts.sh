@@ -1,24 +1,20 @@
 #!/bin/bash
-#parameter 1 g
-#parameter 2 mu
-#parameter 3 eps
-
-cd
-cd udgo/sampleGen
-<<<<<<< HEAD
-javac Position.java && java Position 6 18 10
-javac CSCgen.java && java CSCgen 6 18 10
-cp 6-18-10.csc ../../contiki/tools/cooja/
-cp 6-18-10.sensor ../sampleAnalize/
-cd ../../contiki/tools/cooja
-ant run_nogui -Dargs=/home/mfer/contiki/tools/cooja/6-18-10.csc &
-=======
-javac Position.java
-java Position $1 $2 $3
-javac CSCgen.java
-java CSCgen $1 $2 $3
-cp $1-$2-$3.csc ../../contiki/tools/cooja/
-cp $1-$2-$3.sensor ../sampleAnalize/
-cd ../../contiki/tools/cooja
-ant run_nogui -Dargs=/home/mfer/contiki/tools/cooja/$1-$2-$3.csc &
->>>>>>> 7d6e2fb47f30faced190a6cedbc7a3a57fb27840
+#parameter 1 dir_name
+#parameter 2 g
+#parameter 3 mu
+#parameter 4 eps
+if [ $# -eq 4 ]
+  then
+    cd ../src/sample/generate/
+    javac Position.java
+    java Position $2 $3 $4
+    javac CSCgen.java
+    java CSCgen $2 $3 $4
+    cp $2-$3-$4.csc  ../../../build/$1/contiki/tools/cooja/
+    cp $2-$3-$4.sensor ../analize/
+    cd ../../../build/$1/contiki/tools/cooja/
+    var=$(pwd)
+    ant run_nogui -Dargs=$var/$2-$3-$4.csc &
+  else
+    echo "No arguments supplied: usage: ./setup-contiki.sh dir_name g mu eps"
+fi
