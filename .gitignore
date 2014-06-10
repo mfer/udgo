@@ -8,7 +8,7 @@
 *.a
 *.bin
 *.map
-*.png
+#*.png
 *.log
 *.elf
 *.d
