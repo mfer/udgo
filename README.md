@@ -7,6 +7,8 @@ $git clone https://github.com/mfer/udgo.git
 
 $cd udgo/scripts
 
+$./req-contiki.sh
+
 $./setup-contiki.sh dir_name
 
 $./starts.sh dir_name g mu eps
