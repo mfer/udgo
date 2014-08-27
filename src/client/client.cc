@@ -9,6 +9,8 @@
 #include <sstream>
 #include <fstream>
 
+#include <time.h>
+
 #define BUF_SIZE 2048
 
 /*
@@ -76,6 +78,8 @@ main(int argc, char *argv[])
 	struct addrinfo *result, *rp;
 	int sfd, s;
 	char buf[BUF_SIZE];
+
+	srand (time(NULL));
 
 	if (argc < 3) {
 		fprintf(stderr, "Usage: %s host port msg...\n", argv[0]);
@@ -154,7 +158,9 @@ main(int argc, char *argv[])
 
 				//realizar contas
 				puts("breaking...");
-				sleep(5);
+				for(;;){					
+					if(rand() % 100 + 1 > 90) break;
+				}
 				int ans = 0;
 				printf("ans:%d\n",ans);
 				
