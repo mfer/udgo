@@ -126,6 +126,7 @@ main(int argc, char *argv[])
 	int maisuma=5;
 	char set[BUF_SIZE];
 	char sid[BUF_SIZE];
+	char cmd[BUF_SIZE];
 	while(1 && maisuma){ // from here to eternity
 		sprintf(buf,"id");
 		if (send_msg_and_wait_response(10,sfd,buf)) {
@@ -156,10 +157,20 @@ main(int argc, char *argv[])
 
 				//realizar contas
 				puts("breaking...");
+				int g= 2;
+				int mu = 6;
+				int eps = 10;
 				int ans = system("../../scripts/req-contiki.sh");
 				ans = system("../../scripts/setup-contiki.sh dir_name");
-				ans = system("../../scripts/starts.sh dir_name g mu eps");
-				//after the simulation run: $./ends.sh dir_name g mu eps
+				sprintf(cmd,%s,"../../scripts/starts.sh dir_name %d %d %d",g, mu, eps);
+				ans = system(cmd);
+
+				//IDONTWANNA waiting INVAIN for the simulation run: 
+				sleep(5); //define this better and possibly do a loop-wait
+
+				sprintf(cmd,%s,"../../scripts/ends.sh dir_name %d %d %d",g, mu, eps);
+				ans = system(cmd);
+
 
 				printf("ans:%d\n",ans);
 				
