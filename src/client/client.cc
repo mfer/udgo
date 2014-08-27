@@ -10,6 +10,7 @@
 #include <fstream>
 
 #include <time.h>
+#include <unistd.h>
 
 #define BUF_SIZE 2048
 
@@ -158,8 +159,15 @@ main(int argc, char *argv[])
 
 				//realizar contas
 				puts("breaking...");
-				for(;;){					
-					if(rand() % 100 + 1 > 90) break;
+				int bla=0;
+				for(;;){
+					bla = rand() % 1500 + 1;	
+					if(bla > 1499) {
+						printf("%d\n",bla);
+						break;
+					}else{
+						usleep(1500);
+					}
 				}
 				int ans = 0;
 				printf("ans:%d\n",ans);
