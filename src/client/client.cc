@@ -9,8 +9,7 @@
 #include <sstream>
 #include <fstream>
 
-#include <time.h>
-#include <unistd.h>
+#include <string>
 
 #define BUF_SIZE 2048
 
@@ -79,8 +78,6 @@ main(int argc, char *argv[])
 	struct addrinfo *result, *rp;
 	int sfd, s;
 	char buf[BUF_SIZE];
-
-	srand (time(NULL));
 
 	if (argc < 3) {
 		fprintf(stderr, "Usage: %s host port msg...\n", argv[0]);
@@ -159,17 +156,11 @@ main(int argc, char *argv[])
 
 				//realizar contas
 				puts("breaking...");
-				int bla=0;
-				for(;;){
-					bla = rand() % 1500 + 1;	
-					if(bla > 1499) {
-						printf("%d\n",bla);
-						break;
-					}else{
-						usleep(1500);
-					}
-				}
-				int ans = 0;
+				int ans = system("../../scripts/req-contiki.sh");
+				ans = system("../../scripts/setup-contiki.sh dir_name");
+				ans = system("../../scripts/starts.sh dir_name g mu eps");
+				//after the simulation run: $./ends.sh dir_name g mu eps
+
 				printf("ans:%d\n",ans);
 				
 				//ao terminar de calcular enviar a resposta
