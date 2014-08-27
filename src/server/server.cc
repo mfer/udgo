@@ -13,6 +13,29 @@
 
 #define BUF_SIZE 2048
 
+void
+produce_response(char buf[BUF_SIZE], char res[BUF_SIZE]){	
+
+	memset(res, 0, BUF_SIZE);
+
+	if(strstr(buf,"id")){		
+		//find a set
+		sprintf(res,"set_");
+
+	}else if(strstr(buf,"set_")){
+		//run the calculations
+		sprintf(res,"run_");
+		printf("%s",res);
+
+	}else if(strstr(buf,"ans_")){
+		//send well done (wd)!
+		sprintf(res,"wd");
+		printf("%s",res);
+	}
+	
+}
+
+
 int
 main(int argc, char *argv[])
 {
@@ -69,7 +92,7 @@ main(int argc, char *argv[])
 	
 	FD_ZERO(&readSet);
 	/* Read datagrams and give a correctly response to sender */
-	for (;;) { //until the end...
+	for (;;) { //until the end... of the power supply energy, I presume.
 		FD_SET(sfd, &readSet);
 		if(select(sfd + 1, &readSet, NULL, NULL, NULL) < 0) {
 			perror("Select failed");
@@ -88,10 +111,10 @@ main(int argc, char *argv[])
 				host, NI_MAXHOST, service, NI_MAXSERV, NI_NUMERICSERV);
 				
 			if (s == 0){
-				//printf("Received %ld bytes from %s:%s\n", (long) nread, 
-				//	host, service);
+				printf("Received %ld bytes from %s:%s\n", (long) nread, 
+					host, service);
 				
-				//produce_response(buf,res);			
+				produce_response(buf,res);			
 
 				int res_len = strlen(res)+1;
 				if (sendto(sfd, res, res_len, 0,(struct sockaddr *) &peer_addr,
