@@ -3,17 +3,16 @@ udgo
 
 unit disk graph obstructed app for cooja
 
-$git clone https://github.com/mfer/udgo.git
+    $git clone https://github.com/mfer/udgo.git
+    $cd udgo/scripts
 
-$cd udgo/scripts
+installing requisites:
+    $./req-contiki.sh
 
-$./req-contiki.sh
-
-$./setup-contiki.sh dir_name
-
-$./starts.sh dir_name g mu eps
-
-$./ends.sh dir_name g mu eps
+running a simulation:
+    $./setup-contiki.sh <dirname>
+    $./starts.sh <dirname> <g> <mu> <eps>
+    $./ends.sh <dirname> <g> <mu> <eps>
 
 
 

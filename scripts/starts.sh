@@ -1,5 +1,5 @@
 #!/bin/bash
-#parameter 1 dir_name
+#parameter 1 dirname
 #parameter 2 g
 #parameter 3 mu
 #parameter 4 eps
@@ -14,7 +14,7 @@ if [ $# -eq 4 ]
     cp $2-$3-$4.sensor ../analize/
     cd ../../../build/$1/contiki/tools/cooja/
     var=$(pwd)
-    ant run_nogui -Dargs=$var/$2-$3-$4.csc &
+    ant run_nogui -Dargs=$var/$2-$3-$4.csc > /dev/null 2>&1 &
   else
-    echo "No arguments supplied: usage: ./setup-contiki.sh dir_name g mu eps"
+    echo "No arguments supplied: usage: ./setup-contiki.sh dirname g mu eps"
 fi

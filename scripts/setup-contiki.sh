@@ -1,5 +1,5 @@
 #!/bin/bash
-#parameter 1 dir_name
+#parameter 1 dirname
 
 if [ $# -eq 1 ]
   then
@@ -21,7 +21,7 @@ if [ $# -eq 1 ]
 	  cd tools/cooja/apps/udgo
 	  ln -s ../../../../../../../src/contiki/tools/cooja/apps/udgo/* .
   else
-    echo "No arguments supplied: usage: ./setup-contiki.sh dir_name"
+    echo "No arguments supplied: usage: ./setup-contiki.sh dirname"
 fi
 
 
