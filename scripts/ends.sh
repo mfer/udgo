@@ -11,11 +11,11 @@ if [ $# -eq 4 ]
     tail -n +$2 $2-$3-$4.testlog | head -n -3 > $2-$3-$4.testlog.new
     mv $2-$3-$4.testlog.new $2-$3-$4.testlog
     javac -cp . CTRgen.java
-    java CTRgen $2 $3 $4
+    java -cp . CTRgen $2 $3 $4
     mv $2-$3-$4.ctr CTR/
     cd CTR
     javac -cp . CTR.java
-    java CTR $2-$3-$4.ctr >> $2-$3-$4.ctrs
+    java  -cp . CTR $2-$3-$4.ctr >> $2-$3-$4.ctrs
   else
     echo "No arguments supplied: usage: ./ends.sh dirname g mu eps"
 fi
