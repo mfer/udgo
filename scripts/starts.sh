@@ -7,9 +7,9 @@ if [ $# -eq 4 ]
   then
     cd ../src/sample/generate/
     javac Position.java
-    java Position $2 $3 $4
+    java -cp . Position $2 $3 $4
     javac CSCgen.java
-    java CSCgen $2 $3 $4
+    java -cp . CSCgen $2 $3 $4
     cp $2-$3-$4.csc  ../../../build/$1/contiki/tools/cooja/
     cp $2-$3-$4.sensor ../analize/
     cd ../../../build/$1/contiki/tools/cooja/
