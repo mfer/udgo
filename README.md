@@ -9,8 +9,7 @@ unit disk graph obstructed app for cooja
 installing requisites:
     $./req-contiki.sh
 
-running a simulation:
-    $./setup-contiki.sh <dirname>
+running a simulation:    
     $./starts.sh <dirname> <g> <mu> <eps>
     $./ends.sh <dirname> <g> <mu> <eps>
 
