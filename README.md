@@ -13,7 +13,7 @@ installing requisites:
 running a simulation:    
 
     $./starts.sh <g> <mu> <eps>
-
+    //waits...
     $./ends.sh <g> <mu> <eps>
 
 
