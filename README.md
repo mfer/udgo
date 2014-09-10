@@ -7,11 +7,14 @@ unit disk graph obstructed app for cooja
     $cd udgo/scripts
 
 installing requisites:
-    $./req-contiki.sh
+
+    $./req-contiki.sh <g> <mu> <eps>
 
 running a simulation:    
-    $./starts.sh <dirname> <g> <mu> <eps>
-    $./ends.sh <dirname> <g> <mu> <eps>
+
+    $./starts.sh <g> <mu> <eps>
+
+    $./ends.sh <g> <mu> <eps>
 
 
 
