@@ -4,6 +4,7 @@ udgo
 unit disk graph obstructed app for cooja
 
     $git clone https://github.com/mfer/udgo.git
+    .
     $cd udgo/scripts
 
 installing requisites:
