@@ -79,8 +79,8 @@ main(int argc, char *argv[])
 	int sfd, s;
 	char buf[BUF_SIZE];
 
-	if (argc < 3) {
-		fprintf(stderr, "Usage: %s host port msg...\n", argv[0]);
+	if (argc < 2) {
+		fprintf(stderr, "Usage: %s host port flag\n", argv[0]);
 		exit(EXIT_FAILURE);
 	}
 
@@ -160,15 +160,19 @@ main(int argc, char *argv[])
 				int g= 2;
 				int mu = 6;
 				int eps = 10;
+
 				int ans = system("../../scripts/req-contiki.sh");
-				ans = system("../../scripts/setup-contiki.sh dir_name");
-				sprintf(cmd,%s,"../../scripts/starts.sh dir_name %d %d %d",g, mu, eps);
+
+				sprintf(cmd,"../../scripts/setup-contiki.sh %d %d %d",g, mu, eps);
+				ans = system(cmd);
+
+				sprintf(cmd,"../../scripts/starts.sh %d %d %d",g, mu, eps);
 				ans = system(cmd);
 
 				//IDONTWANNA waiting INVAIN for the simulation run: 
-				sleep(5); //define this better and possibly do a loop-wait
+				sleep(50); //define this better and possibly do a loop-wait
 
-				sprintf(cmd,%s,"../../scripts/ends.sh dir_name %d %d %d",g, mu, eps);
+				sprintf(cmd,"../../scripts/ends.sh %d %d %d",g, mu, eps);
 				ans = system(cmd);
 
 

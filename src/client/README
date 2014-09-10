@@ -1,15 +1,6 @@
-para compilar o servidor:
+to compilet the client:
 $ make
-  para rodá-lo:
-  $ ./server 12345
+  to run it:
+  $ ./client <ip-or-hostname-server> <port-server> <flag>
 
-para compilar o cliente:
-$ make -f Makefile.client
-  para rodá-lo:
-  $ ./client 127.0.0.1 12345
-
-para compilar o servidor web, na pasta view
-  $ cd view && make
-  para rodá-lo:
-  $ ./serv 8000
-
+<flag> could be set_

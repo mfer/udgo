@@ -1,21 +1,24 @@
 #!/bin/bash
-#parameter 1 dirname
-#parameter 2 g
-#parameter 3 mu
-#parameter 4 eps
-
-if [ $# -eq 4 ]
+g=$1
+mu=$2
+eps=$3
+dirname="g="$g"_mu="$mu"_eps="$eps
+if [ $# -eq 3 ]
   then
-    cp ../build/$1/contiki/tools/cooja/build/COOJA.testlog ../src/sample/analize/$2-$3-$4.testlog
+    #this selection caluse handle the call at udgo/src/client
+    if [ "${PWD##*/}" == "client" ]; then
+        cd ../../scripts
+    fi
+    cp ../build/$dirname/contiki/tools/cooja/build/COOJA.testlog ../src/sample/analize/$g-$mu-$eps.testlog
     cd ../src/sample/analize
-    tail -n +$2 $2-$3-$4.testlog | head -n -3 > $2-$3-$4.testlog.new
-    mv $2-$3-$4.testlog.new $2-$3-$4.testlog
+    tail -n +$g $g-$mu-$eps.testlog | head -n -3 > $g-$mu-$eps.testlog.new
+    mv $g-$mu-$eps.testlog.new $g-$mu-$eps.testlog
     javac -cp . CTRgen.java
-    java -cp . CTRgen $2 $3 $4
-    mv $2-$3-$4.ctr CTR/
+    java -cp . CTRgen $g $mu $eps
+    mv $g-$mu-$eps.ctr CTR/
     cd CTR
     javac -cp . CTR.java
-    java  -cp . CTR $2-$3-$4.ctr >> $2-$3-$4.ctrs
+    java  -cp . CTR $g-$mu-$eps.ctr >> $g-$mu-$eps.ctrs
   else
-    echo "No arguments supplied: usage: ./ends.sh dirname g mu eps"
+    echo "No arguments supplied: usage: ./ends.sh g mu eps"
 fi
