@@ -16,6 +16,7 @@ if [ $# -eq 3 ]
     javac CSCgen.java
     java -cp . CSCgen $g $mu $eps
     cp $g-$mu-$eps.csc  ../../../build/$dirname/contiki/tools/cooja/
+    cp ../../contiki/tools/cooja/java/org/contikios/cooja/plugins/VariableWatcher.java  ../../../build/$dirname/contiki/tools/cooja/java/org/contikios/cooja/plugins/
     cp $g-$mu-$eps.sensor ../analize/
     cd ../../../build/$dirname/contiki/tools/cooja/
     var=$(pwd)

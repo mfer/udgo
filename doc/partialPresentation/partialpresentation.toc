@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Trabalho Relacionado}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{COOJA - Contiki}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Redes sem-fio com obst\'aculos}{4}{0}{1}
+\beamer@sectionintoc {2}{Trabalho Desenvolvido}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{UDGO}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Automa\c c\~ao e An\'alise}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Computa\c c\~ao distribu\IeC {\'\i }da}{8}{0}{2}
+\beamer@sectionintoc {3}{Resultado}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Esperado}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Pr\'evia}{10}{0}{3}
+\beamer@sectionintoc {4}{Trabalho por Desenvolver}{11}{0}{4}
+\beamer@subsectionintoc {4}{1}{Gerar Resultados}{11}{0}{4}
+\beamer@subsectionintoc {4}{2}{Diminuir tempo de simula\c c\~ao otimizando COOJA}{12}{0}{4}
