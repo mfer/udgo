@@ -127,6 +127,13 @@ main(int argc, char *argv[])
 	char set[BUF_SIZE];
 	char sid[BUF_SIZE];
 	char cmd[BUF_SIZE];
+
+
+	int g= 2;
+	int mu = 6;
+	int eps = 10;
+
+
 	while(1 && maisuma){ // from here to eternity
 		sprintf(buf,"id");
 		if (send_msg_and_wait_response(10,sfd,buf)) {
@@ -157,9 +164,6 @@ main(int argc, char *argv[])
 
 				//realizar contas
 				puts("breaking...");
-				int g= 2;
-				int mu = 6;
-				int eps = 10;
 
 				int ans = system("../../scripts/req-contiki.sh");
 
@@ -170,11 +174,10 @@ main(int argc, char *argv[])
 				ans = system(cmd);
 
 				//IDONTWANNA waiting INVAIN for the simulation run: 
-				sleep(50); //define this better and possibly do a loop-wait
+				sleep(10*mu); //define this better and possibly do a loop-wait
 
 				sprintf(cmd,"../../scripts/ends.sh %d %d %d",g, mu, eps);
 				ans = system(cmd);
-
 
 				printf("ans:%d\n",ans);
 				
@@ -203,6 +206,11 @@ main(int argc, char *argv[])
 			puts("failed send id and wait a response");
 			maisuma--;
 		}
+
+
+		mu += 2;
+
+		
 	}
 	exit(EXIT_SUCCESS);
 }
