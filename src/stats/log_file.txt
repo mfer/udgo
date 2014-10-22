@@ -1,0 +1,7 @@
+START
+
+END
+MEAN, VAR, STD: 24.5, 208.25, 14.430869689661812
+
+Expected values from http://en.wikipedia.org/wiki/Arithmetic_progression
+MEAN, VAR, STD: 24.0, 0.0, 14.422205
