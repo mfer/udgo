@@ -16,13 +16,8 @@ if [ $# -eq 3 ]
     javac CSCgen.java
     java -cp . CSCgen $g $mu $eps
     cp $g-$mu-$eps.csc  ../../../build/$dirname/contiki/tools/cooja/
-<<<<<<< HEAD
-    cp ../../contiki/tools/cooja/java/org/contikios/cooja/plugins/VariableWatcher.java  ../../../build/$dirname/contiki/tools/cooja/plugin
-/    cp $g-$mu-$eps.sensor ../analize/
-=======
     cp ../../contiki/tools/cooja/java/org/contikios/cooja/plugins/VariableWatcher.java  ../../../build/$dirname/contiki/tools/cooja/java/org/contikios/cooja/plugins/
     cp $g-$mu-$eps.sensor ../analize/
->>>>>>> 2526e8334fbc0b38504ed42526df7d9b50517eb4
     cd ../../../build/$dirname/contiki/tools/cooja/
     var=$(pwd)
     ant run_nogui -Dargs=$var/$g-$mu-$eps.csc > /dev/null 2>&1 &
