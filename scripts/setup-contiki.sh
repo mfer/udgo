@@ -11,32 +11,43 @@ if [ $# -eq 3 ]
 		cd ../../scripts
 	fi
 
-	if [ ! -d "../build/$dirname" ]; then
-		echo $dirname
-	  	mkdir ../build/
-	  	mkdir ../build/$dirname
-	fi
-
-  	cd ../build/$dirname
+	if [ ! -d "../build/localcopy" ]; then
+  	mkdir ../build/
+  	mkdir ../build/localcopy
+  	cd ../build/localcopy
+  	echo "${PWD##*/}"
   	git clone https://github.com/contiki-os/contiki.git
   	cd contiki
-  	git submodule update --init
-
-	\cp ../../../src/contiki/tools/cooja/build.xml tools/cooja/
-	\cp ../../../src/contiki/tools/cooja/config/cooja.html tools/cooja/config/
-	\cp ../../../src/contiki/tools/cooja/config/cooja_applet.config tools/cooja/config/
-	\cp ../../../src/contiki/tools/cooja/config/external_tools.config tools/cooja/config/
-	\cp ../../../src/contiki/tools/cooja/java/org/contikios/cooja/radiomediums/UDGM.java tools/cooja/java/org/contikios/cooja/radiomediums/
-	\cp ../../../src/contiki/examples/rime/example-neighbors.c examples/rime/
-
-	if [ ! -d "./tools/cooja/apps/udgo" ]; then
-		mkdir tools/cooja/apps/udgo
-		cd tools/cooja/apps/udgo
-		ln -s ../../../../../../../src/contiki/tools/cooja/apps/udgo/* .
+  	git submodule update --init  	
+  	cd ../../../scripts
 	fi
+
+	echo "${PWD##*/}"
+
+	if [ ! -d "../build/$dirname" ]; then
+  	mkdir ../build/$dirname
+  	echo "${PWD##*/}"
+  	\cp -R ../build/localcopy/* ../build/$dirname
+  	cd ../build/$dirname/contiki
+
+		\cp ../../../src/contiki/tools/cooja/build.xml tools/cooja/
+		\cp ../../../src/contiki/tools/cooja/config/cooja.html tools/cooja/config/
+		\cp ../../../src/contiki/tools/cooja/config/cooja_applet.config tools/cooja/config/
+		\cp ../../../src/contiki/tools/cooja/config/external_tools.config tools/cooja/config/
+		\cp ../../../src/contiki/tools/cooja/java/org/contikios/cooja/radiomediums/UDGM.java tools/cooja/java/org/contikios/cooja/radiomediums/
+		\cp ../../../src/contiki/examples/rime/example-neighbors.c examples/rime/
+
+		if [ ! -d "./tools/cooja/apps/udgo" ]; then
+			mkdir tools/cooja/apps/udgo
+			cd tools/cooja/apps/udgo
+			ln -s ../../../../../../../src/contiki/tools/cooja/apps/udgo/* .
+		fi  	
+	fi
+
+	echo "${PWD##*/}"	
+
+
 
 else
 	echo "No arguments supplied: usage: ./setup-contiki.sh g mu eps"
 fi
-
-
