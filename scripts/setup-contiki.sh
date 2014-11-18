@@ -15,18 +15,14 @@ if [ $# -eq 3 ]
   	mkdir ../build/
   	mkdir ../build/localcopy
   	cd ../build/localcopy
-  	echo "${PWD##*/}"
   	git clone https://github.com/contiki-os/contiki.git
   	cd contiki
   	git submodule update --init  	
   	cd ../../../scripts
 	fi
 
-	echo "${PWD##*/}"
-
 	if [ ! -d "../build/$dirname" ]; then
   	mkdir ../build/$dirname
-  	echo "${PWD##*/}"
   	\cp -R ../build/localcopy/* ../build/$dirname
   	cd ../build/$dirname/contiki
 
@@ -43,9 +39,6 @@ if [ $# -eq 3 ]
 			ln -s ../../../../../../../src/contiki/tools/cooja/apps/udgo/* .
 		fi  	
 	fi
-
-	echo "${PWD##*/}"	
-
 
 
 else

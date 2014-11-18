@@ -13,11 +13,10 @@
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
   \graphicspath{{figures/}}
-  \title[Projeto Orientado em Computação II]{Obstructed wireless networks with COOJA extended}
+  \title[Oriented Project on Computing II]{Obstructed wireless networks with COOJA extended}
   \author[Manasses \& Olga]{Manasses Ferreira Neto}
   \institute[WISEMAP DCC UFMG]{Wireless Informational Sensing Embedded systems Models Algorithms and Protocols, Computer Science Department DCC, Minas Gerais Federal University}
   \date{Nov. 14th, 2014}
-
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
   \begin{document}
@@ -29,11 +28,7 @@
           The model is based on a grid structure of one-dimensional street segments and
           two-dimensional street intersections. This structure provides a realistic representation
           of a variety of network scenarios with obstacles and, at the same time, allows a simple
-          enough analysis
-          \newline
-          About the use of the simulator COOJA extended throw a class made by the authors with 
-          intents to study obstructed wireless networks
-         
+          enough analysis.           
         \end{block}
       \end{column}
       \begin{column}{.48\linewidth}
@@ -41,8 +36,7 @@
           \begin{itemize}
           \item Model and Analytical CTR: [Almiron et al. 2013] 
           $$ r_{c} = \frac{ln(g)+ln(\mu-1)}{\mu}, \epsilon \geq \epsilon_{c}$$
-          \item UDG Tractability Theory:[Clark et al. 1990]
-          \item Aprox. Algorithm for Visibility Improvement: [Erlebach et al. 2005]
+          $$ q = ((1-2\epsilon_c )^{2\mu}(1-2e^{\mu\epsilon_c})+1)^2$$
           \end{itemize}      
         \end{block}        
       \end{column}
@@ -50,19 +44,16 @@
     \vfill
     \begin{block}{Results}
       \centering
-
-      Due the long time spent it with the simulations, we are dedicating to distribute
-      the computation using a simple server-client protocol routine made it from scratch by the
-      authors.
-      Furthermore, we will study forms to efficiently handles with the visibility calcu-
-      lations. That are at this moment very expensive, mainly for the MRM model. At mo-
-      ment, we are investigating the shifting-strategy with dynamic-programming described at
-      [Erlebach et al. 2005]
-      \includegraphics[width=0.20\linewidth]{udgo}          
-      \includegraphics[width=0.20\linewidth]{node-code}
-      \includegraphics[width=0.20\linewidth]{udgo}          
-      \includegraphics[width=0.20\linewidth]{node-code}      
-      \includegraphics[width=0.20\linewidth]{udgo}          
+      We proposed a new class UDGO (Unit Disk Graph Obstructed) the simulator COOJA extended through to study obstructed wireless networks.
+      Mainly, the behaviour of the Critical Transmission Range (CTR).
+      \newline
+      \includegraphics[width=0.22\linewidth]{eps_c} \qquad
+      \includegraphics[width=0.22\linewidth]{eps_c_zoom} \qquad
+      \includegraphics[width=0.22\linewidth]{ctr} \qquad
+      \includegraphics[width=0.22\linewidth]{ctr_exp}
+      \newline
+      There is a promise future work on speed up the visibility calculations.       
+      We investigated (and started to code) the shifting-strategy with dynamic-programming described at [Erlebach et al. 2005].
     \end{block}
     \vfill
     \vfill
@@ -72,9 +63,9 @@
         \begin{block}{\large Questions we made}
           \centering
             Analytical CTR will be greater than experimental? \newline
-            Physical aspects of MRM could increase the visibility? \newline And the connectivity? \newline
-            For the same properties, what the interference will cause? \newline
-            How can we feedback model by the physical UDGO?
+            Physical aspects of MRM could increase the visibility? \newline 
+            And the connectivity? What to expect when considering interference? \newline
+            How can we feedback the model using the physical UDGO insights?
         \end{block}
         \begin{block}{POC1}
           \centering
@@ -82,34 +73,36 @@
           COOJA named UDGO gathering two pre-existing models UDGM and MRM.
           [Osterlind et al. 2006]
           UDGM inserts the Unit Disk Graph behaviour, being more simple. MRM leads
-          with the physical aspect of the transmission, being much more complex\newline
-          \includegraphics[width=0.3\linewidth]{grid}
-          \includegraphics[width=0.3\linewidth]{udgo}
-          \includegraphics[width=0.3\linewidth]{node-code}
+          with the physical aspect of the transmission, being much more complex.\newline
+          \includegraphics[width=0.9\linewidth]{sim-cycle}\newline
+          \includegraphics[width=0.35\linewidth]{grid}
+          \includegraphics[width=0.35\linewidth]{udgo}                    
+          %\includegraphics[width=0.3\linewidth]{node-code}
           \begin{itemize}
           \item Experimental: UDGO  {\bf https://github.com/mfer/udgo}
           \item Experimental: simulation in batch-mode
           \item Analytical: model and analytical CTR on obstructed networks
-          \end{itemize}          
-          \includegraphics[width=1.0\linewidth]{sim-cycle}
+          \end{itemize}                    
         \end{block}
       \end{column}
       \begin{column}{.48\linewidth}
-        \begin{block}{Answers we get}        
+        \begin{block}{Answers we got}
           \centering
-          We expect discover some insights with the introduced physical medium UDGO that could
-          feedback the model. One thing that could happen it will be the experimental CTR be lower
+          We discovered some insights with the introduced physical medium UDGO that could
+          feedback the model. One thing that happens: the experimental CTR was higher
           than the analytical. Due the physical properties introduced with MRM that could make
-          visibility increase\newline
+          visibility increase.
         \end{block}  
         \begin{block}{POC2}
           \centering
           On the second part, we performed simulations to study the Critical Transmission Range for Connectivity CTR. Comparing the analytical provided by [Almiron et al. 2013] with the experimental that will be obtained by the authors using the extended COOJA. \newline
-          \includegraphics[width=0.75\linewidth]{ptasgig}
+          \includegraphics[width=0.9\linewidth]{nNodes} \newline          
+          \includegraphics[width=0.35\linewidth]{cooja} 
+          \includegraphics[width=0.47\linewidth]{ptasgig} 
           \begin{itemize}
-          \item Experimental: client-server
-          \item Experimental: simulations
-          \item Analytical: PTASGIG {\bf https://github.com/mfer/ptasgig}          
+          \item Experimental: client-server approach to distribute the calculations
+          \item Experimental: to simulate and to analyze
+          \item Analytical: PTASGIG {\bf https://github.com/mfer/ptasgig}
           \end{itemize}  
         \end{block}
       \end{column}
