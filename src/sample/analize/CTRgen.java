@@ -19,7 +19,9 @@ class CTRgen {
 			br = new BufferedReader(new FileReader(sensor_filename));
 			Integer N = Integer.parseInt(br.readLine());
 			Point3d sensors[] = new Point3d[N];
-			Integer sensor = 0, links = 0;
+			Integer sensor = 0;
+			Integer link[][] = new Integer[N][N];
+			int links = 0;
 
 			while ((sCurrentLine = br.readLine()) != null) {
 				StringTokenizer st = new StringTokenizer(sCurrentLine);
@@ -32,12 +34,16 @@ class CTRgen {
 
 			for (int i=0; i < N; i++){
 				if (sensors[i] == null) System.out.println("Hey not everybody emit a radio. Or there is an isolated node.");
+
+				for (int j=0; j < N; j++){
+					link[i][j] = 0;
+				}
 			}
 
 
 			br = new BufferedReader(new FileReader(testlog_filename));
 			while ((sCurrentLine = br.readLine()) != null) {				
-				if (sCurrentLine.length() < 21){
+				if (sCurrentLine.length() < 42/2){ //To filter lines about nodes initialization log
 					StringTokenizer st = new StringTokenizer(sCurrentLine,":");
 				
 					st.nextToken(); //to skip the timeStamp
@@ -47,14 +53,19 @@ class CTRgen {
 					s1--;
 					s2--;
 
-					if (s1 < s2) {
+					if (s1 < s2 && link[s1][s2] == 0){
 						ctr += s1+" "+s2+" "+sensors[s1].distance(sensors[s2])+"\n";
+						link[s1][s2]=1;
+						links++;
+					} else if ( link[s2][s1] == 0 ) {
+						ctr += s1+" "+s2+" "+sensors[s1].distance(sensors[s2])+"\n";
+						link[s1][s2]=1;
 						links++;
 					}
 				}
 			}		
 
-
+			System.out.println(N+"\n"+links+ctr);
 			PrintWriter pw_ctr = new PrintWriter(ctr_filename, "UTF-8");
 			pw_ctr.println(N+"\n"+links+ctr);
  			pw_ctr.close();

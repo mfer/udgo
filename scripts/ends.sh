@@ -11,7 +11,7 @@ if [ $# -eq 3 ]
     fi
     cp ../build/$dirname/contiki/tools/cooja/build/COOJA.testlog ../src/sample/analize/$g-$mu-$eps.testlog
     cd ../src/sample/analize
-    tail -n +$g $g-$mu-$eps.testlog | head -n -3 > $g-$mu-$eps.testlog.new
+    tail -n +$g $g-$mu-$eps.testlog | head -n -3 > $g-$mu-$eps.testlog.new #todo replace +$g per +((g-1)2g*4)
     mv $g-$mu-$eps.testlog.new $g-$mu-$eps.testlog
     javac -cp . CTRgen.java
     java -cp . CTRgen $g $mu $eps

@@ -70,6 +70,28 @@ struct unicast_message {
   uint8_t type;
 };
 
+/* This structure holds information about neighbors. */
+struct neighbor {
+  /* The ->next pointer is needed since we are placing these on a
+     Contiki list. */
+  struct neighbor *next;
+
+  /* The ->addr field holds the Rime address of the neighbor. */
+  linkaddr_t addr;
+
+};
+
+/* This #define defines the maximum amount of neighbors we can remember. */
+#define MAX_NEIGHBORS 50
+
+/* This MEMB() definition defines a memory pool from which we allocate
+   neighbor entries. */
+MEMB(neighbors_memb, struct neighbor, MAX_NEIGHBORS);
+
+/* The neighbors_list is a Contiki list that holds the neighbors we
+   have seen thus far. */
+LIST(neighbors_list);
+
 /* These hold the broadcast and unicast structures, respectively. */
 static struct broadcast_conn broadcast;
 
@@ -86,7 +108,41 @@ AUTOSTART_PROCESSES(&broadcast_process);
 static void
 broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 {
+  struct neighbor *n;
+
+  /* Check if we already know this neighbor. */
+  for(n = list_head(neighbors_list); n != NULL; n = list_item_next(n)) {
+
+    /* We break out of the loop if the address of the neighbor matches
+       the address of the neighbor from which we received this
+       broadcast message. */
+    if(linkaddr_cmp(&n->addr, from)) {
+      break;
+    }
+  }
+
+  /* If n is NULL, this neighbor was not found in our list, and we
+     allocate a new struct neighbor from the neighbors_memb memory
+     pool. */
+  if(n == NULL) {
+    n = memb_alloc(&neighbors_memb);
+
+    /* If we could not allocate a new neighbor entry, we give up. We
+       could have reused an old neighbor entry, but we do not do this
+       for now. */
+    if(n == NULL) {
+      return;
+    }
+
+    /* Initialize the fields. */
+    linkaddr_copy(&n->addr, from);
+
+    /* Place the neighbor on the neighbor list. */
+    list_add(neighbors_list, n);
+
     printf("%d\n",from->u8[0]);
+  }
+
 }
 /* This is where we define what function to be called when a broadcast
    is received. We pass a pointer to this structure in the
@@ -107,8 +163,8 @@ PROCESS_THREAD(broadcast_process, ev, data)
 
   while(1) {
 
-    /* Send a broadcast every 4 - 8 seconds */
-    etimer_set(&et, CLOCK_SECOND * 2 + random_rand() % (CLOCK_SECOND * 2));
+    /* Send a broadcast every 8 - 16 seconds */
+    etimer_set(&et, CLOCK_SECOND * 8 + random_rand() % (CLOCK_SECOND * 8));
 
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 

@@ -25,12 +25,16 @@
 public class CTR {
 
     public static void main(String[] args) {
+        Integer elements=0;
         In in = new In(args[0]);
         EdgeWeightedGraph G = new EdgeWeightedGraph(in);
         PrimMST mst = new PrimMST(G);
         for (Edge e : mst.edges()) {
             StdOut.println(e);
+            elements++;
         }
+        StdOut.printf("the mst has %d edges.\n", elements);
+        StdOut.printf("and should have %d.\n", G.V()-1);
         StdOut.printf("%.5f\n", mst.weight());
         StdOut.printf("%.5f\n", mst.biggest());
     }
