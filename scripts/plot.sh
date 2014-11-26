@@ -12,9 +12,18 @@ for g in $1;
 do
 	for mu in 4 6 8 10 12 14 16 18;
 	do
+		echo -n $g" "$mu" "${eps[$mu]}" "
 		./ends.sh $g $mu ${eps[$mu]} 
-		tail -n 8 "../build/g="$g"_mu="$mu"_eps="${eps[$mu]}"/contiki/tools/cooja/build/COOJA.log" | grep -oP '(?<=Duration: )[0-9]+' | tr "\n" " "
 		echo -n "$((($g-1)*$g*$mu*2)) ";
 		tail -n 1 ../src/sample/analize/CTR/$g-$mu-${eps[$mu]}.ctrs
 	done
+
+	echo "===================================="
+
+        for mu in 4 6 8 10 12 14 16 18;
+        do
+                echo -n $g" "$mu" "${eps[$mu]}" "
+		tail -n 20 "../build/g="$g"_mu="$mu"_eps="${eps[$mu]}"/contiki/tools/cooja/build/COOJA.log" | grep -oP '(?<=Duration: )[0-9]+' | tr "\n" " "
+                tail -n 3 ../src/sample/analize/CTR/$g-$mu-${eps[$mu]}.ctrs | head -n 1
+        done
 done
