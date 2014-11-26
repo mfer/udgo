@@ -33,8 +33,8 @@ public class CTR {
             StdOut.println(e);
             elements++;
         }
-        StdOut.printf("the mst has %d edges.\n", elements);
-        StdOut.printf("and should have %d.\n", G.V()-1);
+        StdOut.printf("%d/", elements);
+        StdOut.printf("%d\n", G.V()-1);
         StdOut.printf("%.5f\n", mst.weight());
         StdOut.printf("%.5f\n", mst.biggest());
     }
