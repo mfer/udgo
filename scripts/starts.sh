@@ -20,7 +20,7 @@ if [ $# -eq 3 ]
     cp $g-$mu-$eps.sensor ../analize/
     cd ../../../build/$dirname/contiki/tools/cooja/
     var=$(pwd)
-    ant run_nogui -Dargs=$var/$g-$mu-$eps.csc > /dev/null 2>&1 &
+    #ant run_nogui -Dargs=$var/$g-$mu-$eps.csc #> /dev/null 2>&1 &
   else
     echo "No arguments supplied: usage: ./starts.sh g mu eps"
 fi
