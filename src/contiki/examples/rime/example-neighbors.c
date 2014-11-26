@@ -107,8 +107,8 @@ PROCESS_THREAD(broadcast_process, ev, data)
 
   while(1) {
 
-    /* Send a broadcast every 4 - 8 seconds */
-    etimer_set(&et, CLOCK_SECOND * 2 + random_rand() % (CLOCK_SECOND * 2));
+    /* Send a broadcast every 1 - 2 seconds */
+    etimer_set(&et, CLOCK_SECOND + random_rand() % (CLOCK_SECOND));
 
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 

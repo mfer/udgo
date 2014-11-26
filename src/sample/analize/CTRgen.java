@@ -52,7 +52,7 @@ class CTRgen {
 
 					s1--;
 					s2--;
-
+					if(s1>=0 && s2>=0){
 					if (s1 < s2 && link[s1][s2] == 0){
 						ctr += s1+" "+s2+" "+sensors[s1].distance(sensors[s2])+"\n";
 						link[s1][s2]=1;
@@ -62,10 +62,11 @@ class CTRgen {
 						link[s1][s2]=1;
 						links++;
 					}
+					}
 				}
 			}		
 
-			System.out.println(N+"\n"+links+ctr);
+			//System.out.println(N+"\n"+links+ctr);
 			PrintWriter pw_ctr = new PrintWriter(ctr_filename, "UTF-8");
 			pw_ctr.println(N+"\n"+links+ctr);
  			pw_ctr.close();
