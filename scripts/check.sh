@@ -10,11 +10,9 @@ eps[18]="24"
 
 for g in $1;
 do
-	for mu in 4 6 8 10 12 14 16 18;
+	for mu in $2;
 	do
-		./ends.sh $g $mu ${eps[$mu]} 
-		tail -n 8 "../build/g="$g"_mu="$mu"_eps="${eps[$mu]}"/contiki/tools/cooja/build/COOJA.log" | grep -oP '(?<=Duration: )[0-9]+' | tr "\n" " "
-		echo -n "$((($g-1)*$g*$mu*2)) ";
-		tail -n 1 ../src/sample/analize/CTR/$g-$mu-${eps[$mu]}.ctrs
+		tail -n 20 "../build/g="$g"_mu="$mu"_eps="${eps[$mu]}"/contiki/tools/cooja/build/COOJA.log"
+		tail -f "../build/g="$g"_mu="$mu"_eps="${eps[$mu]}"/contiki/tools/cooja/build/COOJA.testlog"
 	done
 done
