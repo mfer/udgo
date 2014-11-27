@@ -1,7 +1,11 @@
 #!/bin/bash
 
-$old=$1
-$new=$2
+g=$1
+mu=$2
+eps=$3
+old=$4
+new=$5
+dirname="g="$g"_mu="$mu"_eps="$eps
 
 filename="../build/"$dirname"/contiki/tools/cooja/apps/udgo/java/org/contikios/udgo/UDGO.java"
 echo $filename
