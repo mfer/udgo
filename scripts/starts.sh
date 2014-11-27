@@ -5,7 +5,7 @@ eps=$3
 dirname="g="$g"_mu="$mu"_eps="$eps
 if [ $# -eq 3 ]
   then
-    this selection caluse handle the call at udgo/src/client
+    #this selection clause handle the call at udgo/src/client
     if [ "${PWD##*/}" == "client" ]; then
         cd ../../scripts
     fi
