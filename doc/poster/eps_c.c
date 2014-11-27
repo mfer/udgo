@@ -12,7 +12,7 @@ void main(){
 	char *mode = "a";
 	char filename[] = "n.dat";
 
-	for (mu=4;mu<=18;mu=mu+2){
+	for (mu=3;mu<=18;mu=mu+2){
 
 	sprintf(filename, "%d.dat", mu);
 
