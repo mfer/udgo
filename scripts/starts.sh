@@ -5,10 +5,10 @@ eps=$3
 dirname="g="$g"_mu="$mu"_eps="$eps
 if [ $# -eq 3 ]
   then
-    #this selection caluse handle the call at udgo/src/client
-    #if [ "${PWD##*/}" == "client"]; then
-    #    cd ../../scripts
-    #fi
+    this selection caluse handle the call at udgo/src/client
+    if [ "${PWD##*/}" == "client" ]; then
+        cd ../../scripts
+    fi
     ./setup-contiki.sh $g $mu $eps
     cd ../src/sample/generate/
     javac Position.java
@@ -20,7 +20,7 @@ if [ $# -eq 3 ]
     cp $g-$mu-$eps.sensor ../analize/
     cd ../../../build/$dirname/contiki/tools/cooja/
     var=$(pwd)
-    #ant run_nogui -Dargs=$var/$g-$mu-$eps.csc #> /dev/null 2>&1 &
+    ant run_nogui -Dargs=$var/$g-$mu-$eps.csc > /dev/null 2>&1 &
   else
     echo "No arguments supplied: usage: ./starts.sh g mu eps"
 fi
