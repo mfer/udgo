@@ -95,8 +95,8 @@ public class UDGO extends UDGM {
     super(simulation);
     sim = simulation;
     random = simulation.getRandomGenerator();
-    currentChannelModel = new ChannelModel(sim);
 
+    currentChannelModel = new ChannelModel(sim);
 
     WITH_CAPTURE_EFFECT = currentChannelModel.getParameterBooleanValue(ChannelModel.Parameter.captureEffect);
     CAPTURE_EFFECT_THRESHOLD = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectSignalTreshold);
@@ -195,40 +195,74 @@ public class UDGO extends UDGM {
 
       double distance = senderPos.getDistanceTo(recvPos);
 
-      System.out.println(distance+" "+moteTransmissionRange);
+
+//      System.out.println(distance+" "+moteTransmissionRange);
+
 
       if (distance <= moteTransmissionRange) {
-
-        System.out.println("in");
-
         if (recvProb == 1.0 || random.nextDouble() < recvProb) {
-
           if (!recv.isRadioOn()) {
-
             newConnection.addInterfered(recv);
             recv.interfereAnyReception();
-
+          } else if (recv.isInterfered()) {
+            if (WITH_CAPTURE_EFFECT) {
+              newConnection.addInterfered(recv, recvSignalStrength);
+            } else {
+              newConnection.addInterfered(recv, recvSignalStrength);
+            }
           } else if (recv.isTransmitting()) {
-
             newConnection.addInterfered(recv, recvSignalStrength);
-
           } else if (recv.isReceiving()) {
-
+            if (!WITH_CAPTURE_EFFECT) {
+              newConnection.addInterfered(recv, recvSignalStrength);
+              recv.interfereAnyReception();
               for (RadioConnection conn : getActiveConnections()) {
                 if (conn.isDestination(recv)) {
-                  conn.removeDestination(recv);
+                  conn.addInterfered(recv);
                 }
               }
-
-              /* Success: radio starts receiving */
-              newConnection.addDestination(recv, recvSignalStrength);
-
+            } else {
+              double currSignal = recv.getCurrentSignalStrength();
+              if (recvSignalStrength < currSignal - CAPTURE_EFFECT_THRESHOLD) {
+              } else {
+                long startTime = newConnection.getReceptionStartTime();
+                boolean interfering = (sim.getSimulationTime()-startTime) >= CAPTURE_EFFECT_PREAMBLE_DURATION; 
+                if (interfering) {
+                  newConnection.addInterfered(recv, recvSignalStrength);
+                  recv.interfereAnyReception();
+                  for (RadioConnection conn : getActiveConnections()) {
+                    if (conn.isDestination(recv)) {
+                      conn.addInterfered(recv);
+                    }
+                  }
+                } else {
+                  for (RadioConnection conn : getActiveConnections()) {
+                    if (conn.isDestination(recv)) {
+                      conn.removeDestination(recv);
+                    }
+                  }
+                  newConnection.addDestination(recv, recvSignalStrength);
+                }
+              }
+            }
           } else {
-            /* Success: radio starts receiving */
             newConnection.addDestination(recv, recvSignalStrength);
           }
+        } else if (recvSignalStrength > currentChannelModel.getParameterDoubleValue(Parameter.bg_noise_mean)) {
+          if (!WITH_CAPTURE_EFFECT) {
+            newConnection.addInterfered(recv, recvSignalStrength);
+            recv.interfereAnyReception();
+          } else {
+          }
         }
+      } else if (distance <= moteInterferenceRange) {
+        newConnection.addInterfered(recv);
+        recv.interfereAnyReception();
       }
+
+
+
+
     }
 
     return newConnection;

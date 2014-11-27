@@ -941,6 +941,9 @@ public class ChannelModel {
       }
     }
 
+    // Check for TRANSMITTING_RANGE just to recover the UDG
+    if( source.distance(dest) < 100.0 ) return false;
+
     return true;
   }
 
