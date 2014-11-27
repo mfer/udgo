@@ -915,6 +915,9 @@ public class ChannelModel {
   private boolean isDirectPath(Point2D source, Point2D dest) {
     Line2D sourceToDest = new Line2D.Double(source, dest);
 
+    // Check for TRANSMITTING_RANGE just to recover the UDG
+    if( source.distance(dest) > 100 ) return false;
+
     // Get angle
     double deltaX = dest.getX() - source.getX();
     double deltaY = dest.getY() - source.getY();
@@ -940,9 +943,6 @@ public class ChannelModel {
         }
       }
     }
-
-    // Check for TRANSMITTING_RANGE just to recover the UDG
-    if( source.distance(dest) > 100 ) return false;
 
     return true;
   }
