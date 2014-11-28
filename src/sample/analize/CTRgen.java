@@ -59,14 +59,21 @@ class CTRgen {
 			for (int i=0; i <= N; i++){
 				for (int j=i+1; j <= N; j++){					
 					if (link[i][j] == 1) {
-					links++;
 					if (zeroFlag == 0) {
 						//cooja expected (0-N]
 						s1=i-1; s2=j-1;
-						ctr += s1+" "+s2+" "+sensors[s1].distance(sensors[s2])+"\n";
+						if(sensors[s1].distance(sensors[s2])<10000.0){
+							ctr += s1+" "+s2+" "+sensors[s1].distance(sensors[s2])+"\n";
+							links++;
+						}
 					}else{
 						//there are cases that cooja give us [0-N) instead of (0-N]
-						if (i<N && j<N) ctr += i+" "+j+" "+sensors[i].distance(sensors[j])+"\n";
+						if (i<N && j<N) {
+							if(sensors[i].distance(sensors[j])<10000.0){
+								ctr += i+" "+j+" "+sensors[i].distance(sensors[j])+"\n";
+								links++;
+							}
+						}
 					}
 					}
 				}
