@@ -96,6 +96,7 @@ public class EdgeWeightedGraph {
         int E = in.readInt();
         if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
         for (int i = 0; i < E; i++) {
+		//StdOut.printf("%d\n", i);
             int v = in.readInt();
             int w = in.readInt();
             double weight = in.readDouble();
