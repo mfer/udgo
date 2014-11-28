@@ -49,10 +49,7 @@ public class Stat{
         //System.out.println("-->"+g+" "+mu+" "+nodes+" "+greatest_mst);
 
         final Tuple t = measure.createTuple(g, mu, nodes);
-        System.out.println(t+" "+greatest_mst);
-
-        
-        
+        //System.out.println(t+" "+greatest_mst);
 
         if (!map.containsKey(t)) {
           DataSeries gmst = new DataSeries();
@@ -64,12 +61,14 @@ public class Stat{
         
       }
 
-      Iterator<Tuple> keySetIterator = map.keySet().iterator();
 
+      Iterator<Tuple> keySetIterator = map.keySet().iterator();
       while(keySetIterator.hasNext()){
         Tuple key = keySetIterator.next();
-        System.out.println("key: " + key + " value: " + map.get(key).getMean()+" "+map.get(key).getVariance()+" "+map.get(key).getStandardDeviation());
+        x.add(key.getNthValue(2));
+        log.println(key.getNthValue(0) + " " + key.getNthValue(1) + " " + key.getNthValue(2) + " " + map.get(key).getMean()+" "+map.get(key).getVariance()+" "+map.get(key).getStandardDeviation());
       }      
+
 
     } catch (FileNotFoundException e) {
       e.printStackTrace();

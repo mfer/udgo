@@ -1,7 +1,7 @@
 # Grace project file
 #
 @version 50123
-@page size 735, 677
+@page size 975, 468
 @page scroll 5%
 @page inout 5%
 @link page off
@@ -91,7 +91,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Thu Nov 27 18:04:32 2014"
+@timestamp def "Fri Nov 28 00:41:51 2014"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -138,10 +138,10 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 10, 10, 1000, 1000
+@    world 14.5596149, 16.7935634, 891.561427, 614.570102
 @    stack world 0, 0, 0, 0
 @    znorm 1
-@    view 0.125839, 0.150000, 0.964767, 0.850000
+@    view 0.241477, 0.150000, 1.851324, 0.850000
 @    title "CTR behavior"
 @    title font 0
 @    title size 1.500000
@@ -169,7 +169,7 @@
 @    xaxis  label color 1
 @    xaxis  label place normal
 @    xaxis  tick on
-@    xaxis  tick major 4
+@    xaxis  tick major 2
 @    xaxis  tick minor ticks 0
 @    xaxis  tick default 6
 @    xaxis  tick place rounded true
@@ -220,7 +220,7 @@
 @    yaxis  label color 1
 @    yaxis  label place normal
 @    yaxis  tick on
-@    yaxis  tick major 4
+@    yaxis  tick major 2
 @    yaxis  tick minor ticks 0
 @    yaxis  tick default 6
 @    yaxis  tick place rounded true
@@ -260,7 +260,7 @@
 @    altyaxis  off
 @    legend on
 @    legend loctype view
-@    legend 0.1513089163, 0.82
+@    legend 0.29035186036, 0.82
 @    legend box color 1
 @    legend box pattern 1
 @    legend box linewidth 1.0
@@ -378,7 +378,7 @@
 @    s1 errorbar riser clip off
 @    s1 errorbar riser clip length 0.100000
 @    s1 comment "Cols 3:4"
-@    s1 legend  "g=3"
+@    s1 legend  "model g=3"
 @    s2 hidden false
 @    s2 type xy
 @    s2 symbol 0
@@ -427,7 +427,7 @@
 @    s2 errorbar riser clip off
 @    s2 errorbar riser clip length 0.100000
 @    s2 comment "Cols 3:4"
-@    s2 legend  "g=4"
+@    s2 legend  "model g=4"
 @    s3 hidden false
 @    s3 type xy
 @    s3 symbol 0
@@ -476,7 +476,7 @@
 @    s3 errorbar riser clip off
 @    s3 errorbar riser clip length 0.100000
 @    s3 comment "Cols 3:4"
-@    s3 legend  "g=5"
+@    s3 legend  "model g=5"
 @    s4 hidden true
 @    s4 type xy
 @    s4 symbol 0
@@ -723,7 +723,7 @@
 @    s8 comment "Cols 3:4"
 @    s8 legend  "g=10"
 @    s9 hidden false
-@    s9 type xy
+@    s9 type xydy
 @    s9 symbol 1
 @    s9 symbol size 1.000000
 @    s9 symbol color 1
@@ -763,16 +763,16 @@
 @    s9 errorbar color 1
 @    s9 errorbar pattern 1
 @    s9 errorbar size 1.000000
-@    s9 errorbar linewidth 1.0
+@    s9 errorbar linewidth 2.0
 @    s9 errorbar linestyle 1
-@    s9 errorbar riser linewidth 1.0
+@    s9 errorbar riser linewidth 2.0
 @    s9 errorbar riser linestyle 1
 @    s9 errorbar riser clip off
 @    s9 errorbar riser clip length 0.100000
-@    s9 comment "Cols 4:5"
+@    s9 comment "Cols 3:4:6"
 @    s9 legend  "measure g=2"
 @    s10 hidden false
-@    s10 type xy
+@    s10 type xydy
 @    s10 symbol 2
 @    s10 symbol size 1.000000
 @    s10 symbol color 2
@@ -812,16 +812,16 @@
 @    s10 errorbar color 2
 @    s10 errorbar pattern 1
 @    s10 errorbar size 1.000000
-@    s10 errorbar linewidth 1.0
+@    s10 errorbar linewidth 2.0
 @    s10 errorbar linestyle 1
-@    s10 errorbar riser linewidth 1.0
+@    s10 errorbar riser linewidth 2.0
 @    s10 errorbar riser linestyle 1
 @    s10 errorbar riser clip off
 @    s10 errorbar riser clip length 0.100000
-@    s10 comment "Cols 4:5"
-@    s10 legend  "exp g=3"
+@    s10 comment "Cols 3:4:6"
+@    s10 legend  "measure g=3"
 @    s11 hidden false
-@    s11 type xy
+@    s11 type xydy
 @    s11 symbol 3
 @    s11 symbol size 1.000000
 @    s11 symbol color 3
@@ -861,16 +861,16 @@
 @    s11 errorbar color 3
 @    s11 errorbar pattern 1
 @    s11 errorbar size 1.000000
-@    s11 errorbar linewidth 1.0
+@    s11 errorbar linewidth 2.0
 @    s11 errorbar linestyle 1
-@    s11 errorbar riser linewidth 1.0
+@    s11 errorbar riser linewidth 2.0
 @    s11 errorbar riser linestyle 1
 @    s11 errorbar riser clip off
 @    s11 errorbar riser clip length 0.100000
-@    s11 comment "Cols 4:5"
-@    s11 legend  "exp g=4"
+@    s11 comment "Cols 3:4:6"
+@    s11 legend  "measure g=4"
 @    s12 hidden false
-@    s12 type xy
+@    s12 type xydy
 @    s12 symbol 4
 @    s12 symbol size 1.000000
 @    s12 symbol color 4
@@ -910,14 +910,14 @@
 @    s12 errorbar color 4
 @    s12 errorbar pattern 1
 @    s12 errorbar size 1.000000
-@    s12 errorbar linewidth 1.0
+@    s12 errorbar linewidth 2.0
 @    s12 errorbar linestyle 1
-@    s12 errorbar riser linewidth 1.0
+@    s12 errorbar riser linewidth 2.0
 @    s12 errorbar riser linestyle 1
 @    s12 errorbar riser clip off
 @    s12 errorbar riser clip length 0.100000
-@    s12 comment "Cols 4:5"
-@    s12 legend  "exp g=5"
+@    s12 comment "Cols 3:4:6"
+@    s12 legend  "measure g=5"
 @target G0.S0
 @type xy
 16 44.793987
@@ -1018,102 +1018,46 @@
 4752 29.545111
 &
 @target G0.S9
-@type xy
-16 53.35148
-24 37.4803
-32 36.01385
-40 22.822
-48 27.55409
-56 35.534
-64 22.27191
-72 20.2669
-16 51.07874
-24 39.76367
-32 28.044
-40 33.08375
-48 37.32292
-56 23.37746
-64 22.60226
-72 18.98002
-16 35.09942
-24 33.43414
-32 28.98319
-40 29.97991
-48 30.71043
-56 25.34939
-64 25.25214
-72 21.64856
-16 44.55178
-24 38.42379
-32 31.14195
-40 24.51939
-48 34.00958
-56 31.02512
-64 22.45708
-72 17.69314
+@type xydy
+24 37.275475 2.3615434
+48 32.399255 3.645661
+56 28.821492 4.7855699
+64 23.145848 1.2216917
+72 19.647155 1.4707948
+40 27.601262 4.1247703
+16 46.020355 7.0844228
+32 31.045748 3.0804192
 &
 @target G0.S10
-@type xy
-48 59.13602
-72 42.86684
-96 34.21389
-120 31.74827
-144 38.44914
-168 33.08059
-192 28.31812
-216 35.14688
-48 57.04225
-72 48.42862
-96 34.00514
-120 40.80418
-144 35.18716
-168 39.35279
-192 38.81299
-216 48.16919
+@type xydy
+72 46.574693 2.6218482
+144 36.274487 1.5377121
+168 37.262057 2.9567434
+192 35.3147 4.9473292
+216 37.721693 7.6975969
+120 37.785543 4.2689969
+48 57.740173 0.98701264
+96 34.074723 0.098405694
 &
 @target G0.S11
-@type xy
-96 51.44565
-144 42.45596
-192 38.79724
-240 36.44891
-288 46.95159
-336 90.72927
-384 209.63593
-432 212.44767
-96 72.33064
-144 56.25664
-192 41.65654
-240 43.76566
-288 84.63321
-336 302.15549
-384 298.80662
-432 202.09806
+@type xydy
+288 65.7924 18.84081
+384 254.22127 44.585345
+144 49.3563 6.90034
+336 196.44238 105.71311
+432 207.27286 5.174805
+96 61.888145 10.442495
+240 40.107285 3.658375
+192 40.22689 1.42965
 &
 @target G0.S12
-@type xy
-160 63.1621
-240 52.28314
-320 433.52079
-400 313.50106
-480 438.01832
-560 483.15217
-640 510.45438
-720 516.39757
-160 54.6854
-240 46.78011
-320 390.73315
-400 324.55743
-480 400.29133
-560 437.80315
-640 506.32092
-720 452.43409
-160 75.1102
-240 42.05222
-320 400.48313
-400 354.5873
-480 350.25999
-560 444.10073
-640 447.61202
-720 432.25172
+@type xydy
+480 396.18988 35.944379
+640 488.12911 28.69956
+240 47.03849 4.1807496
+560 455.01868 20.058825
+720 467.02779 35.868864
+160 64.319233 8.3784379
+400 330.88193 17.359325
+320 408.24569 18.31008
 &
