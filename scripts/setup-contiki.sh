@@ -32,6 +32,7 @@ if [ $# -eq 3 ]
 		\cp ../../../src/contiki/tools/cooja/config/external_tools.config tools/cooja/config/
 		\cp ../../../src/contiki/tools/cooja/java/org/contikios/cooja/radiomediums/UDGM.java tools/cooja/java/org/contikios/cooja/radiomediums/
 		\cp ../../../src/contiki/examples/rime/example-neighbors.c examples/rime/
+		\cp ../../../src/contiki/tools/cooja/java/org/contikios/cooja/plugins/VariableWatcher.java  tools/cooja/java/org/contikios/cooja/plugins/
 
 		if [ ! -d "./tools/cooja/apps/udgo" ]; then
 			mkdir tools/cooja/apps/udgo
