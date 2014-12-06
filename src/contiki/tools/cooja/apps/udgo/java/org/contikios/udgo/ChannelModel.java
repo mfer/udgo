@@ -913,10 +913,12 @@ public class ChannelModel {
    * @return True if no obstacles between source and destination
    */
   private boolean isDirectPath(Point2D source, Point2D dest) {
+    if( source == null || dest == null ) return false;
+    
     Line2D sourceToDest = new Line2D.Double(source, dest);
 
     // Check for TRANSMITTING_RANGE just to recover the UDG
-    if( source.distance(dest) > 100 ) return false;
+    if( source.distance(dest) > 100.0 ) return false;
 
     // Get angle
     double deltaX = dest.getX() - source.getX();

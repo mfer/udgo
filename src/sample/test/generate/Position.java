@@ -15,7 +15,7 @@ class Position {
         Double seg_size = 100.0;
 
         Integer segs = 2 * g * (g - 1 );
-        Integer N = mu * segs;
+        Integer N = g * g;
         Integer streets = 2*g;
         Integer sps = N/streets; //or mu*(g-1) //Sensors Per Street divided by 2 --> half vertical half horizontal
 
@@ -29,18 +29,13 @@ class Position {
 		try {
 			PrintWriter pw_sensor = new PrintWriter(sensor_filename, "UTF-8");
 			pw_sensor.println(N);
-	        for (int street = 0; street < g; street++){
-	        	//vertical
-		        for(int sensor = 0; sensor < sps; sensor++){
-		        	y = Min + (Math.random() * (Max - Min));
-		        	pw_sensor.println(seg_size*street+" "+y+" 0.0");
+	        for (int street_indian = 0; street_indian < g; street_indian++){
+		        for(int street_state = 0; street_state < g; street_state++){
+		        	x = seg_size*street_state;
+		        	y = seg_size*street_indian;
+		        	pw_sensor.println(x+" "+y+" 0.0"); //intersection sensor
 		        }
-		        //horizontal
-		        for(int sensor = 0; sensor < sps; sensor++){
-		        	x = Min + (Math.random() * (Max - Min));
-		        	pw_sensor.println(x+" "+seg_size*street+" 0.0");
-		        }
-		    }
+		    }		    
 		    pw_sensor.close();
 
 
