@@ -65,7 +65,6 @@ public class Stat{
       Iterator<Tuple> keySetIterator = map.keySet().iterator();
       while(keySetIterator.hasNext()){
         Tuple key = keySetIterator.next();
-        x.add(key.getNthValue(2));
         log.println(key.getNthValue(0) + " " + key.getNthValue(1) + " " + key.getNthValue(2) + " " + map.get(key).getMean()+" "+map.get(key).getVariance()+" "+map.get(key).getStandardDeviation());
       }      
 
