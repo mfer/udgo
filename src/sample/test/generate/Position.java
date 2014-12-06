@@ -9,13 +9,13 @@ class Position {
 		String sensor_filename = "test.sensor";
 		String obstacle_filename = "test.obstacle";
 
-        Integer g = 4;
-        Integer mu = 8;
-        Double eps = 38.8;
+        Integer g = 3;
+        Integer mu = 18;
+        Double eps = 24.0;
         Double seg_size = 100.0;
 
         Integer segs = 2 * g * (g - 1 );
-        Integer N = g * g;
+        Integer N = g * g  + segs * mu;
         Integer streets = 2*g;
         Integer sps = N/streets; //or mu*(g-1) //Sensors Per Street divided by 2 --> half vertical half horizontal
 
@@ -29,12 +29,50 @@ class Position {
 		try {
 			PrintWriter pw_sensor = new PrintWriter(sensor_filename, "UTF-8");
 			pw_sensor.println(N);
+
+
 	        for (int street_indian = 0; street_indian < g; street_indian++){
+	        	//just at intersection sensors
 		        for(int street_state = 0; street_state < g; street_state++){
 		        	x = seg_size*street_state;
 		        	y = seg_size*street_indian;
-		        	pw_sensor.println(x+" "+y+" 0.0"); //intersection sensor
+		        	pw_sensor.println(x+" "+y+" 0.0");
+
+		        	if (street_indian < g-1 && street_state < g-1){
+
+		        		for (int i = 1; i <= mu; i++){
+				        	//horizontal middle block
+				        	x = seg_size*street_state + i*seg_size/(mu+1);
+				        	y = seg_size*street_indian;
+				        	pw_sensor.println(x+" "+y+" 0.0");
+
+							//vertical middle block
+							x = seg_size*street_state;
+				        	y = seg_size*street_indian + i*seg_size/(mu+1);
+				        	pw_sensor.println(x+" "+y+" 0.0");
+			        	}
+		        	}
+
+		        	if (street_indian < g-1 && street_state == g-1){
+		        		for (int i = 1; i <= mu; i++){
+							//vertical middle block
+							x = seg_size*street_state;
+				        	y = seg_size*street_indian + i*seg_size/(mu+1);
+				        	pw_sensor.println(x+" "+y+" 0.0");
+			        	}
+		        	}
+
+		        	if (street_indian == g-1 && street_state < g-1){
+		        		for (int i = 1; i <= mu; i++){
+				        	//horizontal middle block
+				        	x = seg_size*street_state + i*seg_size/(mu+1);
+				        	y = seg_size*street_indian;
+				        	pw_sensor.println(x+" "+y+" 0.0");
+			        	}
+		        	}		        	
+
 		        }
+
 		    }		    
 		    pw_sensor.close();
 
