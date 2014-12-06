@@ -1,0 +1,3958 @@
+273127:183:MAC b7:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 183.
+279855:76:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+281015:170:MAC aa:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 170.
+281461:160:MAC a0:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 160.
+281481:175:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+281680:69:MAC 45:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 69.
+281965:76:Starting 'Broadcast process'
+282446:183:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+283591:175:Starting 'Broadcast process'
+284556:183:Starting 'Broadcast process'
+285927:39:Rime started with address 39.0
+286587:34:Rime started with address 34.0
+287457:178:Rime started with address 178.0
+287970:143:Rime started with address 143.0
+290323:170:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+290769:160:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+290987:69:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+292433:170:Starting 'Broadcast process'
+292879:160:Starting 'Broadcast process'
+293097:69:Starting 'Broadcast process'
+294539:24:Rime started with address 24.0
+295212:39:MAC 27:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 39.
+295870:34:MAC 22:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 34.
+296892:178:MAC b2:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 178.
+297409:143:MAC 8f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 143.
+301073:157:Rime started with address 157.0
+302093:70:Rime started with address 70.0
+303821:24:MAC 18:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 24.
+304519:39:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+305177:34:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+306200:178:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+306629:39:Starting 'Broadcast process'
+306717:143:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+307287:34:Starting 'Broadcast process'
+308310:178:Starting 'Broadcast process'
+308827:143:Starting 'Broadcast process'
+310512:157:MAC 9d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 157.
+311374:70:MAC 46:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 70.
+313128:24:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+315238:24:Starting 'Broadcast process'
+319819:157:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+320683:70:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+321512:85:Rime started with address 85.0
+321930:157:Starting 'Broadcast process'
+322793:70:Starting 'Broadcast process'
+330797:85:MAC 55:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 85.
+332155:8:Rime started with address 8.0
+339090:67:Rime started with address 67.0
+340104:85:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+341192:8:MAC 08:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 8.
+342214:85:Starting 'Broadcast process'
+345717:153:Rime started with address 153.0
+348372:67:MAC 43:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 67.
+350498:8:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+352609:8:Starting 'Broadcast process'
+355157:153:MAC 99:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 153.
+357678:67:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+359789:67:Starting 'Broadcast process'
+363664:108:Rime started with address 108.0
+364475:153:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+365876:48:Rime started with address 48.0
+366585:153:Starting 'Broadcast process'
+369315:79:Rime started with address 79.0
+371402:127:Rime started with address 127.0
+371474:60:Rime started with address 60.0
+373096:108:MAC 6c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 108.
+375157:48:MAC 30:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 48.
+375576:94:Rime started with address 94.0
+378603:79:MAC 4f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 79.
+380759:60:MAC 3c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 60.
+380843:127:MAC 7f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 127.
+382404:108:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+383079:115:Rime started with address 115.0
+383968:50:Rime started with address 50.0
+384463:48:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+384514:108:Starting 'Broadcast process'
+384858:94:MAC 5e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 94.
+386574:48:Starting 'Broadcast process'
+387695:98:Rime started with address 98.0
+387910:79:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+390020:79:Starting 'Broadcast process'
+390066:60:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+390158:127:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+392176:60:Starting 'Broadcast process'
+392268:127:Starting 'Broadcast process'
+392516:115:MAC 73:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 115.
+393254:50:MAC 32:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 50.
+394165:94:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+396275:94:Starting 'Broadcast process'
+396981:98:MAC 62:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 98.
+399322:55:Rime started with address 55.0
+400687:122:Rime started with address 122.0
+401211:28:Rime started with address 28.0
+401824:115:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+402561:50:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+402919:104:Rime started with address 104.0
+403846:106:Rime started with address 106.0
+403934:115:Starting 'Broadcast process'
+404671:50:Starting 'Broadcast process'
+406288:98:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+408398:98:Starting 'Broadcast process'
+408606:55:MAC 37:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 55.
+410125:122:MAC 7a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 122.
+410491:28:MAC 1c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 28.
+412350:104:MAC 68:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 104.
+413283:106:MAC 6a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 106.
+417912:55:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+419433:122:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+419798:28:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+420023:55:Starting 'Broadcast process'
+421543:122:Starting 'Broadcast process'
+421613:158:Rime started with address 158.0
+421658:104:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+421908:28:Starting 'Broadcast process'
+422590:106:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+423768:104:Starting 'Broadcast process'
+424701:106:Starting 'Broadcast process'
+431052:158:MAC 9e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 158.
+438876:152:Rime started with address 152.0
+440360:158:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+441625:95:Rime started with address 95.0
+442470:158:Starting 'Broadcast process'
+443985:103:Rime started with address 103.0
+448315:152:MAC 98:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 152.
+449975:11:Rime started with address 11.0
+450913:95:MAC 5f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 95.
+453421:103:MAC 67:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 103.
+456645:89:Rime started with address 89.0
+457623:152:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+458880:156:Rime started with address 156.0
+459165:11:MAC 0b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 11.
+459733:152:Starting 'Broadcast process'
+460219:95:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+462330:95:Starting 'Broadcast process'
+462728:103:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+463172:31:Rime started with address 31.0
+464839:103:Starting 'Broadcast process'
+465930:89:MAC 59:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 89.
+466421:190:Rime started with address 190.0
+466872:138:Rime started with address 138.0
+468319:156:MAC 9c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 156.
+468482:11:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+468644:140:Rime started with address 140.0
+470593:11:Starting 'Broadcast process'
+472458:31:MAC 1f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 31.
+472983:35:Rime started with address 35.0
+475237:89:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+475447:88:Rime started with address 88.0
+475498:54:Rime started with address 54.0
+475864:190:MAC be:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 190.
+476311:138:MAC 8a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 138.
+476944:44:Rime started with address 44.0
+477338:45:Rime started with address 45.0
+477347:89:Starting 'Broadcast process'
+477626:156:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+478081:140:MAC 8c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 140.
+479737:156:Starting 'Broadcast process'
+481765:31:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+482265:35:MAC 23:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 35.
+483875:31:Starting 'Broadcast process'
+484732:88:MAC 58:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 88.
+484781:54:MAC 36:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 54.
+485177:190:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+485619:138:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+486227:44:MAC 2c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 44.
+486618:45:MAC 2d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 45.
+487287:190:Starting 'Broadcast process'
+487389:140:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+487729:138:Starting 'Broadcast process'
+488632:72:Rime started with address 72.0
+489499:140:Starting 'Broadcast process'
+491572:35:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+493682:35:Starting 'Broadcast process'
+494039:88:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+494087:54:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+495510:2:Rime started with address 2.0
+495534:44:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+495925:45:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+496149:88:Starting 'Broadcast process'
+496198:54:Starting 'Broadcast process'
+497644:44:Starting 'Broadcast process'
+497916:72:MAC 48:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 72.
+498035:45:Starting 'Broadcast process'
+500049:133:Rime started with address 133.0
+500893:150:Rime started with address 150.0
+503629:30:Rime started with address 30.0
+504547:2:MAC 02:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 2.
+507223:72:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+509333:72:Starting 'Broadcast process'
+509486:133:MAC 85:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 133.
+510045:6:Rime started with address 6.0
+510330:150:MAC 96:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 150.
+510849:81:Rime started with address 81.0
+512915:30:MAC 1e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 30.
+513854:2:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+515964:2:Starting 'Broadcast process'
+517568:77:Rime started with address 77.0
+518794:133:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+519082:6:MAC 06:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 6.
+519638:150:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+520131:81:MAC 51:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 81.
+520904:133:Starting 'Broadcast process'
+521748:150:Starting 'Broadcast process'
+521912:131:Rime started with address 131.0
+522222:30:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+522666:110:Rime started with address 110.0
+523899:86:Rime started with address 86.0
+524332:30:Starting 'Broadcast process'
+526855:77:MAC 4d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 77.
+528388:6:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+529438:81:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+530499:6:Starting 'Broadcast process'
+531349:131:MAC 83:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 131.
+531548:81:Starting 'Broadcast process'
+532106:110:MAC 6e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 110.
+533159:65:Rime started with address 65.0
+533179:86:MAC 56:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 86.
+536162:77:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+538272:77:Starting 'Broadcast process'
+540657:131:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+541414:110:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+542444:65:MAC 41:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 65.
+542486:86:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+542767:131:Starting 'Broadcast process'
+543524:110:Starting 'Broadcast process'
+544596:86:Starting 'Broadcast process'
+548103:109:Rime started with address 109.0
+551751:65:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+553861:65:Starting 'Broadcast process'
+557543:109:MAC 6d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 109.
+560143:68:Rime started with address 68.0
+564452:117:Rime started with address 117.0
+566542:132:Rime started with address 132.0
+566861:109:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+568971:109:Starting 'Broadcast process'
+569426:68:MAC 44:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 68.
+571146:96:Rime started with address 96.0
+573890:117:MAC 75:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 117.
+575980:132:MAC 84:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 132.
+578733:68:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+580357:137:Rime started with address 137.0
+580430:96:MAC 60:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 96.
+580843:68:Starting 'Broadcast process'
+583197:117:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+583967:174:Rime started with address 174.0
+585287:132:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+585308:117:Starting 'Broadcast process'
+586021:18:Rime started with address 18.0
+587398:132:Starting 'Broadcast process'
+588147:63:Rime started with address 63.0
+589736:96:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+589795:137:MAC 89:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 137.
+591847:96:Starting 'Broadcast process'
+593408:174:MAC ae:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 174.
+595301:18:MAC 12:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 18.
+597432:63:MAC 3f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 63.
+599103:137:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+601213:137:Starting 'Broadcast process'
+602727:174:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+604608:18:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+604837:174:Starting 'Broadcast process'
+606718:18:Starting 'Broadcast process'
+606738:63:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+607746:4:Rime started with address 4.0
+608396:172:Rime started with address 172.0
+608849:63:Starting 'Broadcast process'
+614841:33:Rime started with address 33.0
+616783:4:MAC 04:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 4.
+617831:172:MAC ac:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 172.
+618388:145:Rime started with address 145.0
+624126:33:MAC 21:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 33.
+626090:4:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+627139:172:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+627827:145:MAC 91:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 145.
+628200:4:Starting 'Broadcast process'
+629249:172:Starting 'Broadcast process'
+633432:33:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+635543:33:Starting 'Broadcast process'
+637135:145:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+639245:145:Starting 'Broadcast process'
+641583:1:Rime started with address 1.0
+642685:168:Rime started with address 168.0
+643216:164:Rime started with address 164.0
+645154:27:Rime started with address 27.0
+648712:41:Rime started with address 41.0
+650472:66:Rime started with address 66.0
+650623:1:MAC 01:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 1.
+652118:168:MAC a8:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 168.
+652649:164:MAC a4:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 164.
+653357:148:Rime started with address 148.0
+653757:64:Rime started with address 64.0
+654434:27:MAC 1b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 27.
+657996:41:MAC 29:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 41.
+659755:66:MAC 42:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 66.
+659929:1:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+661157:7:Rime started with address 7.0
+661425:168:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+661957:164:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+662040:1:Starting 'Broadcast process'
+662796:148:MAC 94:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 148.
+663040:64:MAC 40:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 64.
+663536:168:Starting 'Broadcast process'
+663741:27:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+664067:164:Starting 'Broadcast process'
+665851:27:Starting 'Broadcast process'
+667303:41:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+669062:66:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+669413:41:Starting 'Broadcast process'
+670196:7:MAC 07:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 7.
+671172:66:Starting 'Broadcast process'
+671253:47:Rime started with address 47.0
+672070:40:Rime started with address 40.0
+672104:148:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+672347:64:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+674032:53:Rime started with address 53.0
+674214:148:Starting 'Broadcast process'
+674457:64:Starting 'Broadcast process'
+675620:162:Rime started with address 162.0
+679503:7:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+680536:47:MAC 2f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 47.
+681350:40:MAC 28:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 40.
+681613:7:Starting 'Broadcast process'
+681739:128:Rime started with address 128.0
+683315:53:MAC 35:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 53.
+685058:162:MAC a2:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 162.
+689843:47:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+690657:40:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+691167:128:MAC 80:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 128.
+691953:47:Starting 'Broadcast process'
+692622:53:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+692767:40:Starting 'Broadcast process'
+694366:162:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+694732:53:Starting 'Broadcast process'
+696476:162:Starting 'Broadcast process'
+700474:128:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+702585:128:Starting 'Broadcast process'
+704531:61:Rime started with address 61.0
+708701:179:Rime started with address 179.0
+709615:14:Rime started with address 14.0
+713816:61:MAC 3d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 61.
+716030:101:Rime started with address 101.0
+718142:179:MAC b3:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 179.
+718809:14:MAC 0e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 14.
+722069:15:Rime started with address 15.0
+723123:61:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+724539:46:Rime started with address 46.0
+725233:61:Starting 'Broadcast process'
+725467:101:MAC 65:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 101.
+727012:25:Rime started with address 25.0
+727460:179:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+728123:14:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+729570:179:Starting 'Broadcast process'
+730233:14:Starting 'Broadcast process'
+730329:78:Rime started with address 78.0
+731261:15:MAC 0f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 15.
+731993:20:Rime started with address 20.0
+732454:16:Rime started with address 16.0
+732801:37:Rime started with address 37.0
+733824:46:MAC 2e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 46.
+734775:101:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+736291:25:MAC 19:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 25.
+736885:101:Starting 'Broadcast process'
+737532:62:Rime started with address 62.0
+739617:78:MAC 4e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 78.
+740575:15:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+741277:20:MAC 14:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 20.
+741735:16:MAC 10:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 16.
+742086:37:MAC 25:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 37.
+742441:58:Rime started with address 58.0
+742685:15:Starting 'Broadcast process'
+743131:46:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+745241:46:Starting 'Broadcast process'
+745598:25:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+746817:62:MAC 3e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 62.
+747708:25:Starting 'Broadcast process'
+748924:78:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+750583:20:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+750991:52:Rime started with address 52.0
+751034:78:Starting 'Broadcast process'
+751042:16:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+751393:37:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+751729:58:MAC 3a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 58.
+752694:20:Starting 'Broadcast process'
+753083:154:Rime started with address 154.0
+753152:16:Starting 'Broadcast process'
+753503:37:Starting 'Broadcast process'
+754845:142:Rime started with address 142.0
+756123:62:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+758234:62:Starting 'Broadcast process'
+760274:52:MAC 34:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 52.
+760317:99:Rime started with address 99.0
+761036:58:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+762522:154:MAC 9a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 154.
+763146:58:Starting 'Broadcast process'
+763834:191:Rime started with address 191.0
+764284:142:MAC 8e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 142.
+766653:189:Rime started with address 189.0
+769583:52:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+769599:99:MAC 63:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 99.
+771693:52:Starting 'Broadcast process'
+771830:154:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+773275:191:MAC bf:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 191.
+773592:142:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+773940:154:Starting 'Broadcast process'
+775702:142:Starting 'Broadcast process'
+776095:189:MAC bd:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 189.
+778906:99:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+780613:119:Rime started with address 119.0
+781016:99:Starting 'Broadcast process'
+782588:191:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+784698:191:Starting 'Broadcast process'
+785410:189:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+787520:189:Starting 'Broadcast process'
+789816:177:Rime started with address 177.0
+790053:119:MAC 77:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 119.
+799249:177:MAC b1:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 177.
+799371:119:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+801481:119:Starting 'Broadcast process'
+803992:74:Rime started with address 74.0
+808557:177:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+810667:177:Starting 'Broadcast process'
+813275:74:MAC 4a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 74.
+815993:10:Rime started with address 10.0
+820205:118:Rime started with address 118.0
+822581:74:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+824692:74:Starting 'Broadcast process'
+825185:10:MAC 0a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 10.
+829645:118:MAC 76:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 118.
+831788:184:Rime started with address 184.0
+834503:10:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+836613:10:Starting 'Broadcast process'
+838963:118:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+841073:118:Starting 'Broadcast process'
+841226:184:MAC b8:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 184.
+843793:71:Rime started with address 71.0
+850534:184:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+851312:113:Rime started with address 113.0
+852644:184:Starting 'Broadcast process'
+853074:71:MAC 47:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 71.
+853847:12:Rime started with address 12.0
+860399:176:Rime started with address 176.0
+860752:113:MAC 71:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 113.
+862380:71:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+863038:12:MAC 0c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 12.
+864491:71:Starting 'Broadcast process'
+865675:136:Rime started with address 136.0
+869498:93:Rime started with address 93.0
+869839:176:MAC b0:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 176.
+870071:113:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+872181:113:Starting 'Broadcast process'
+872345:12:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+874455:12:Starting 'Broadcast process'
+874882:185:Rime started with address 185.0
+875110:136:MAC 88:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 136.
+878783:93:MAC 5d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 93.
+879147:176:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+881257:176:Starting 'Broadcast process'
+884320:185:MAC b9:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 185.
+884417:136:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+884965:49:Rime started with address 49.0
+886528:136:Starting 'Broadcast process'
+888089:93:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+890200:93:Starting 'Broadcast process'
+890570:124:Rime started with address 124.0
+891174:75:Rime started with address 75.0
+892498:116:Rime started with address 116.0
+893628:185:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+894250:49:MAC 31:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 49.
+894303:155:Rime started with address 155.0
+895738:185:Starting 'Broadcast process'
+896485:29:Rime started with address 29.0
+900008:124:MAC 7c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 124.
+900462:75:MAC 4b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 75.
+900515:111:Rime started with address 111.0
+901936:116:MAC 74:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 116.
+903557:49:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+903745:155:MAC 9b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 155.
+904338:161:Rime started with address 161.0
+905667:49:Starting 'Broadcast process'
+905771:29:MAC 1d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 29.
+909315:124:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+909769:75:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+909953:111:MAC 6f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 111.
+911243:116:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+911426:124:Starting 'Broadcast process'
+911879:75:Starting 'Broadcast process'
+913058:155:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+913354:116:Starting 'Broadcast process'
+913771:161:MAC a1:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 161.
+915078:29:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+915168:155:Starting 'Broadcast process'
+916083:166:Rime started with address 166.0
+917188:29:Starting 'Broadcast process'
+919271:111:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+921382:111:Starting 'Broadcast process'
+922569:22:Rime started with address 22.0
+923079:161:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+925189:161:Starting 'Broadcast process'
+925514:166:MAC a6:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 166.
+925881:129:Rime started with address 129.0
+928127:146:Rime started with address 146.0
+929879:173:Rime started with address 173.0
+931851:22:MAC 16:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 22.
+934822:166:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+935265:147:Rime started with address 147.0
+935312:129:MAC 81:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 129.
+936932:166:Starting 'Broadcast process'
+937565:146:MAC 92:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 146.
+939320:173:MAC ad:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 173.
+941158:22:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+943268:22:Starting 'Broadcast process'
+944620:129:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+944629:51:Rime started with address 51.0
+944703:147:MAC 93:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 147.
+946730:129:Starting 'Broadcast process'
+946873:146:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+948635:173:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+948658:43:Rime started with address 43.0
+948983:146:Starting 'Broadcast process'
+949979:26:Rime started with address 26.0
+950745:173:Starting 'Broadcast process'
+953909:51:MAC 33:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 51.
+954011:147:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+954512:56:Rime started with address 56.0
+954685:167:Rime started with address 167.0
+956121:147:Starting 'Broadcast process'
+957941:43:MAC 2b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 43.
+959261:26:MAC 1a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 26.
+963216:51:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+963795:56:MAC 38:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 56.
+964123:167:MAC a7:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 167.
+965326:51:Starting 'Broadcast process'
+967248:43:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+967870:9:Rime started with address 9.0
+968568:26:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+968835:134:Rime started with address 134.0
+969358:43:Starting 'Broadcast process'
+969763:82:Rime started with address 82.0
+970678:26:Starting 'Broadcast process'
+973101:56:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+973431:167:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+973931:139:Rime started with address 139.0
+974502:5:Rime started with address 5.0
+975212:56:Starting 'Broadcast process'
+975541:167:Starting 'Broadcast process'
+976904:9:MAC 09:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 9.
+977689:187:Rime started with address 187.0
+978267:134:MAC 86:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 134.
+978570:42:Rime started with address 42.0
+978578:19:Rime started with address 19.0
+979044:82:MAC 52:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 82.
+983370:139:MAC 8b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 139.
+983539:5:MAC 05:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 5.
+986211:9:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+987131:187:MAC bb:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 187.
+987575:134:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+987837:112:Rime started with address 112.0
+987854:42:MAC 2a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 42.
+987860:19:MAC 13:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 19.
+988321:9:Starting 'Broadcast process'
+988351:82:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+989685:134:Starting 'Broadcast process'
+990461:82:Starting 'Broadcast process'
+992459:149:Rime started with address 149.0
+992500:105:Rime started with address 105.0
+992678:139:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+992845:5:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+994788:139:Starting 'Broadcast process'
+994956:5:Starting 'Broadcast process'
+996446:187:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+997160:42:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+997167:19:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+997275:112:MAC 70:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 112.
+998556:187:Starting 'Broadcast process'
+999271:42:Starting 'Broadcast process'
+999277:19:Starting 'Broadcast process'
+999285:80:Rime started with address 80.0
+1001891:149:MAC 95:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 149.
+1001938:105:MAC 69:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 105.
+1002365:182:Rime started with address 182.0
+1005251:169:Rime started with address 169.0
+1005778:125:Rime started with address 125.0
+1006582:112:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1008567:80:MAC 50:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 80.
+1008693:112:Starting 'Broadcast process'
+1011199:149:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1011246:105:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1011313:171:Rime started with address 171.0
+1011803:182:MAC b6:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 182.
+1013309:149:Starting 'Broadcast process'
+1013356:105:Starting 'Broadcast process'
+1014687:169:MAC a9:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 169.
+1015216:125:MAC 7d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 125.
+1017874:80:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1019984:80:Starting 'Broadcast process'
+1020752:171:MAC ab:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 171.
+1021111:182:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1023221:182:Starting 'Broadcast process'
+1023994:169:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1024534:125:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1026105:169:Starting 'Broadcast process'
+1026645:125:Starting 'Broadcast process'
+1026866:90:Rime started with address 90.0
+1030059:171:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1032170:171:Starting 'Broadcast process'
+1036154:90:MAC 5a:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 90.
+1038966:87:Rime started with address 87.0
+1043703:192:Rime started with address 192.0
+1045460:90:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1046302:126:Rime started with address 126.0
+1047408:38:Rime started with address 38.0
+1047571:90:Starting 'Broadcast process'
+1048251:87:MAC 57:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 87.
+1049244:102:Rime started with address 102.0
+1053136:192:MAC c0:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 192.
+1054047:141:Rime started with address 141.0
+1055740:126:MAC 7e:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 126.
+1056693:38:MAC 26:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 38.
+1057558:87:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1058680:102:MAC 66:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 102.
+1059668:87:Starting 'Broadcast process'
+1062444:192:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1063486:141:MAC 8d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 141.
+1064554:192:Starting 'Broadcast process'
+1065048:126:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1065682:97:Rime started with address 97.0
+1066000:38:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1067158:126:Starting 'Broadcast process'
+1067987:102:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1068110:38:Starting 'Broadcast process'
+1068562:17:Rime started with address 17.0
+1070098:102:Starting 'Broadcast process'
+1071079:135:Rime started with address 135.0
+1072096:159:Rime started with address 159.0
+1072794:141:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1074904:141:Starting 'Broadcast process'
+1074965:97:MAC 61:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 97.
+1077846:17:MAC 11:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 17.
+1080515:135:MAC 87:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 135.
+1081535:159:MAC 9f:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 159.
+1084274:97:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1086384:97:Starting 'Broadcast process'
+1087152:17:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1089263:17:Starting 'Broadcast process'
+1089658:92:Rime started with address 92.0
+1089822:135:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1090205:73:Rime started with address 73.0
+1090854:159:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1091933:135:Starting 'Broadcast process'
+1092964:159:Starting 'Broadcast process'
+1098944:92:MAC 5c:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 92.
+1099488:73:MAC 49:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 73.
+1102473:83:Rime started with address 83.0
+1108250:92:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1108797:73:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1109754:165:Rime started with address 165.0
+1110361:92:Starting 'Broadcast process'
+1110603:144:Rime started with address 144.0
+1110907:73:Starting 'Broadcast process'
+1111756:83:MAC 53:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 83.
+1117622:130:Rime started with address 130.0
+1119185:165:MAC a5:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 165.
+1120041:144:MAC 90:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 144.
+1121063:83:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1123173:83:Starting 'Broadcast process'
+1127059:130:MAC 82:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 130.
+1128493:165:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1129349:144:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1130603:165:Starting 'Broadcast process'
+1131459:144:Starting 'Broadcast process'
+1131822:123:Rime started with address 123.0
+1133913:84:Rime started with address 84.0
+1136367:130:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1138296:107:Rime started with address 107.0
+1138477:130:Starting 'Broadcast process'
+1141003:36:Rime started with address 36.0
+1141260:123:MAC 7b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 123.
+1142290:163:Rime started with address 163.0
+1143194:84:MAC 54:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 84.
+1143389:13:Rime started with address 13.0
+1145029:59:Rime started with address 59.0
+1147735:107:MAC 6b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 107.
+1150288:36:MAC 24:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 36.
+1150579:123:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1151728:163:MAC a3:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 163.
+1152501:84:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1152579:13:MAC 0d:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 13.
+1152689:123:Starting 'Broadcast process'
+1154317:59:MAC 3b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 59.
+1154611:84:Starting 'Broadcast process'
+1157052:107:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1158732:3:Rime started with address 3.0
+1159162:107:Starting 'Broadcast process'
+1159595:36:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1161036:163:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1161705:36:Starting 'Broadcast process'
+1161897:13:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1163146:163:Starting 'Broadcast process'
+1163624:59:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1164007:13:Starting 'Broadcast process'
+1165734:59:Starting 'Broadcast process'
+1166186:21:Rime started with address 21.0
+1167767:3:MAC 03:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 3.
+1175466:21:MAC 15:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 21.
+1177073:3:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1179184:3:Starting 'Broadcast process'
+1179686:114:Rime started with address 114.0
+1180548:180:Rime started with address 180.0
+1184773:21:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1186883:21:Starting 'Broadcast process'
+1189123:114:MAC 72:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 114.
+1189988:180:MAC b4:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 180.
+1198431:114:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1199296:180:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1200541:114:Starting 'Broadcast process'
+1201406:180:Starting 'Broadcast process'
+1204744:23:Rime started with address 23.0
+1214028:23:MAC 17:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 23.
+1223335:23:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1224335:120:Rime started with address 120.0
+1225255:100:Rime started with address 100.0
+1225445:23:Starting 'Broadcast process'
+1230605:121:Rime started with address 121.0
+1233773:120:MAC 78:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 120.
+1234685:100:MAC 64:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 100.
+1235259:57:Rime started with address 57.0
+1237224:32:Rime started with address 32.0
+1240041:121:MAC 79:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 121.
+1243081:120:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1243757:91:Rime started with address 91.0
+1243778:186:Rime started with address 186.0
+1243993:100:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1244543:57:MAC 39:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 57.
+1244776:181:Rime started with address 181.0
+1245191:120:Starting 'Broadcast process'
+1246103:100:Starting 'Broadcast process'
+1246509:32:MAC 20:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 32.
+1247273:188:Rime started with address 188.0
+1249349:121:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1251459:121:Starting 'Broadcast process'
+1253042:91:MAC 5b:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 91.
+1253219:186:MAC ba:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 186.
+1253849:57:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1254216:181:MAC b5:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 181.
+1255815:32:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1255960:57:Starting 'Broadcast process'
+1256715:188:MAC bc:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 188.
+1257926:32:Starting 'Broadcast process'
+1259224:151:Rime started with address 151.0
+1262349:91:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1262527:186:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1263535:181:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1264459:91:Starting 'Broadcast process'
+1264638:186:Starting 'Broadcast process'
+1265645:181:Starting 'Broadcast process'
+1266023:188:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1268133:188:Starting 'Broadcast process'
+1268661:151:MAC 97:00:00:00:00:00:00:00 Contiki-2.6-1935-gb6b5c6e started. Node id is set to 151.
+1277980:151:nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1280090:151:Starting 'Broadcast process'
+1346001:8:178
+1346035:56:178
+1346042:23:178
+1346047:61:178
+1348986:184:178
+1351640:14:178
+1351684:179:178
+1360143:9:178
+1371078:20:178
+1371290:12:178
+1376726:57:178
+1385241:186:178
+1401795:171:178
+1404647:183:178
+1421399:64:178
+1443968:70:178
+1445343:74:50
+1446572:173:178
+1450907:68:50
+1457647:17:178
+1462054:51:50
+1464836:43:50
+1467544:26:50
+1477339:174:157
+1478812:63:50
+1479575:31:104
+1481594:73:50
+1482198:92:104
+1484397:71:50
+1485670:140:157
+1488452:153:157
+1490663:35:104
+1490814:46:104
+1493413:83:104
+1493608:45:104
+1494161:187:157
+1495524:42:50
+1498371:37:50
+1499784:172:157
+1504105:72:50
+1504542:112:104
+1504600:108:104
+1506739:33:50
+1510219:79:104
+1510256:105:104
+1510892:93:69
+1513856:127:69
+1516398:185:157
+1516500:133:69
+1516652:52:69
+1518782:94:104
+1519390:182:157
+1520613:30:50
+1521957:169:157
+1522174:125:69
+1522336:142:69
+1525124:123:157
+1527118:81:104
+1527160:99:104
+1528005:49:69
+1528811:175:170
+1528982:171:170
+1529700:107:104
+1529743:98:104
+1532180:36:50
+1533211:163:157
+1533369:191:157
+1533401:124:69
+1534482:189:170
+1535460:116:104
+1536001:155:157
+1536344:131:69
+1537615:27:50
+1537770:29:50
+1538120:110:104
+1540554:41:50
+1541708:55:69
+1542843:64:170
+1543160:28:50
+1543446:66:50
+1543976:111:104
+1544422:148:157
+1546532:119:104
+1546533:106:104
+1548756:65:50
+1552306:39:104
+1554626:34:50
+1554904:87:104
+1555675:177:157
+1555722:143:157
+1558686:166:157
+1559699:192:170
+1560678:47:104
+1562921:38:50
+1563438:40:104
+1564161:126:157
+1565316:102:170
+1565746:53:50
+1566878:129:157
+1568038:70:170
+1569784:74:69
+1569853:141:157
+1572564:128:69
+1573948:180:170
+1578105:147:157
+1582096:97:170
+1582336:117:170
+1583946:95:69
+1583995:132:69
+1584904:103:170
+1586096:17:183
+1589438:135:157
+1596035:56:170
+1596080:61:170
+1597358:23:183
+1600139:179:183
+1600175:14:183
+1600182:8:183
+1600227:184:183
+1603321:63:69
+1606315:73:69
+1607359:190:170
+1608342:9:183
+1608943:138:69
+1611716:82:69
+1611990:134:69
+1614747:54:69
+1615680:100:170
+1617324:88:69
+1618571:113:170
+1619452:12:183
+1620062:83:69
+1623133:121:69
+1624307:172:170
+1625310:20:183
+1626924:176:170
+1627128:57:170
+1628756:62:69
+1628838:144:69
+1631636:72:69
+1634176:130:69
+1634333:91:69
+1634335:58:69
+1635225:181:170
+1635252:186:170
+1638341:60:170
+1653015:171:183
+1670048:64:183
+1678290:178:183
+1678998:34:2
+1680778:177:117
+1682275:87:110
+1684860:24:2
+1686376:192:117
+1689438:102:117
+1690384:109:110
+1690523:22:2
+1695330:70:183
+1695818:74:2
+1696155:114:110
+1697833:180:183
+1698178:173:183
+1707090:95:2
+1707097:10:2
+1709012:97:117
+1711791:103:117
+1712705:85:2
+1712874:118:110
+1713086:96:150
+1715488:26:2
+1721279:167:150
+1723878:89:2
+1725484:174:117
+1726871:156:150
+1729649:31:150
+1730040:63:55
+1732413:92:110
+1732796:73:55
+1732815:138:55
+1733040:71:55
+1735203:190:117
+1735774:134:55
+1737983:15:2
+1739491:100:117
+1740752:120:110
+1740780:88:110
+1740799:5:2
+1740976:46:150
+1741109:35:150
+1741206:54:55
+1742336:113:117
+1743580:45:150
+1743734:83:110
+1745287:187:117
+1746362:78:2
+1746458:42:2
+1746460:19:2
+1748995:37:2
+1749147:16:2
+1749151:4:2
+1750654:172:117
+1751990:165:150
+1753720:176:117
+1754570:32:2
+1754732:108:110
+1754904:112:110
+1755006:72:55
+1755093:62:55
+1757766:48:150
+1758054:58:55
+1759356:181:117
+1760419:149:150
+1760427:105:110
+1760447:93:2
+1760563:145:150
+1760576:79:150
+1760938:130:55
+1764893:188:117
+1765876:94:110
+1766375:133:55
+1766532:52:55
+1767766:185:117
+1768944:30:2
+1768957:154:150
+1770352:182:117
+1773221:169:117
+1777216:99:110
+1777547:49:55
+1777593:151:150
+1778686:175:117
+1779828:98:110
+1779870:107:110
+1780128:36:2
+1781496:191:117
+1782908:1:2
+1784518:189:117
+1785551:13:2
+1785819:59:55
+1785905:164:150
+1785991:168:150
+1787008:170:117
+1788545:160:150
+1788779:69:55
+1788937:131:55
+1793986:104:110
+1794064:90:2
+1794153:28:2
+1796831:106:110
+1796945:161:150
+1797024:119:110
+1797118:65:55
+1799553:3:2
+1802798:39:150
+1812881:40:108
+1813874:47:150
+1813879:158:150
+1815929:109:108
+1816617:53:55
+1816685:162:150
+1819637:74:55
+1821274:114:108
+1830580:95:55
+1830583:152:150
+1833577:132:55
+1837912:85:16
+1838087:118:108
+1839207:159:150
+1840645:11:16
+1849068:89:16
+1850097:179:8
+1850137:14:8
+1857585:73:16
+1857810:92:108
+1858552:190:70
+1858675:9:8
+1858787:138:70
+1859335:71:28
+1860135:140:143
+1860521:82:108
+1862952:153:143
+1865681:100:143
+1865917:46:108
+1865917:120:108
+1865951:5:16
+1866098:88:108
+1867732:25:28
+1868532:113:143
+1868879:83:108
+1869822:12:8
+1870523:42:28
+1871511:78:16
+1872441:20:8
+1873269:4:28
+1873301:37:28
+1877074:144:143
+1878234:176:70
+1878419:57:70
+1879080:32:28
+1879104:72:28
+1881703:33:28
+1882675:136:143
+1883720:145:48
+1883779:149:48
+1883914:130:70
+1884752:58:28
+1885654:93:16
+1885759:91:108
+1885763:79:108
+1886613:186:70
+1888062:127:143
+1889664:60:70
+1891187:80:108
+1892181:133:70
+1892329:150:48
+1893168:182:191
+1893168:94:108
+1893217:185:191
+1895141:154:48
+1895704:169:191
+1895928:30:28
+1896451:142:143
+1899178:115:143
+1899421:123:143
+1899511:84:16
+1900743:171:70
+1901354:50:28
+1902124:151:143
+1902284:6:16
+1902372:81:108
+1902386:99:108
+1902544:76:108
+1904259:175:191
+1905323:98:108
+1905326:107:108
+1906168:183:8
+1907125:36:28
+1907753:124:143
+1908050:1:16
+1908935:164:48
+1909206:189:70
+1909780:155:191
+1909975:163:191
+1910369:168:143
+1910677:13:16
+1911838:170:70
+1912581:27:28
+1912740:29:28
+1913115:69:63
+1914585:160:48
+1914705:131:70
+1915522:66:28
+1915526:41:28
+1915848:86:63
+1916049:55:63
+1919047:122:143
+1919304:104:108
+1920134:64:70
+1921028:148:191
+1921574:161:143
+1922077:119:108
+1923760:65:28
+1924647:3:16
+1927610:7:16
+1928494:39:48
+1928661:178:8
+1929566:34:28
+1930119:21:16
+1932393:177:191
+1934417:192:70
+1935826:24:16
+1936858:47:48
+1937587:38:28
+1938484:126:143
+1938487:109:143
+1939662:40:48
+1939911:158:48
+1940426:53:28
+1940734:22:28
+1942599:162:48
+1943975:74:63
+1944023:146:143
+1944267:129:143
+1945411:173:8
+1946897:141:143
+1948367:180:70
+1949530:147:143
+1951841:68:28
+1956449:152:48
+1957274:10:28
+1959176:17:8
+1960191:51:28
+1960689:118:143
+1963493:85:63
+1963749:135:143
+1964852:11:8
+1965597:26:28
+1965601:43:28
+1970381:23:8
+1970760:61:70
+1970763:56:70
+1971050:89:1
+1971928:137:143
+1973186:184:8
+1975231:156:96
+1976380:179:70
+1976951:174:191
+1978813:31:48
+1980615:101:143
+1980768:92:96
+1982068:67:70
+1985993:82:63
+1986152:71:63
+1988002:153:191
+1988030:15:1
+1989938:35:48
+1990118:46:48
+1990119:120:48
+1990827:5:1
+1991055:100:191
+1991738:88:63
+1991741:54:63
+1992912:45:48
+1993594:113:191
+1993679:187:191
+1996417:78:1
+1996503:19:1
+1996507:42:1
+1998995:16:1
+1999046:37:1
+1999197:4:1
+1999232:172:191
+1999710:20:184
+2002709:57:184
+2002884:72:63
+2003169:112:96
+2003440:144:127
+2004624:32:1
+2006104:136:127
+2006182:108:96
+2008044:186:184
+2008228:58:63
+2008827:105:96
+2008829:149:96
+2009041:145:96
+2009091:130:127
+2010128:93:1
+2010621:181:191
+2011112:91:63
+2011758:79:96
+2011775:60:127
+2013105:2:1
+2013209:188:191
+2016691:80:63
+2016692:52:63
+2017334:133:127
+2017342:150:96
+2017351:94:96
+2020131:154:96
+2021628:30:1
+2023230:123:127
+2023283:142:127
+2025214:50:63
+2025552:151:96
+2025931:115:127
+2027050:6:1
+2027832:171:184
+2027989:76:63
+2028352:98:96
+2028361:81:96
+2029809:36:1
+2030391:183:184
+2031388:124:127
+2031441:107:96
+2033574:75:63
+2033943:164:96
+2034095:168:96
+2035471:13:1
+2036930:110:127
+2039537:160:96
+2039937:69:127
+2041130:111:41
+2042808:122:127
+2043724:104:41
+2043728:28:41
+2044026:90:1
+2044556:64:184
+2045115:161:96
+2046537:119:41
+2049269:65:41
+2049479:3:1
+2052458:7:1
+2053784:143:127
+2055872:178:184
+2056439:87:96
+2057881:21:1
+2060682:24:1
+2062211:126:127
+2063322:40:41
+2063517:38:41
+2063609:22:1
+2064922:158:96
+2065153:102:127
+2066325:53:41
+2067613:162:96
+2068987:74:1
+2069606:70:184
+2070261:146:96
+2070571:141:127
+2072572:180:184
+2072611:173:184
+2076026:147:96
+2077459:68:41
+2081627:97:127
+2081640:152:96
+2083153:10:1
+2083188:95:1
+2085878:51:41
+2085896:85:1
+2086705:17:184
+2087302:118:127
+2087492:135:127
+2091249:43:41
+2097652:8:184
+2097744:61:184
+2097898:23:184
+2098702:137:127
+2100403:179:184
+2101636:174:175
+2102143:14:184
+2103348:31:39
+2103848:63:54
+2106606:73:54
+2106808:67:127
+2106955:92:81
+2106983:101:127
+2107384:190:175
+2109041:9:184
+2109406:138:54
+2109566:134:54
+2109614:140:127
+2110744:71:41
+2112215:82:54
+2114787:35:39
+2116491:25:41
+2117647:46:39
+2117975:113:127
+2117990:88:54
+2118012:100:127
+2118140:83:54
+2118577:187:175
+2119296:42:41
+2120051:12:184
+2120454:45:39
+2120947:78:54
+2123589:121:127
+2124172:172:175
+2125100:37:41
+2126408:144:54
+2126948:176:175
+2129159:112:81
+2129317:108:81
+2129371:62:54
+2130459:33:41
+2131531:48:39
+2132357:136:153
+2134633:105:81
+2134756:130:54
+2134871:79:81
+2134882:149:81
+2134958:91:54
+2135225:181:175
+2137568:2:22
+2137771:60:54
+2138199:188:175
+2140351:133:54
+2140539:80:54
+2140824:185:175
+2143117:94:81
+2143317:52:54
+2143791:182:175
+2145214:154:39
+2146347:169:175
+2147686:142:54
+2148964:125:54
+2149102:123:153
+2150210:50:41
+2151350:151:81
+2151397:99:81
+2151449:76:54
+2151690:49:54
+2154414:98:81
+2157114:124:54
+2157280:75:54
+2157737:189:175
+2158304:36:22
+2158447:13:89
+2159456:164:39
+2159789:168:81
+2160391:155:153
+2160653:163:153
+2161413:27:41
+2163258:170:175
+2164490:29:41
+2165499:110:81
+2165557:55:54
+2165709:86:54
+2167203:66:41
+2170331:119:39
+2171135:106:115
+2171183:161:81
+2171734:148:153
+2174781:3:89
+2177355:34:22
+2179583:143:115
+2179736:87:115
+2182761:166:153
+2183098:177:175
+2185765:24:89
+2185779:192:175
+2187191:40:39
+2187376:47:39
+2190712:109:115
+2190752:102:115
+2190826:53:54
+2194044:157:153
+2196309:114:115
+2196310:141:115
+2202713:68:33
+2205224:97:175
+2207016:132:128
+2207730:95:89
+2207730:10:22
+2209975:17:128
+2210414:103:115
+2211373:51:33
+2212995:96:81
+2213156:118:115
+2213211:135:115
+2213236:85:89
+2214183:43:33
+2215561:11:128
+2215727:26:22
+2221182:23:128
+2221392:137:115
+2223832:8:128
+2226613:14:128
+2226761:18:128
+2227100:156:81
+2229367:67:128
+2229502:63:89
+2232184:73:89
+2232535:101:115
+2232811:92:115
+2234905:134:128
+2235160:9:128
+2235245:138:128
+2237638:15:22
+2240483:5:89
+2240580:139:128
+2240950:113:115
+2241699:54:86
+2241980:46:33
+2242020:120:33
+2243169:187:174
+2245029:44:33
+2245033:25:33
+2245946:78:89
+2245996:19:22
+2246084:20:128
+2246291:12:128
+2246534:121:115
+2248661:16:89
+2248719:4:22
+2248822:172:174
+2251476:32:22
+2252126:144:115
+2252878:112:86
+2257870:136:115
+2261141:91:86
+2262540:2:89
+2262582:93:89
+2263077:188:174
+2263132:181:174
+2263420:127:115
+2265819:185:174
+2266073:133:115
+2266757:80:86
+2268177:150:156
+2268458:182:174
+2271070:154:156
+2271339:169:174
+2271560:142:115
+2271576:125:128
+2274674:123:115
+2275140:84:86
+2275298:99:86
+2276504:151:156
+2276594:81:156
+2276915:6:128
+2279630:191:174
+2279821:175:174
+2280383:183:171
+2282804:124:115
+2283645:1:36
+2283702:77:86
+2283885:116:33
+2284900:164:156
+2284949:168:156
+2285230:155:174
+2285278:163:174
+2285400:13:128
+2286346:59:86
+2287893:160:156
+2289353:69:86
+2289500:41:33
+2291145:122:115
+2292393:55:86
+2292450:111:33
+2294545:64:171
+2295023:104:33
+2296337:161:156
+2296669:148:174
+2297426:3:36
+2302966:34:36
+2303469:7:11
+2305777:178:171
+2306303:87:86
+2307649:166:174
+2307753:177:174
+2310165:22:89
+2310628:24:95
+2312808:47:156
+2313036:158:156
+2314641:40:33
+2314884:38:33
+2315949:102:174
+2318567:162:156
+2318914:157:174
+2319691:70:171
+2321526:146:156
+2322253:180:171
+2322492:173:171
+2323105:128:11
+2329816:152:156
+2329935:117:174
+2332848:97:137
+2333984:10:36
+2334278:17:11
+2334371:132:11
+2335612:103:174
+2337991:159:156
+2338151:96:156
+2338363:135:137
+2342263:26:36
+2344263:89:22
+2345539:23:11
+2346397:167:156
+2347617:184:171
+2347708:56:171
+2347716:61:171
+2348290:8:11
+2350265:179:171
+2351323:14:11
+2356014:67:171
+2357958:92:156
+2358071:101:137
+2359518:134:11
+2359527:9:11
+2359615:138:11
+2360676:140:137
+2361870:15:36
+2362185:82:86
+2363610:153:137
+2363700:5:95
+2365232:139:11
+2366304:100:137
+2366659:54:95
+2367588:44:116
+2367633:25:116
+2367683:120:116
+2368342:46:116
+2369166:113:137
+2370226:83:116
+2370320:42:36
+2370659:12:11
+2372041:121:137
+2372221:78:95
+2373372:20:11
+2375990:37:36
+2377371:165:156
+2378379:176:171
+2378529:57:171
+2378553:32:36
+2378930:62:49
+2380442:112:137
+2381369:33:116
+2381540:108:116
+2381739:130:49
+2382986:105:137
+2383228:58:95
+2383284:136:137
+2385667:79:156
+2385710:145:156
+2385919:149:156
+2386227:93:95
+2386765:186:171
+2390187:133:49
+2390364:80:49
+2392649:94:116
+2395455:30:36
+2398606:125:11
+2399784:115:137
+2400128:123:137
+2400949:50:36
+2403776:107:116
+2404030:98:116
+2404443:76:49
+2405703:175:169
+2405848:191:169
+2406965:75:49
+2408384:163:169
+2408684:1:95
+2411471:155:169
+2412238:29:116
+2412245:27:116
+2412704:131:49
+2413434:160:168
+2414082:110:137
+2415051:41:116
+2415270:86:49
+2416688:122:137
+2417796:111:116
+2419653:106:137
+2419831:148:169
+2420667:104:116
+2421595:161:168
+2422426:3:95
+2423498:119:116
+2427841:143:137
+2428304:7:95
+2429266:39:116
+2430845:177:169
+2431719:87:116
+2433765:166:169
+2436175:126:137
+2436454:192:189
+2437349:40:116
+2437543:47:116
+2439123:109:137
+2439623:158:168
+2440165:38:116
+2441111:162:168
+2441931:102:137
+2441984:157:169
+2443932:146:168
+2444675:70:189
+2444852:141:137
+2445675:173:20
+2446304:74:49
+2447614:180:189
+2448642:128:20
+2449528:147:168
+2459815:17:20
+2460240:51:53
+2463029:43:53
+2463700:96:168
+2465396:11:20
+2470953:23:20
+2472795:61:189
+2473024:137:122
+2473753:8:20
+2473753:184:20
+2473806:14:20
+2474752:89:15
+2474871:156:168
+2476467:179:20
+2476537:18:20
+2479816:67:49
+2479969:63:53
+2480482:92:168
+2480624:31:164
+2482615:73:49
+2483702:190:189
+2484342:101:122
+2484902:9:20
+2485422:82:49
+2485576:71:53
+2488825:35:164
+2490323:139:20
+2490888:44:53
+2490945:25:53
+2490966:54:49
+2491013:88:49
+2491212:5:15
+2491609:46:164
+2494191:19:15
+2494420:45:164
+2495511:187:169
+2496206:12:20
+2497044:78:15
+2498051:172:169
+2499809:16:15
+2499812:4:15
+2503045:165:164
+2503310:176:189
+2503465:57:189
+2503746:112:122
+2504958:72:53
+2506525:136:122
+2507938:58:53
+2507978:33:53
+2508318:149:168
+2508415:48:164
+2509177:130:122
+2509179:105:122
+2510541:91:53
+2510891:93:15
+2510968:2:15
+2511282:79:168
+2511291:145:164
+2511637:186:189
+2511882:127:122
+2513534:80:53
+2514672:60:189
+2515131:188:169
+2516777:150:164
+2517753:185:169
+2517935:133:122
+2519512:154:164
+2520654:142:122
+2520774:182:169
+2521104:125:20
+2524644:50:53
+2525102:151:168
+2526045:99:122
+2526065:115:122
+2527460:76:53
+2527875:81:168
+2528484:171:189
+2528520:175:189
+2529570:183:20
+2531109:191:189
+2531636:124:122
+2533041:75:53
+2533280:1:15
+2535626:27:53
+2535660:59:53
+2536307:13:15
+2537860:131:20
+2539215:160:164
+2539540:170:189
+2540271:110:122
+2541237:41:53
+2541241:66:53
+2541274:86:62
+2541278:28:53
+2541278:55:62
+2544871:90:15
+2545557:106:122
+2549610:65:53
+2550347:3:15
+2552069:7:20
+2553058:39:164
+2554061:143:122
+2554882:178:20
+2557501:21:20
+2558478:24:15
+2562395:126:122
+2563725:38:53
+2564264:22:15
+2564420:158:164
+2564579:47:164
+2565261:102:122
+2567101:162:164
+2568044:129:122
+2570337:114:98
+2570753:141:122
+2577687:68:53
+2580425:95:6
+2583101:132:62
+2583905:10:15
+2586908:96:98
+2587573:135:122
+2588958:85:6
+2591683:11:6
+2597282:89:6
+2597596:23:6
+2601569:174:148
+2602825:18:6
+2605466:67:62
+2605504:63:62
+2605705:73:62
+2606390:92:98
+2608312:138:62
+2609403:190:176
+2609744:140:148
+2612739:153:148
+2614724:46:98
+2614987:120:98
+2617138:5:6
+2617511:100:176
+2617584:44:98
+2618136:187:148
+2619237:42:58
+2619286:25:58
+2622080:37:58
+2622156:121:62
+2622775:16:6
+2624683:20:179
+2625209:165:161
+2628207:144:62
+2628752:112:98
+2630435:33:58
+2630439:72:58
+2631804:108:98
+2633532:149:161
+2633571:130:62
+2634495:105:98
+2635979:127:135
+2636373:60:62
+2636699:145:161
+2640685:185:148
+2640756:188:148
+2641984:150:161
+2642879:94:98
+2643317:182:148
+2645119:125:6
+2646125:169:148
+2649758:50:58
+2650316:151:161
+2650400:81:161
+2650518:49:62
+2654048:107:98
+2654279:175:176
+2654687:191:148
+2655707:183:179
+2658593:36:19
+2658751:168:161
+2659960:189:176
+2660163:163:148
+2660270:155:148
+2660321:164:31
+2660921:27:58
+2661167:59:58
+2662487:170:176
+2663979:29:58
+2666562:66:58
+2666651:122:135
+2666760:28:58
+2666848:41:58
+2667968:104:98
+2670751:119:98
+2672124:65:58
+2675383:3:19
+2677153:39:31
+2677914:178:179
+2678694:7:6
+2681508:21:6
+2682062:87:98
+2682586:166:148
+2682683:177:148
+2684767:192:176
+2686818:24:19
+2686822:22:19
+2688237:47:31
+2688332:40:31
+2688945:109:135
+2689128:38:58
+2691534:102:135
+2691620:53:58
+2693757:157:148
+2694634:74:58
+2697290:114:135
+2697507:173:179
+2703258:68:58
+2705326:152:31
+2706374:10:19
+2708161:132:134
+2708248:103:135
+2708279:97:135
+2711091:118:135
+2711320:51:58
+2712019:96:161
+2714393:43:58
+2716729:11:134
+2719307:167:31
+2722323:23:134
+2722417:137:135
+2722757:184:179
+2722931:89:19
+2727938:18:134
+2728152:63:58
+2730585:67:134
+2730972:73:58
+2731384:92:87
+2733374:138:134
+2733434:140:135
+2733642:101:135
+2733777:71:58
+2739842:5:19
+2739975:15:19
+2741743:54:134
+2741769:113:135
+2741883:139:134
+2742764:88:87
+2743284:25:44
+2744395:187:182
+2744560:12:134
+2745457:42:19
+2745660:83:87
+2747300:20:134
+2747314:121:135
+2748106:4:19
+2748305:37:19
+2748356:78:19
+2749935:165:31
+2750121:172:182
+2752861:62:134
+2752894:144:135
+2753598:32:19
+2753759:72:87
+2753803:108:87
+2757259:33:44
+2758326:48:31
+2758335:149:31
+2758573:130:134
+2758643:136:135
+2759200:2:19
+2759387:91:87
+2761207:145:31
+2761343:181:182
+2762025:93:19
+2762450:79:87
+2764191:60:134
+2764298:188:182
+2765009:80:87
+2766720:150:31
+2766939:52:134
+2767051:185:182
+2767121:133:134
+2767942:94:87
+2769504:154:31
+2772479:125:134
+2772509:169:182
+2775298:49:134
+2775509:6:134
+2776293:115:87
+2776359:81:87
+2776402:99:87
+2776558:50:44
+2779008:98:87
+2779009:107:87
+2779269:76:87
+2781022:191:182
+2781114:175:182
+2781822:75:87
+2783367:36:3
+2783453:13:93
+2783672:1:93
+2783679:77:93
+2783831:163:182
+2783883:155:182
+2787718:27:44
+2787802:29:44
+2787990:41:44
+2789203:131:134
+2789354:69:144
+2790205:86:87
+2792073:55:134
+2792101:122:144
+2793543:28:44
+2793639:66:44
+2794901:148:182
+2794939:90:93
+2799273:65:44
+2802046:39:44
+2803156:34:3
+2803404:7:134
+2806234:177:182
+2806368:143:144
+2808800:21:134
+2808975:166:182
+2810211:47:44
+2810375:192:170
+2811347:24:3
+2813098:38:44
+2813262:40:44
+2813304:53:44
+2814159:22:3
+2814453:102:144
+2817165:157:182
+2818723:70:170
+2819787:74:93
+2819842:146:147
+2820045:141:144
+2821069:114:87
+2821597:180:170
+2822229:173:178
+2822805:128:134
+2830982:10:93
+2833940:95:93
+2835387:51:44
+2835954:17:178
+2836950:135:144
+2838344:85:3
+2841077:26:3
+2845656:167:158
+2846667:61:170
+2847227:184:178
+2847275:8:178
+2847568:23:178
+2847957:137:144
+2848343:89:3
+2850075:179:178
+2850119:14:178
+2854010:31:158
+2857711:190:170
+2858643:9:178
+2859103:140:147
+2859144:138:144
+2859383:101:144
+2862129:153:147
+2864416:15:3
+2864663:5:3
+2867449:54:59
+2868116:45:158
+2869869:12:178
+2870139:42:3
+2870142:19:3
+2870505:83:59
+2872495:20:178
+2872885:4:3
+2872888:78:93
+2873036:16:93
+2873344:121:144
+2874300:176:170
+2874593:172:170
+2875690:37:3
+2876350:165:158
+2877319:57:170
+2878314:32:3
+2878820:112:144
+2881029:72:93
+2881631:136:144
+2882097:149:158
+2882110:48:158
+2882639:186:170
+2884561:105:144
+2884876:145:158
+2886299:2:3
+2887343:127:144
+2888375:188:155
+2890619:80:107
+2891311:185:155
+2893139:150:158
+2893294:94:107
+2893959:182:155
+2895357:125:132
+2896034:154:158
+2896757:169:155
+2898429:123:147
+2898884:151:158
+2900120:84:93
+2900277:6:93
+2901385:115:144
+2901644:99:107
+2902404:171:170
+2904701:98:107
+2905283:191:155
+2906054:183:178
+2906988:124:144
+2907270:168:158
+2907832:189:170
+2908667:36:50
+2909195:13:132
+2909893:164:158
+2911201:27:50
+2911232:29:50
+2913892:41:38
+2914873:131:132
+2914968:55:132
+2915710:111:107
+2915820:28:50
+2915829:66:50
+2918732:104:107
+2921143:3:93
+2921519:106:107
+2924908:65:59
+2928960:7:132
+2929503:143:147
+2929722:87:107
+2930248:177:155
+2931498:21:132
+2936347:24:4
+2939301:22:4
+2939733:102:101
+2939828:109:101
+2945321:70:180
+2945521:141:101
+2946515:74:59
+2946575:146:158
+2946600:162:158
+2946714:114:107
+2948183:173:180
+2948408:128:132
+2951394:68:59
+2954754:152:158
+2955907:10:4
+2956505:97:101
+2956657:117:101
+2959916:17:132
+2960235:96:158
+2961003:51:38
+2962054:135:101
+2962303:103:101
+2963128:159:158
+2964371:26:4
+2965524:11:132
+2970285:61:180
+2970325:56:180
+2971088:23:132
+2973242:184:180
+2973281:179:180
+2973329:137:101
+2973641:14:132
+2973862:8:132
+2975380:174:155
+2976676:18:132
+2977459:63:59
+2979993:92:107
+2982776:73:59
+2984615:140:101
+2984907:134:132
+2985064:9:132
+2985184:138:132
+2985240:71:50
+2985562:82:59
+2986519:153:155
+2989742:15:4
+2989745:5:4
+2990558:139:132
+2990919:25:38
+2991219:88:107
+2991364:120:107
+2991374:44:107
+2991416:46:107
+2992983:113:101
+2993068:100:101
+2994002:83:107
+2994887:187:155
+2995199:19:4
+2995933:121:101
+2996079:20:132
+2996324:12:132
+2998232:78:4
+2998718:172:101
+2998978:16:132
+3000886:176:180
+3000976:57:180
+3001386:165:145
+3001515:144:101
+3001956:62:132
+3003770:32:4
+3004147:72:50
+3005257:108:107
+3006891:130:101
+3007111:136:101
+3007120:48:145
+3008066:93:3
+3009265:186:180
+3009411:2:4
+3009653:79:145
+3009721:149:145
+3009944:91:50
+3009945:58:50
+3012312:60:180
+3012489:127:101
+3017759:30:4
+3018173:150:145
+3018400:133:101
+3020945:142:101
+3021073:154:145
+3022651:125:18
+3023891:115:101
+3026509:151:145
+3026586:81:145
+3027387:49:77
+3027394:76:77
+3029182:171:180
+3029358:175:101
+3030422:191:166
+3031009:183:9
+3031541:36:4
+3032161:124:101
+3032720:59:93
+3033210:163:166
+3034610:189:180
+3034943:168:145
+3035213:164:145
+3035999:155:166
+3037104:110:75
+3037450:170:180
+3037974:160:145
+3039521:131:18
+3039628:111:75
+3041789:28:43
+3042849:64:180
+3043363:122:101
+3044406:148:166
+3045285:106:75
+3045289:119:75
+3046337:161:145
+3047565:65:43
+3049791:3:77
+3050841:7:18
+3051803:39:145
+3052965:34:43
+3053195:178:9
+3054591:143:101
+3055741:177:166
+3056515:87:75
+3059639:192:180
+3059803:38:50
+3063092:158:145
+3063111:22:30
+3063126:47:145
+3064043:126:166
+3064384:40:43
+3065042:109:75
+3066779:129:166
+3066929:157:166
+3068612:162:145
+3069511:74:77
+3069592:141:166
+3070459:114:75
+3073011:173:9
+3078015:147:166
+3079777:152:145
+3082609:10:30
+3083518:95:77
+3083889:17:9
+3084319:118:75
+3085550:96:145
+3086088:85:77
+3087517:135:102
+3088149:159:145
+3096716:167:145
+3097350:89:77
+3097853:8:9
+3098055:184:9
+3098838:137:102
+3100677:179:9
+3100678:14:9
+3102199:156:145
+3105118:31:145
+3105466:67:60
+3105832:73:77
+3106972:101:102
+3108280:138:60
+3111703:153:166
+3112308:82:75
+3113373:15:30
+3115910:139:9
+3117601:25:43
+3117639:44:43
+3117692:46:43
+3117885:88:75
+3118044:83:75
+3118218:100:102
+3118338:113:102
+3119076:19:30
+3119943:187:166
+3121504:12:9
+3122631:78:77
+3124245:20:9
+3124460:4:30
+3125473:16:77
+3126801:172:102
+3127821:57:60
+3127971:176:60
+3128024:62:60
+3128970:108:75
+3129212:112:75
+3130424:32:30
+3131667:33:43
+3134639:105:75
+3135756:2:30
+3135935:145:45
+3136617:186:60
+3136712:130:60
+3138083:181:102
+3139471:188:166
+3139540:133:60
+3141542:150:45
+3142169:185:166
+3143027:94:75
+3144347:154:45
+3145209:125:60
+3146659:50:38
+3147866:123:166
+3148106:169:166
+3150291:84:77
+3150467:6:77
+3151569:99:75
+3153421:171:60
+3153575:49:60
+3154097:98:75
+3154709:191:102
+3154746:175:102
+3155646:1:30
+3158143:168:159
+3158344:36:30
+3158989:59:78
+3163614:160:159
+3164682:131:60
+3164752:69:60
+3164817:55:78
+3166043:110:102
+3167460:90:78
+3168070:111:43
+3168668:122:102
+3170138:64:60
+3171535:106:102
+3171943:161:159
+3174882:65:30
+3177348:39:159
+3177731:34:30
+3178240:87:80
+3178692:178:17
+3178852:7:78
+3179714:143:102
+3181347:21:78
+3184410:24:78
+3187836:40:45
+3188010:47:45
+3188215:158:159
+3189981:22:78
+3192215:53:80
+3192676:70:60
+3193148:129:146
+3193993:157:148
+3195583:173:17
+3197843:114:80
+3198095:180:60
+3198164:128:17
+3199567:68:42
+3201681:147:146
+3204367:152:159
+3204909:117:102
+3205162:97:102
+3209623:95:78
+3210558:103:102
+3210847:51:42
+3212175:85:78
+3212672:96:146
+3216245:43:42
+3216279:26:42
+3217913:11:17
+3220323:61:60
+3220539:23:17
+3220597:56:60
+3220747:167:159
+3223295:8:17
+3223339:184:17
+3223460:89:78
+3224569:18:9
+3226171:156:159
+3226315:14:17
+3226317:179:17
+3228653:63:80
+3228767:31:45
+3231254:9:18
+3231468:73:80
+3234018:101:103
+3234262:190:103
+3234571:134:17
+3234671:138:17
+3235688:153:148
+3236917:35:45
+3237054:82:80
+3239859:100:103
+3240208:139:17
+3242432:88:80
+3242451:113:103
+3242453:54:80
+3243954:187:148
+3245504:83:80
+3246035:12:17
+3248210:121:103
+3248635:16:78
+3248776:20:17
+3249723:37:42
+3250680:165:159
+3252484:176:57
+3252702:32:42
+3253647:72:80
+3253647:112:80
+3253795:62:80
+3253910:144:103
+3254354:33:25
+3256580:136:103
+3256788:108:80
+3258280:130:57
+3259417:91:80
+3259418:105:80
+3260062:93:78
+3260870:186:57
+3262198:127:103
+3263029:145:146
+3263098:79:146
+3263545:188:148
+3263867:60:57
+3264760:185:103
+3267562:94:80
+3267809:52:80
+3267856:133:103
+3269243:30:42
+3269394:169:148
+3270335:142:103
+3273944:125:17
+3274057:6:78
+3276069:115:103
+3276093:99:80
+3276200:49:80
+3276768:81:146
+3277095:151:146
+3277640:171:57
+3278816:175:103
+3278833:76:80
+3278980:98:80
+3279064:191:103
+3279526:183:17
+3281598:124:103
+3281758:75:80
+3282278:13:78
+3282433:1:78
+3283258:163:148
+3283343:36:42
+3285014:116:25
+3285369:168:146
+3285857:155:148
+3287336:59:80
+3287714:131:17
+3288020:160:146
+3288034:41:25
+3289970:55:80
+3289974:69:80
+3290124:110:80
+3290168:86:80
+3292862:122:103
+3293668:111:25
+3294399:64:57
+3295721:106:80
+3296338:161:146
+3299861:3:42
+3301713:39:25
+3302764:34:42
+3305491:177:148
+3305654:178:57
+3311315:24:42
+3312947:38:25
+3313155:40:25
+3313175:158:146
+3313914:53:42
+3313944:22:42
+3315049:102:103
+3315717:109:82
+3319014:162:146
+3320688:141:103
+3321018:74:89
+3321242:114:82
+3322502:180:57
+3322553:173:57
+3323958:128:138
+3324080:68:25
+3331401:95:89
+3332045:10:89
+3332070:97:103
+3332075:117:103
+3332505:132:138
+3335090:17:138
+3335392:51:25
+3335972:159:45
+3336994:85:89
+3337587:96:162
+3338359:118:82
+3340952:43:25
+3346104:167:162
+3346302:23:138
+3347592:184:57
+3350570:179:57
+3351703:174:103
+3351740:156:162
+3352076:14:138
+3354495:31:162
+3357288:92:162
+3358871:101:129
+3358952:190:57
+3360504:134:138
+3360535:71:42
+3361521:140:129
+3361589:153:129
+3363200:139:138
+3365154:45:159
+3365495:35:162
+3365892:120:82
+3366126:88:82
+3369056:83:82
+3369392:187:181
+3371661:121:138
+3371904:12:138
+3372646:16:89
+3372793:78:90
+3373975:37:42
+3374423:20:138
+3375068:172:181
+3376821:165:162
+3377246:144:138
+3377316:4:42
+3379661:32:42
+3379947:108:82
+3379959:112:82
+3380043:62:138
+3382219:48:162
+3382807:105:82
+3382950:72:82
+3382991:33:42
+3383003:58:82
+3383035:91:82
+3383961:136:129
+3384981:79:162
+3385021:145:162
+3385215:149:162
+3385581:60:138
+3385935:130:138
+3386450:93:90
+3388532:127:138
+3388984:188:181
+3391235:80:82
+3391243:94:82
+3391394:52:138
+3391497:133:138
+3391964:185:181
+3393561:150:162
+3393577:30:42
+3394115:142:138
+3394513:169:181
+3394607:182:181
+3396445:154:162
+3397779:123:129
+3399656:50:42
+3401766:81:162
+3402541:49:138
+3402566:76:82
+3402593:99:82
+3405128:75:82
+3405187:98:82
+3405346:107:82
+3405957:191:181
+3405987:183:8
+3406057:175:181
+3407375:36:42
+3408255:124:138
+3408838:189:181
+3410727:27:42
+3410776:59:82
+3412920:160:162
+3413470:29:42
+3413556:110:82
+3413663:69:138
+3413669:131:138
+3414326:170:181
+3416240:66:42
+3416286:41:42
+3416319:86:82
+3417395:122:129
+3419347:28:42
+3419510:64:138
+3422177:106:82
+3424491:3:89
+3424883:65:82
+3427124:34:42
+3427880:7:138
+3428365:178:8
+3428784:143:129
+3430299:87:82
+3431206:177:181
+3434427:166:129
+3435505:24:89
+3436666:192:181
+3437001:126:129
+3438156:158:162
+3438211:22:42
+3438622:38:42
+3439343:40:46
+3440848:53:42
+3445467:141:129
+3448437:128:8
+3452055:68:42
+3456161:117:181
+3458276:10:42
+3459319:17:8
+3459663:132:8
+3460391:51:42
+3461901:103:181
+3462520:118:110
+3462645:96:110
+3464554:11:8
+3464581:159:46
+3466123:26:42
+3468599:56:186
+3469262:89:90
+3470355:167:46
+3470526:23:8
+3471235:137:110
+3471594:61:186
+3473050:179:8
+3473252:184:8
+3475669:174:181
+3476019:18:8
+3476027:14:8
+3478696:63:73
+3478721:31:46
+3482791:138:121
+3483300:134:7
+3484267:71:73
+3485972:153:129
+3488900:139:7
+3489674:120:46
+3489804:5:73
+3491187:113:121
+3492538:25:46
+3492538:44:46
+3497333:16:7
+3502103:176:186
+3502290:57:186
+3504368:112:110
+3506641:33:46
+3506680:72:73
+3507563:149:156
+3509161:58:73
+3509410:91:73
+3509966:105:110
+3510385:145:156
+3510978:130:121
+3511035:60:121
+3513329:2:10
+3514946:80:73
+3516643:133:121
+3518649:94:110
+3521805:30:10
+3522167:123:129
+3522577:125:7
+3524344:151:156
+3525213:6:7
+3525950:50:73
+3526630:99:110
+3527374:171:186
+3530186:183:186
+3530411:124:121
+3530507:191:175
+3532732:168:156
+3533690:13:7
+3534311:59:73
+3535841:170:175
+3536967:27:29
+3538332:160:156
+3539561:90:89
+3539915:41:29
+3540059:86:73
+3542570:111:29
+3542750:66:29
+3543785:161:156
+3543968:106:110
+3544072:64:186
+3544991:148:129
+3549647:3:10
+3551178:65:29
+3554677:87:110
+3555397:177:175
+3555417:178:186
+3556682:21:7
+3558382:166:129
+3560773:24:10
+3560868:158:156
+3563196:109:110
+3563508:47:156
+3563709:22:10
+3564223:126:129
+3564860:53:29
+3564868:38:29
+3565123:40:29
+3566202:162:156
+3567490:157:129
+3569460:173:186
+3570798:74:73
+3571647:114:110
+3572074:180:186
+3573544:128:7
+3576271:68:29
+3580093:152:156
+3580363:97:175
+3580924:117:175
+3586269:103:175
+3586290:118:121
+3587603:51:29
+3588395:159:156
+3588611:96:156
+3590060:43:29
+3590369:11:7
+3595790:23:7
+3595947:89:7
+3597104:167:156
+3599489:8:173
+3599528:184:173
+3599648:179:173
+3600052:174:175
+3601505:18:7
+3605757:31:156
+3605950:101:121
+3608299:190:175
+3609556:71:29
+3609698:140:112
+3610841:9:173
+3612522:82:112
+3613882:15:10
+3615170:120:29
+3616660:187:175
+3616687:5:10
+3616936:100:175
+3617184:113:175
+3618122:88:112
+3618135:25:29
+3618135:44:29
+3618275:83:112
+3619685:19:10
+3622268:78:10
+3624981:16:125
+3625091:4:10
+3625256:172:175
+3625305:176:175
+3626509:144:112
+3627378:57:173
+3627888:32:10
+3629298:72:29
+3629474:108:112
+3630684:62:125
+3632085:136:112
+3632120:33:29
+3633431:130:125
+3633449:93:10
+3633529:149:160
+3633593:48:160
+3634858:58:29
+3635088:91:112
+3635112:105:112
+3635924:186:173
+3636252:188:175
+3636374:145:160
+3636401:181:175
+3637866:127:112
+3640670:80:112
+3641637:133:125
+3641796:52:125
+3641917:185:175
+3641970:150:160
+3643330:94:112
+3644711:182:175
+3644774:154:160
+3646023:30:29
+3647552:169:175
+3649039:115:112
+3650316:151:160
+3651491:50:29
+3651921:76:112
+3652410:171:173
+3653020:6:125
+3653123:49:125
+3654703:107:112
+3654707:98:112
+3655268:183:173
+3658721:164:160
+3658795:168:160
+3659055:77:55
+3661499:59:55
+3661507:13:125
+3662446:131:125
+3664982:86:55
+3665999:110:112
+3667644:90:55
+3668662:122:112
+3668714:104:112
+3669389:64:173
+3669794:161:160
+3671486:119:112
+3671515:106:112
+3675915:65:55
+3678024:7:125
+3678429:39:160
+3679616:87:112
+3679673:143:112
+3680417:178:173
+3683690:21:125
+3689546:158:160
+3689563:53:55
+3690408:38:40
+3690950:102:112
+3691057:109:112
+3692251:162:160
+3694548:70:173
+3695190:146:160
+3695685:74:55
+3696673:141:112
+3696715:114:112
+3697139:180:173
+3697598:128:125
+3700742:68:30
+3701940:147:126
+3706007:10:30
+3706164:152:160
+3708827:132:125
+3709372:95:55
+3709895:103:188
+3712065:51:30
+3712308:85:55
+3714842:159:160
+3715408:43:40
+3717407:11:125
+3717499:26:30
+3720174:167:160
+3720192:56:125
+3722809:8:125
+3723061:23:125
+3725790:14:125
+3725956:156:160
+3728557:18:125
+3729027:63:55
+3731198:67:125
+3731868:73:55
+3733982:9:125
+3734135:134:125
+3734255:92:160
+3736668:153:126
+3736955:140:126
+3737572:35:40
+3737751:82:55
+3739480:15:30
+3739739:139:125
+3739835:5:30
+3740191:54:55
+3740282:120:40
+3740328:46:40
+3742300:187:188
+3742386:19:30
+3742822:42:30
+3743042:88:55
+3743123:83:55
+3743175:44:40
+3743180:25:40
+3745093:12:125
+3745905:78:55
+3747719:4:30
+3747903:20:125
+3748358:37:30
+3748754:121:55
+3751204:165:160
+3751751:57:190
+3751909:176:190
+3753489:32:30
+3754190:72:55
+3754475:108:40
+3757282:33:40
+3758553:136:126
+3759944:91:55
+3760035:130:55
+3760098:93:55
+3760260:186:190
+3761665:2:30
+3762887:60:190
+3764066:127:126
+3765558:80:55
+3765653:133:55
+3768040:52:55
+3768842:154:40
+3771175:142:55
+3773676:49:55
+3774707:151:126
+3774807:123:126
+3775596:99:114
+3776308:50:30
+3777007:84:55
+3778434:81:114
+3779823:175:190
+3781223:36:30
+3781376:1:30
+3782614:189:190
+3782839:163:157
+3785879:155:188
+3786318:77:6
+3788708:160:158
+3789536:131:67
+3789607:86:114
+3789758:110:114
+3791867:90:6
+3792937:66:30
+3793095:28:30
+3793553:148:157
+3795382:106:114
+3798159:65:30
+3802074:39:40
+3802861:7:6
+3803631:34:30
+3804677:143:126
+3804942:178:183
+3806483:87:114
+3807305:166:157
+3807698:177:188
+3808554:21:6
+3814766:109:114
+3815055:22:30
+3815150:157:188
+3816359:162:158
+3818384:146:126
+3818555:129:126
+3819175:74:72
+3821916:173:183
+3822856:128:6
+3827610:68:72
+3830186:152:158
+3830317:117:190
+3833179:10:2
+3833201:97:190
+3834219:132:67
+3835690:103:190
+3835825:17:183
+3835861:96:158
+3837173:135:114
+3837339:118:114
+3838829:159:158
+3838833:26:2
+3841909:11:6
+3847107:167:158
+3848349:137:114
+3849448:174:177
+3849650:179:183
+3849837:8:183
+3849928:184:183
+3850350:156:158
+3850535:14:183
+3853426:18:6
+3855447:31:158
+3855636:63:72
+3855787:73:72
+3858206:9:183
+3859334:134:6
+3859480:138:67
+3860935:140:113
+3863544:153:177
+3863912:5:2
+3863917:15:2
+3864393:35:158
+3864725:139:6
+3866530:46:43
+3866849:54:72
+3869209:187:177
+3869334:19:2
+3869442:45:158
+3869519:44:43
+3869641:25:43
+3875136:165:158
+3875182:4:2
+3875267:20:183
+3875944:144:113
+3876231:176:67
+3878124:32:2
+3879096:108:114
+3879305:112:114
+3880757:33:43
+3883368:48:158
+3883490:149:158
+3883645:58:72
+3883809:91:72
+3884769:105:114
+3885199:188:157
+3886400:145:158
+3887221:60:67
+3889237:80:72
+3891422:185:177
+3891951:150:158
+3893251:94:114
+3894393:182:177
+3894579:30:2
+3894788:154:158
+3896955:169:177
+3897625:123:113
+3898034:125:6
+3900378:151:158
+3900548:81:158
+3900563:76:72
+3900611:84:72
+3903169:115:113
+3904092:171:67
+3905387:191:177
+3905783:36:2
+3905868:124:113
+3905939:1:2
+3906483:107:43
+3906783:189:67
+3908158:163:177
+3908762:75:72
+3908771:77:72
+3909036:116:43
+3910981:155:177
+3911428:170:113
+3911795:59:72
+3914382:69:72
+3914548:86:72
+3914752:66:43
+3917226:122:113
+3917438:55:72
+3919419:148:177
+3920138:161:92
+3925546:3:2
+3928421:34:2
+3928549:39:31
+3929450:178:184
+3931293:143:113
+3931302:87:92
+3931727:21:7
+3933342:166:177
+3934936:126:157
+3936701:47:31
+3936709:192:113
+3936747:24:2
+3939707:53:43
+3939726:22:2
+3939830:38:43
+3941969:157:177
+3942231:102:113
+3942363:129:113
+3942564:146:92
+3943212:70:184
+3945000:141:113
+3945337:114:92
+3946117:173:184
+3946207:180:184
+3948229:128:7
+3950918:147:92
+3960234:17:184
+3961898:135:113
+3961911:96:92
+3965341:11:7
+3969852:61:60
+3970166:56:60
+3970841:23:7
+3973202:137:113
+3973310:156:92
+3974270:8:184
+3974322:179:184
+3975670:174:113
+3976538:18:7
+3976962:14:184
+3980089:63:72
+3980235:73:72
+3981111:67:60
+3981138:138:60
+3984397:101:113
+3985449:9:184
+3986142:82:72
+3987418:139:7
+3987668:15:26
+3990260:35:31
+3990300:46:31
+3990450:5:26
+3991300:54:72
+3993144:45:31
+3995727:16:7
+3995844:42:26
+3996048:19:26
+3996619:12:184
+3998434:121:60
+3998595:37:26
+3998680:4:26
+3999434:20:184
+4000778:176:60
+4001302:144:60
+4004104:112:92
+4004183:32:26
+4006743:48:31
+4006836:108:92
+4006937:105:92
+4007211:33:26
+4009325:130:60
+4009497:79:92
+4009552:149:92
+4011118:91:72
+4012494:127:141
+4012629:2:26
+4016681:80:72
+4017932:133:60
+4018031:94:92
+4021021:30:26
+4023530:123:141
+4023537:169:191
+4023624:115:141
+4026128:171:60
+4026274:151:92
+4026433:99:92
+4026435:81:92
+4026582:6:7
+4027698:76:72
+4029046:107:92
+4029052:98:92
+4029076:175:191
+4030052:183:184
+4030636:75:72
+4031774:168:92
+4032253:36:26
+4034529:155:191
+4034783:163:191
+4034816:164:31
+4034993:189:60
+4035053:13:7
+4035106:116:31
+4036246:59:72
+4037303:131:60
+4037496:170:60
+4038825:86:72
+4038831:69:72
+4041825:55:72
+4042849:64:60
+4043296:122:141
+4043335:106:92
+4045823:148:191
+4049090:3:26
+4052109:34:26
+4054520:143:141
+4057239:177:191
+4057469:166:141
+4060131:192:60
+4060243:24:26
+4062863:126:141
+4063043:38:26
+4063207:22:26
+4065831:102:141
+4067862:70:60
+4068360:157:191
+4068737:129:141
+4069703:74:72
+4070891:180:60
+4071296:173:60
+4071546:146:141
+4074176:128:60
+4076866:147:141
+4076996:68:26
+4082379:132:60
+4082616:97:141
+4082662:10:26
+4082763:117:141
+4085429:103:141
+4085477:51:26
+4087709:85:74
+4088269:135:141
+4088547:96:94
+4091023:43:26
+4095541:23:14
+4096484:137:141
+4098290:8:14
+4098339:184:14
+4099111:89:74
+4099377:156:162
+4101217:179:14
+4101577:174:191
+4103076:18:20
+4104177:31:39
+4104505:63:74
+4105247:92:94
+4107506:73:74
+4107600:101:141
+4108537:9:20
+4108966:134:14
+4110088:71:74
+4110531:140:141
+4112225:15:22
+4113348:153:141
+4114267:139:14
+4114510:35:39
+4114785:46:39
+4115624:54:74
+4116116:100:141
+4117090:45:39
+4117556:44:39
+4117561:25:39
+4118501:187:191
+4118920:113:141
+4119196:83:94
+4119897:12:14
+4120584:19:22
+4120842:42:22
+4123369:4:22
+4123555:37:22
+4124016:172:191
+4124258:16:74
+4125348:165:162
+4125989:32:22
+4126046:57:64
+4126241:176:64
+4129719:72:74
+4130195:108:94
+4131023:48:39
+4132755:136:141
+4133685:149:162
+4133794:145:162
+4134427:186:64
+4134599:130:64
+4135185:181:191
+4135481:91:74
+4135600:58:74
+4137259:60:64
+4137287:2:22
+4137998:188:191
+4138723:80:94
+4140802:185:191
+4141939:150:162
+4142888:133:64
+4143492:182:191
+4143998:52:74
+4144725:154:162
+4145789:142:64
+4149457:84:74
+4150636:151:162
+4152226:6:74
+4152638:99:94
+4154470:171:64
+4155424:107:94
+4155701:98:94
+4156036:124:135
+4158642:168:162
+4159993:189:64
+4160681:13:74
+4160683:59:74
+4160795:160:162
+4161619:164:162
+4161742:27:51
+4162496:170:64
+4163276:55:74
+4163511:69:74
+4163995:110:94
+4164395:41:51
+4166792:111:39
+4166926:122:135
+4167018:28:51
+4169449:104:94
+4169620:106:94
+4172302:161:162
+4173645:3:22
+4176352:34:22
+4180745:87:94
+4181374:143:135
+4184020:166:135
+4184941:192:64
+4185018:24:22
+4185761:158:162
+4188231:40:39
+4188318:47:39
+4189313:109:135
+4189389:38:51
+4189729:126:135
+4192223:102:135
+4192443:129:135
+4192486:157:135
+4193369:70:64
+4195127:141:135
+4196083:173:20
+4196304:180:64
+4197901:114:135
+4204977:152:162
+4206481:117:135
+4206936:97:135
+4206998:10:22
+4209793:17:14
+4211547:118:135
+4211590:103:135
+4212851:96:162
+4213097:85:22
+4213183:159:162
+4214802:43:51
+4220478:56:64
+4221219:167:39
+4221255:61:64
+4222795:137:135
+4223903:89:22
+4224030:179:64
+4224239:184:64
+4227551:63:69
+4229703:67:64
+4230283:73:69
+4231780:92:98
+4233139:9:11
+4234163:140:135
+4234215:101:135
+4234419:71:51
+4235664:190:174
+4236088:134:11
+4237188:153:135
+4240237:120:98
+4241162:35:167
+4241485:54:69
+4241909:139:11
+4242503:42:51
+4242572:25:51
+4243714:45:167
+4243973:187:174
+4244346:12:11
+4244588:20:14
+4247875:4:19
+4247992:78:19
+4248342:37:51
+4249214:172:174
+4251389:176:61
+4251524:57:61
+4252018:165:167
+4253727:32:19
+4254116:108:98
+4255518:72:69
+4256393:136:135
+4256676:33:51
+4257651:145:167
+4257796:105:98
+4257843:48:167
+4259021:93:19
+4259720:186:61
+4260376:181:174
+4260740:149:167
+4261914:2:19
+4263525:188:174
+4266212:185:174
+4266533:52:69
+4268284:94:98
+4268881:150:167
+4268956:154:167
+4269102:182:174
+4270593:30:19
+4271706:169:174
+4272419:125:11
+4273445:115:135
+4273490:123:135
+4275253:49:69
+4275269:84:69
+4275277:6:11
+4277251:151:167
+4279230:107:98
+4279447:183:61
+4279537:171:61
+4280198:191:174
+4280319:175:174
+4281478:36:19
+4281916:1:19
+4281986:189:61
+4282984:163:174
+4283797:124:69
+4285289:116:98
+4285477:164:167
+4285635:155:174
+4285645:168:167
+4286400:131:69
+4287815:170:61
+4288486:160:167
+4288867:41:68
+4288908:29:68
+4291217:110:98
+4291715:66:68
+4292071:55:69
+4293342:104:98
+4293914:111:98
+4293992:148:174
+4296007:119:98
+4296208:64:61
+4296358:106:98
+4296945:161:167
+4298691:39:162
+4300109:65:68
+4301261:3:19
+4301862:178:61
+4302986:7:11
+4304536:87:98
+4305379:177:174
+4305388:166:174
+4308753:21:11
+4310026:192:61
+4312473:24:19
+4313300:40:98
+4313391:162:39
+4313428:47:167
+4313634:158:167
+4314263:38:68
+4314881:22:19
+4315938:109:98
+4316312:102:174
+4316338:157:174
+4317076:53:68
+4318497:70:61
+4321315:173:61
+4321315:180:61
+4321462:114:98
+4322486:128:11
+4330297:117:174
+4330451:152:167
+4331865:10:19
+4333313:103:174
+4333394:97:174
+4333885:17:11
+4336938:51:68
+4338651:96:167
+4338689:159:167
+4339765:43:68
+4345105:23:11
+4346441:56:61
+4346930:14:20
+4347841:8:11
+4349361:179:61
+4349388:184:61
+4353452:18:11
+4353700:63:68
+4354771:67:61
+4355685:31:167
+4356406:73:68
+4356763:101:137
+4357734:190:61
+4359346:71:68
+4359524:140:137
+4360361:138:61
+4360363:134:61
+4362350:15:19
+4364344:35:40
+4365126:5:19
+4366998:44:40
+4367009:120:40
+4367045:25:40
+4367086:46:40
+4367860:100:137
+4368093:113:137
+4370378:45:40
+4370648:121:137
+4371101:187:185
+4373320:37:68
+4376750:172:185
+4377692:165:146
+4378602:62:49
+4378924:32:68
+4381458:48:40
+4381596:130:49
+4381722:58:68
+4381958:136:137
+4383304:149:146
+4385744:145:146
+4387578:60:49
+4387749:181:185
+4390762:188:185
+4392908:30:68
+4392976:52:49
+4393032:133:49
+4393484:94:87
+4393506:182:185
+4394824:154:40
+4396280:169:185
+4398832:115:137
+4399896:151:146
+4400949:50:68
+4404034:183:9
+4404781:175:185
+4404787:191:185
+4406607:36:68
+4406995:1:90
+4408210:168:146
+4409477:116:40
+4409523:164:40
+4409627:13:90
+4410218:155:185
+4410282:163:185
+4412151:27:68
+4412527:131:49
+4413751:160:146
+4414932:41:40
+4415406:69:49
+4417647:111:40
+4417936:104:40
+4418239:122:137
+4420707:119:40
+4421102:64:49
+4421664:148:185
+4422368:161:146
+4426454:178:9
+4426457:3:90
+4428442:39:40
+4432717:177:185
+4434700:24:90
+4437528:47:40
+4438949:158:146
+4440610:102:137
+4440827:53:34
+4441727:162:146
+4443275:74:90
+4443572:141:137
+4443882:157:185
+4448706:128:9
+4449445:68:34
+4457192:132:9
+4457246:95:90
+4457453:97:137
+4459828:17:9
+4460388:51:34
+4462812:85:90
+4463036:159:152
+4466251:26:34
+4470422:61:180
+4470504:56:180
+4471393:167:152
+4473506:89:90
+4473806:8:9
+4474791:174:185
+4476389:14:9
+4477242:156:152
+4479722:31:152
+4482620:138:49
+4484026:71:34
+4485545:134:9
+4490522:5:90
+4490944:139:9
+4490975:46:152
+4491181:83:87
+4491222:35:152
+4491472:120:87
+4492517:100:140
+4492729:113:140
+4493787:45:152
+4494139:42:34
+4494578:12:9
+4495711:78:90
+4496542:121:49
+4497085:37:34
+4498835:16:90
+4499077:20:9
+4501150:176:180
+4501230:57:180
+4502360:165:152
+4502384:32:34
+4503762:112:140
+4504715:72:90
+4505439:33:34
+4506681:136:140
+4507659:145:152
+4507892:48:152
+4508052:58:34
+4509433:186:180
+4509577:105:140
+4509678:93:90
+4510629:79:152
+4512259:127:140
+4512440:60:180
+4512763:188:172
+4513092:181:172
+4515782:185:172
+4516895:80:76
+4516912:94:76
+4517107:52:76
+4518440:182:172
+4518884:150:152
+4519025:154:152
+4519220:30:34
+4520655:142:140
+4521236:169:172
+4523424:123:140
+4524112:84:90
+4524801:50:34
+4527077:6:90
+4527229:81:152
+4528326:98:76
+4528418:99:76
+4528982:171:180
+4529175:183:180
+4529817:191:172
+4529819:175:172
+4530282:1:34
+4531076:107:76
+4533308:36:34
+4533760:77:76
+4533764:75:76
+4535275:155:172
+4535822:164:152
+4535918:27:34
+4536755:59:76
+4537722:131:130
+4538364:29:44
+4538611:160:152
+4539342:55:76
+4539494:86:76
+4539590:110:76
+4539954:122:140
+4541551:41:44
+4541693:28:34
+4541693:66:34
+4541806:111:44
+4545112:106:76
+4545899:64:180
+4547166:119:44
+4547735:65:76
+4549867:3:34
+4551066:178:8
+4553969:143:140
+4556277:87:76
+4556905:166:140
+4562335:126:140
+4563663:40:44
+4563718:158:152
+4563916:38:44
+4565136:102:140
+4566492:162:152
+4567919:129:140
+4568123:70:180
+4570018:114:76
+4570256:74:76
+4570725:141:140
+4570959:146:140
+4571083:173:180
+4576314:147:140
+4581720:132:8
+4584738:17:8
+4585796:85:95
+4586175:96:145
+4586252:51:44
+4587628:135:140
+4589047:159:145
+4589288:43:44
+4590054:11:8
+4595839:137:140
+4595955:23:8
+4596501:61:130
+4596506:56:130
+4597788:167:145
+4598799:184:8
+4598873:179:8
+4599417:174:172
+4599780:89:95
+4600180:156:145
+4601421:14:8
+4604904:67:130
+4605993:31:145
+4606081:92:145
+4607063:101:140
+4607681:138:130
+4607979:190:172
+4610176:9:8
+4612096:82:76
+4612771:15:32
+4612897:139:8
+4614424:35:145
+4615048:120:44
+4617051:46:44
+4617437:88:76
+4618563:19:32
+4619180:187:172
+4619736:25:44
+4620093:45:145
+4620478:83:76
+4621135:42:32
+4621429:12:8
+4621470:121:130
+4621797:78:95
+4623885:4:32
+4624105:37:32
+4624235:20:8
+4624667:176:172
+4624815:16:95
+4625325:165:145
+4627200:144:130
+4627201:57:130
+4628786:112:76
+4630819:33:44
+4630900:48:145
+4633895:149:145
+4634555:105:76
+4635545:93:95
+4636571:79:145
+4638371:60:130
+4641000:133:130
+4641157:52:130
+4642230:150:145
+4645053:154:145
+4646557:142:130
+4646645:30:32
+4649680:84:95
+4652701:6:95
+4653438:98:44
+4653606:81:145
+4654553:183:8
+4654961:175:172
+4654963:191:172
+4656487:107:44
+4657728:36:32
+4658138:77:95
+4658228:189:172
+4658961:164:145
+4659027:116:44
+4660827:59:95
+4660864:13:95
+4661141:170:172
+4663719:69:95
+4664636:160:145
+4666249:111:99
+4666663:55:95
+4668751:28:32
+4668781:66:32
+4669198:104:99
+4669297:90:95
+4671984:119:99
+4672070:106:99
+4674331:65:32
+4676544:7:134
+4677251:34:32
+4678748:39:145
+4680278:87:99
+4681354:143:123
+4682193:21:134
+4682507:177:169
+4685748:192:172
+4686868:47:145
+4687125:158:145
+4687631:40:38
+4688320:22:32
+4688784:109:99
+4689559:162:145
+4689728:126:123
+4690432:53:38
+4692415:129:123
+4694620:74:95
+4695203:146:123
+4695731:173:178
+4697142:114:99
+4698961:180:178
+4699287:128:134
+4701842:68:38
+4703643:147:123
+4706417:152:145
+4707314:132:134
+4707843:10:32
+4709919:51:38
+4712934:43:38
+4715819:11:134
+4720036:137:124
+4723606:8:178
+4723805:184:178
+4726247:174:169
+4726589:179:178
+4727073:18:134
+4729460:31:149
+4731295:101:124
+4732570:138:134
+4734874:9:178
+4735167:71:38
+4736144:82:99
+4737133:153:123
+4740057:100:172
+4740601:35:149
+4741005:139:134
+4741853:88:99
+4742313:113:124
+4743231:45:149
+4743469:25:38
+4743806:44:38
+4744817:83:99
+4745250:187:169
+4746661:42:38
+4747890:121:124
+4749249:37:38
+4749540:16:134
+4750657:176:172
+4751626:57:178
+4751771:165:149
+4753093:112:99
+4753638:144:124
+4755818:108:99
+4757208:48:149
+4757912:58:38
+4758809:181:172
+4758823:105:99
+4759997:145:149
+4760032:93:89
+4760128:186:178
+4761351:91:99
+4761718:188:169
+4763032:2:89
+4766980:94:99
+4767023:185:169
+4768714:150:149
+4769926:182:169
+4771583:125:134
+4773317:142:124
+4774227:50:38
+4774492:84:89
+4776702:171:178
+4777067:151:149
+4778208:76:99
+4778357:98:99
+4778364:107:99
+4779366:183:178
+4783765:75:99
+4785492:13:89
+4785494:168:149
+4785684:27:38
+4785715:77:89
+4785836:29:38
+4788053:160:149
+4788136:170:192
+4789538:86:99
+4789545:110:99
+4791241:66:38
+4791244:28:38
+4793396:90:89
+4793581:161:149
+4794626:148:177
+4795554:106:124
+4795945:119:46
+4796109:104:46
+4799565:65:38
+4801556:39:46
+4802300:7:89
+4804026:143:124
+4806296:21:128
+4808963:166:177
+4812300:40:46
+4812653:47:46
+4813322:158:149
+4814707:53:36
+4815189:102:124
+4816150:162:149
+4817797:146:129
+4819030:70:192
+4821628:180:192
+4821644:74:89
+4825884:68:36
+4826180:147:129
+4834146:132:128
+4834158:17:128
+4836386:96:149
+4836398:118:114
+4837049:51:36
+4838132:85:89
+4840636:43:46
+4842218:26:36
+4845470:23:128
+4845911:184:179
+4848182:174:177
+4849760:156:149
+4854277:31:46
+4855500:63:89
+4855617:73:89
+4856654:92:114
+4856723:101:129
+4857655:9:179
+4857835:190:192
+4859155:134:128
+4859296:140:129
+4859387:71:36
+4862047:153:129
+4862273:82:114
+4864023:5:89
+4864843:139:128
+4865959:35:46
+4867905:88:114
+4868276:44:46
+4868414:25:46
+4868492:45:46
+4868673:54:144
+4870390:42:36
+4870610:12:128
+4870628:187:177
+4870762:83:114
+4870874:121:144
+4871074:172:169
+4872093:78:89
+4872201:16:89
+4873376:37:36
+4874787:57:192
+4876863:165:46
+4878444:112:114
+4878596:108:114
+4878925:32:36
+4880588:72:89
+4882120:33:46
+4882581:48:46
+4884221:105:114
+4884584:91:114
+4887222:2:36
+4887486:79:114
+4890308:188:177
+4891048:133:144
+4892347:94:114
+4892692:169:172
+4892845:182:177
+4892898:185:177
+4893664:150:46
+4893737:154:46
+4895430:30:36
+4896535:142:144
+4898267:125:128
+4898488:123:129
+4899511:84:58
+4900715:99:114
+4901080:6:128
+4903782:191:177
+4904105:98:114
+4904112:107:114
+4904979:183:179
+4906689:1:36
+4906894:75:114
+4907372:124:144
+4907719:77:58
+4908140:189:192
+4909382:155:177
+4909473:13:128
+4909525:163:177
+4909700:116:114
+4910356:59:58
+4910404:29:58
+4910482:27:58
+4911225:164:158
+4911916:110:114
+4912402:131:128
+4913281:55:58
+4913707:160:158
+4915939:41:58
+4915975:66:58
+4918121:111:114
+4918893:28:58
+4918908:90:15
+4920572:106:114
+4920837:104:114
+4921525:148:129
+4923601:119:114
+4924371:65:58
+4924719:3:15
+4926556:7:128
+4928047:39:158
+4929944:178:179
+4931719:87:114
+4931826:166:129
+4937523:126:129
+4938392:38:58
+4938650:22:15
+4939409:47:158
+4941250:53:58
+4941751:162:158
+4943027:157:129
+4943858:74:58
+4944177:70:179
+4946833:173:179
+4947124:180:179
+4947477:146:158
+4952707:152:158
+4954406:117:181
+4955178:97:144
+4956807:132:7
+4958215:10:15
+4960609:51:58
+4961503:96:158
+4963969:159:158
+4964892:11:7
+4970397:23:7
+4972048:56:144
+4972559:167:158
+4975114:156:158
+4975975:18:7
+4976355:14:7
+4977046:174:181
+4980259:63:58
+4980480:67:144
+4981088:92:158
+4981706:9:183
+4982845:190:181
+4983157:73:58
+4984638:134:7
+4985860:82:58
+4985932:71:58
+4987012:153:126
+4990007:139:7
+4991651:54:58
+4991654:88:58
+4992049:5:15
+4992529:44:116
+4992582:120:116
+4992621:46:116
+4993847:187:181
+4994627:19:15
+4997866:121:49
+4998118:20:183
+4998203:4:15
+4999100:172:181
