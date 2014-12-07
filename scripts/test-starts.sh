@@ -44,5 +44,4 @@ java -cp . CSCgen
 cp test.csc  ../../../../build/$dirname/contiki/tools/cooja/
 cp test.sensor ../analize/
 cd ../../../../build/$dirname/contiki/tools/cooja/
-var=$(pwd)
-ant run_nogui -Dargs=$var/test.csc #> /dev/null 2>&1 &
+ant run_nogui -Dargs=$(pwd)/test.csc #> /dev/null 2>&1 &
