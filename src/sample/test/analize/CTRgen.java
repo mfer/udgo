@@ -13,7 +13,7 @@ class CTRgen {
 		String sensor_filename = "test.sensor";
 		String ctr ="\n";
 		Integer s1, s2, zeroFlag=0;
-		Double TRANSMITTING_RANGE=100.0;
+		Double TRANSMITTING_RANGE=100000.0;
 
 		try { 			
 			String sCurrentLine; 

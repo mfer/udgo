@@ -9,9 +9,9 @@ class Position {
 		String sensor_filename = "test.sensor";
 		String obstacle_filename = "test.obstacle";
 
-        Integer g = 4;
+        Integer g = 2;
         Integer mu = 18;
-        Double eps = 12.0;
+        Double eps = 3.0;
         Double seg_size = 100.0;
 
         Integer gCol = g;
@@ -53,7 +53,7 @@ class Position {
 							//vertical middle block
 							x = seg_size*street_state;
 				        	y = seg_size*street_indian + i*seg_size/(mu+1);
-//				        	pw_sensor.println(x+" "+y+" 0.0");
+				        	pw_sensor.println(x+" "+y+" 0.0");
 			        	}
 		        	}
 		        	if (street_indian == gRow-1 && street_state < gCol-1){
@@ -69,7 +69,7 @@ class Position {
 							//vertical middle block
 							x = seg_size*street_state;
 				        	y = seg_size*street_indian + i*seg_size/(mu+1);
-//				        	pw_sensor.println(x+" "+y+" 0.0");
+				        	pw_sensor.println(x+" "+y+" 0.0");
 			        	}
 		        	}
 

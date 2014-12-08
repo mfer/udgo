@@ -65,16 +65,11 @@ struct broadcast_message {
   uint8_t seqno;
 };
 
-/* This is the structure of unicast ping messages. */
-struct unicast_message {
-  uint8_t type;
-};
-
-/* These hold the broadcast and unicast structures, respectively. */
+/* These hold the broadcast structure*/
 static struct broadcast_conn broadcast;
 
 /*---------------------------------------------------------------------------*/
-/* We first declare our two processes. */
+/* We first declare our Broadcast process. */
 PROCESS(broadcast_process, "Broadcast process");
 
 /* The AUTOSTART_PROCESSES() definition specifices what processes to
@@ -107,11 +102,10 @@ PROCESS_THREAD(broadcast_process, ev, data)
 
   while(1) {
 
-    /* Send a broadcast every 1 - 2 seconds */
-    etimer_set(&et, CLOCK_SECOND + random_rand() % (CLOCK_SECOND));
-
+    /* Send a broadcast every CLOCK_SECOND */
+    etimer_set(&et, CLOCK_SECOND);
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
-
+    
     msg.seqno = seqno;
     packetbuf_copyfrom(&msg, sizeof(struct broadcast_message));
     broadcast_send(&broadcast);

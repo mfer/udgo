@@ -82,9 +82,6 @@ public class UDGO extends UDGM {
   public final static boolean WITH_NOISE = true; /* NoiseSourceRadio */
   public final static boolean WITH_DIRECTIONAL = true; /* DirectionalAntennaRadio */
   private Observer channelModelObserver = null;
-  private boolean WITH_CAPTURE_EFFECT;
-  private double CAPTURE_EFFECT_THRESHOLD;
-  private double CAPTURE_EFFECT_PREAMBLE_DURATION;
 
   private Simulation sim;
   private Random random = null;
@@ -95,20 +92,6 @@ public class UDGO extends UDGM {
     super(simulation);
     sim = simulation;
     random = simulation.getRandomGenerator();
-
-    currentChannelModel = new ChannelModel(sim);
-
-    WITH_CAPTURE_EFFECT = currentChannelModel.getParameterBooleanValue(ChannelModel.Parameter.captureEffect);
-    CAPTURE_EFFECT_THRESHOLD = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectSignalTreshold);
-    CAPTURE_EFFECT_PREAMBLE_DURATION = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectPreambleDuration);
-   
-    currentChannelModel.addSettingsObserver(channelModelObserver = new Observer() {
-      public void update(Observable o, Object arg) {
-        WITH_CAPTURE_EFFECT = currentChannelModel.getParameterBooleanValue(ChannelModel.Parameter.captureEffect);
-        CAPTURE_EFFECT_THRESHOLD = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectSignalTreshold);
-        CAPTURE_EFFECT_PREAMBLE_DURATION = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectPreambleDuration);
-      }
-    });
 
     currentChannelModel = new ChannelModel(sim);
 
@@ -152,19 +135,8 @@ public class UDGO extends UDGM {
     UDGORadioConnection newConnection = new UDGORadioConnection(sender);
     final Position senderPos = sender.getPosition();
 
-    /* Calculate ranges: grows with radio output power */
-    double moteTransmissionRange = TRANSMITTING_RANGE
-    * ((double) sender.getCurrentOutputPowerIndicator() / (double) sender.getOutputPowerIndicatorMax());
-    double moteInterferenceRange = INTERFERENCE_RANGE
-    * ((double) sender.getCurrentOutputPowerIndicator() / (double) sender.getOutputPowerIndicatorMax());
-
-//    System.out.println(moteTransmissionRange +" = "+ TRANSMITTING_RANGE);
-//    System.out.println(moteInterferenceRange +" = "+ INTERFERENCE_RANGE);
-
     /* Loop through all potential destinations */
     for (Radio recv: getRegisteredRadios()) {
-
-      //Radio recv = dest.radio;
       if (sender == recv) {
         continue;
       }
@@ -177,27 +149,27 @@ public class UDGO extends UDGM {
       }
 
       final Radio recvFinal = recv;
-      
-      /* Calculate receive probability */
-      TxPair txPair = new RadioPair() {
-        public Radio getFromRadio() {
-          return sender;
-        }
-        public Radio getToRadio() {
-          return recvFinal;
-        }
-      };
-      double[] probData = currentChannelModel.getProbability(
-          txPair,
-          -Double.MAX_VALUE
-      );
-      double recvProb = probData[0];
-      double recvSignalStrength = probData[1];      
-      Position recvPos = recv.getPosition();
+      final Position recvPos = recvFinal.getPosition();
+      double distance = senderPos.getDistanceTo(recvPos);      
 
-      double distance = senderPos.getDistanceTo(recvPos);
+      if (distance <= TRANSMITTING_RANGE) {      
 
-      if (distance <= moteTransmissionRange) {
+        /* Calculate receive probability */
+        TxPair txPair = new RadioPair() {
+          public Radio getFromRadio() {
+            return sender;
+          }
+          public Radio getToRadio() {
+            return recvFinal;
+          }
+        };
+        double[] probData = currentChannelModel.getProbability(
+            txPair,
+            -Double.MAX_VALUE
+        );
+        double recvProb = probData[0];
+        double recvSignalStrength = probData[1];      
+
         if (recvProb == 1.0 || random.nextDouble() < recvProb) {
           if (recv.isRadioOn()) {
             newConnection.addDestination(recv, recvSignalStrength);
