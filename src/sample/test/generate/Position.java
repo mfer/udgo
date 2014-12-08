@@ -9,7 +9,7 @@ class Position {
 		String sensor_filename = "test.sensor";
 		String obstacle_filename = "test.obstacle";
 
-        Integer g = 10;
+        Integer g = 3;
         Integer mu = 18;
         Double eps = 24.0;
         Double seg_size = 200.0;

@@ -158,6 +158,9 @@ public class UDGO extends UDGM {
     double moteInterferenceRange = INTERFERENCE_RANGE
     * ((double) sender.getCurrentOutputPowerIndicator() / (double) sender.getOutputPowerIndicatorMax());
 
+//    System.out.println(moteTransmissionRange +" = "+ TRANSMITTING_RANGE);
+//    System.out.println(moteInterferenceRange +" = "+ INTERFERENCE_RANGE);
+
     /* Loop through all potential destinations */
     for (Radio recv: getRegisteredRadios()) {
 
@@ -188,7 +191,6 @@ public class UDGO extends UDGM {
           txPair,
           -Double.MAX_VALUE
       );
-
       double recvProb = probData[0];
       double recvSignalStrength = probData[1];      
       Position recvPos = recv.getPosition();
@@ -196,23 +198,28 @@ public class UDGO extends UDGM {
       double distance = senderPos.getDistanceTo(recvPos);
 
 
-//      System.out.println(distance+" "+moteTransmissionRange);
 
-
+//      System.out.println(senderPos+" --> "+recvPos);
       if (distance <= moteTransmissionRange) {
+//        System.out.println("distance <= moteTransmissionRange");
         if (recvProb == 1.0 || random.nextDouble() < recvProb) {
+//          System.out.println("recvProb == 1.0 || random.nextDouble() < recvProb");
           if (!recv.isRadioOn()) {
+//            System.out.println("!recv.isRadioOn()");
             newConnection.addInterfered(recv);
             recv.interfereAnyReception();
           } else if (recv.isInterfered()) {
+//            System.out.println("recv.isInterfered()");
             if (WITH_CAPTURE_EFFECT) {
               newConnection.addInterfered(recv, recvSignalStrength);
             } else {
               newConnection.addInterfered(recv, recvSignalStrength);
             }
           } else if (recv.isTransmitting()) {
+//            System.out.println("recv.isTransmitting()");
             newConnection.addInterfered(recv, recvSignalStrength);
           } else if (recv.isReceiving()) {
+//            System.out.println("recv.isReceiving()");
             if (!WITH_CAPTURE_EFFECT) {
               newConnection.addInterfered(recv, recvSignalStrength);
               recv.interfereAnyReception();
@@ -241,27 +248,21 @@ public class UDGO extends UDGM {
                       conn.removeDestination(recv);
                     }
                   }
-                  newConnection.addDestination(recv, recvSignalStrength);
+//                  System.out.println("newConnection.addDestination(recv, recvSignalStrength) "+ distance+" "+" "+recvSignalStrength);                  
+                  newConnection.addDestination(recv, recvSignalStrength);                  
                 }
               }
             }
           } else {
+//            System.out.println("newConnection.addDestination(recv, recvSignalStrength) "+ distance+" "+" "+recvSignalStrength);
             newConnection.addDestination(recv, recvSignalStrength);
-          }
-        } else if (recvSignalStrength > currentChannelModel.getParameterDoubleValue(Parameter.bg_noise_mean)) {
-          if (!WITH_CAPTURE_EFFECT) {
-            newConnection.addInterfered(recv, recvSignalStrength);
-            recv.interfereAnyReception();
-          } else {
           }
         }
       } else if (distance <= moteInterferenceRange) {
+//        System.out.println("distance <= moteInterferenceRange");
         newConnection.addInterfered(recv);
         recv.interfereAnyReception();
       }
-
-
-
 
     }
 
