@@ -203,9 +203,6 @@ public class UDGO extends UDGM {
             newConnection.addDestination(recv, recvSignalStrength);
           }
         }
-      } else if (distance <= moteInterferenceRange) {
-        newConnection.addInterfered(recv);
-        recv.interfereAnyReception();
       }
 
     }
