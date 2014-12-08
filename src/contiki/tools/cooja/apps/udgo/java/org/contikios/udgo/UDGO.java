@@ -210,11 +210,7 @@ public class UDGO extends UDGM {
             recv.interfereAnyReception();
           } else if (recv.isInterfered()) {
 //            System.out.println("recv.isInterfered()");
-            if (WITH_CAPTURE_EFFECT) {
-              newConnection.addInterfered(recv, recvSignalStrength);
-            } else {
-              newConnection.addInterfered(recv, recvSignalStrength);
-            }
+            newConnection.addInterfered(recv, recvSignalStrength);
           } else if (recv.isTransmitting()) {
 //            System.out.println("recv.isTransmitting()");
             newConnection.addInterfered(recv, recvSignalStrength);
@@ -230,8 +226,7 @@ public class UDGO extends UDGM {
               }
             } else {
               double currSignal = recv.getCurrentSignalStrength();
-              if (recvSignalStrength < currSignal - CAPTURE_EFFECT_THRESHOLD) {
-              } else {
+              if (recvSignalStrength >= currSignal - CAPTURE_EFFECT_THRESHOLD) {
                 long startTime = newConnection.getReceptionStartTime();
                 boolean interfering = (sim.getSimulationTime()-startTime) >= CAPTURE_EFFECT_PREAMBLE_DURATION; 
                 if (interfering) {

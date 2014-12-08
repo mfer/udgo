@@ -11,8 +11,8 @@ class Position {
 
         Integer g = 3;
         Integer mu = 18;
-        Double eps = 24.0;
-        Double seg_size = 200.0;
+        Double eps = 12.0;
+        Double seg_size = 100.0;
 
         Integer gCol = g;
         Integer gRow = g;
