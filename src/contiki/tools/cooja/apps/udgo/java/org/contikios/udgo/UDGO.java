@@ -197,64 +197,13 @@ public class UDGO extends UDGM {
 
       double distance = senderPos.getDistanceTo(recvPos);
 
-
-
-//      System.out.println(senderPos+" --> "+recvPos);
       if (distance <= moteTransmissionRange) {
-//        System.out.println("distance <= moteTransmissionRange");
         if (recvProb == 1.0 || random.nextDouble() < recvProb) {
-//          System.out.println("recvProb == 1.0 || random.nextDouble() < recvProb");
-          if (!recv.isRadioOn()) {
-//            System.out.println("!recv.isRadioOn()");
-            newConnection.addInterfered(recv);
-            recv.interfereAnyReception();
-          } else if (recv.isInterfered()) {
-//            System.out.println("recv.isInterfered()");
-            newConnection.addInterfered(recv, recvSignalStrength);
-          } else if (recv.isTransmitting()) {
-//            System.out.println("recv.isTransmitting()");
-            newConnection.addInterfered(recv, recvSignalStrength);
-          } else if (recv.isReceiving()) {
-//            System.out.println("recv.isReceiving()");
-            if (!WITH_CAPTURE_EFFECT) {
-              newConnection.addInterfered(recv, recvSignalStrength);
-              recv.interfereAnyReception();
-              for (RadioConnection conn : getActiveConnections()) {
-                if (conn.isDestination(recv)) {
-                  conn.addInterfered(recv);
-                }
-              }
-            } else {
-              double currSignal = recv.getCurrentSignalStrength();
-              if (recvSignalStrength >= currSignal - CAPTURE_EFFECT_THRESHOLD) {
-                long startTime = newConnection.getReceptionStartTime();
-                boolean interfering = (sim.getSimulationTime()-startTime) >= CAPTURE_EFFECT_PREAMBLE_DURATION; 
-                if (interfering) {
-                  newConnection.addInterfered(recv, recvSignalStrength);
-                  recv.interfereAnyReception();
-                  for (RadioConnection conn : getActiveConnections()) {
-                    if (conn.isDestination(recv)) {
-                      conn.addInterfered(recv);
-                    }
-                  }
-                } else {
-                  for (RadioConnection conn : getActiveConnections()) {
-                    if (conn.isDestination(recv)) {
-                      conn.removeDestination(recv);
-                    }
-                  }
-//                  System.out.println("newConnection.addDestination(recv, recvSignalStrength) "+ distance+" "+" "+recvSignalStrength);                  
-                  newConnection.addDestination(recv, recvSignalStrength);                  
-                }
-              }
-            }
-          } else {
-//            System.out.println("newConnection.addDestination(recv, recvSignalStrength) "+ distance+" "+" "+recvSignalStrength);
+          if (recv.isRadioOn()) {
             newConnection.addDestination(recv, recvSignalStrength);
           }
         }
       } else if (distance <= moteInterferenceRange) {
-//        System.out.println("distance <= moteInterferenceRange");
         newConnection.addInterfered(recv);
         recv.interfereAnyReception();
       }
