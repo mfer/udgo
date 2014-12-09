@@ -10,7 +10,7 @@ class Position {
 		String obstacle_filename = "test.obstacle";
 
         Integer g = 2;
-        Integer mu = 18;
+        Integer mu = 19;
         Double eps = 3.0;
         Double seg_size = 100.0;
 

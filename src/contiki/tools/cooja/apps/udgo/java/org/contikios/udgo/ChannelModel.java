@@ -762,6 +762,7 @@ public class ChannelModel {
 
       // Get ray path point just before destination (if path exists at all)
       if (type == RayData.RayType.ORIGIN) {
+//        System.out.print("origin ");
 
         // Check if direct path exists
         justBeforeDestination = sourcePoint;
@@ -773,6 +774,7 @@ public class ChannelModel {
         }
 
       } else if (type == RayData.RayType.REFRACTION && pseudoSourceToDest.intersectsLine(line)) {
+//        System.out.print("refraction ");
 
         // Destination is inside refraction interval
         justBeforeDestination = getIntersectionPoint(pseudoSourceToDest, line);
@@ -781,6 +783,7 @@ public class ChannelModel {
         directPathExists = isDirectPath(justBeforeDestination, dest);
 
       } else if (type == RayData.RayType.REFLECTION && pseudoSourceToDest.intersectsLine(line)) {
+//        System.out.print("reflection ");
 
         // Destination is inside reflection interval
         justBeforeDestination = getIntersectionPoint(pseudoSourceToDest, line);
@@ -789,12 +792,17 @@ public class ChannelModel {
         directPathExists = isDirectPath(justBeforeDestination, dest);
 
       } else if (type == RayData.RayType.DIFFRACTION) {
+//        System.out.print("difraction ");
 
         // Check if direct path exists (travelling through object not allowed
         justBeforeDestination = sourcePoint;
         directPathExists = isDirectPath(justBeforeDestination, dest);
 
       }
+
+
+//      System.out.print("directedPathExists: ");
+//      System.out.println(directPathExists);
 
       // If a direct path exists, traverse up tree to find entire path
       if (directPathExists) {
@@ -828,6 +836,11 @@ public class ChannelModel {
         Line2D currentlyTracedLine = currentlyTracedRayData.getLine();
 
 
+//        System.out.print("while: ");
+//        System.out.print(!pathBroken);
+//        System.out.print(" && ");
+//        System.out.println(currentlyTracedNodeType != RayData.RayType.ORIGIN);
+
         // Traverse upwards until origin found
         while (!pathBroken && currentlyTracedNodeType != RayData.RayType.ORIGIN) {
 
@@ -839,11 +852,14 @@ public class ChannelModel {
           currentlyTracedLine = currentlyTracedRayData.getLine();
 
           if (currentlyTracedNodeType == RayData.RayType.ORIGIN) {
+//            System.out.print("origin ");
             // We finally found the path origin, path ends here
             lastPoint = newestPoint;
             newestPoint = origin;
 
             currentPath.addPoint(newestPoint, currentlyTracedNodeType);
+
+//            System.out.println(newestPoint.distance(lastPoint));
 
             // Check that this ray subpath is long enough to be considered
             if (newestPoint.distance(lastPoint) < 0.01) {
@@ -854,6 +870,7 @@ public class ChannelModel {
             // Trace further up in the tree
 
             if (currentlyTracedNodeType == RayData.RayType.REFRACTION || currentlyTracedNodeType == RayData.RayType.REFLECTION) {
+//              System.out.print("reflection/refraction ");
               // Traced tree element is a reflection/refraction - get intersection point and keep climbing
               lastPoint = newestPoint;
 
@@ -861,12 +878,15 @@ public class ChannelModel {
               newestPoint = getIntersectionPointInfinite(newToOldIntersection, currentlyTracedLine);
 
             } else {
+//              System.out.print("diffraction ");
               // Traced tree element is a diffraction - save point and keep climbing
               lastPoint = newestPoint;
               newestPoint = currentlyTracedSource;
             }
 
             currentPath.addPoint(newestPoint, currentlyTracedNodeType);
+
+//            System.out.println(newestPoint.distance(lastPoint));
 
             // Check that this ray subpath is long enough to be considered
             if (newestPoint == null || lastPoint == null || newestPoint.distance(lastPoint) < 0.01) {
@@ -884,8 +904,23 @@ public class ChannelModel {
           }
         }
 
+//        System.out.print("if: ");
+//        System.out.println(!pathBroken);
+
         // Save ray path
         if (!pathBroken) {
+/*
+          if( justBeforeDestination != null )
+            System.out.println("jBefore: "+justBeforeDestination.distance(dest)); 
+          else{
+            System.out.print("sPoint: "+sourcePoint.distance(dest) + "  "  );
+            if(getIntersectionPoint(pseudoSourceToDest, line) != null)
+              System.out.println(getIntersectionPoint(pseudoSourceToDest, line).distance(dest));
+            else
+              System.out.println();
+          }
+          System.out.println(currentPath);
+*/          
           allPaths.add(currentPath);
 
           // Stop here if no other paths should be considered
@@ -893,9 +928,12 @@ public class ChannelModel {
             return allPaths;
           }
 
+//          System.out.println("-----------------");            
+
         }
 
       }
+      
     }
 
     return allPaths;
@@ -916,9 +954,6 @@ public class ChannelModel {
     if( source == null || dest == null ) return false;
     
     Line2D sourceToDest = new Line2D.Double(source, dest);
-
-    // Check for TRANSMITTING_RANGE just to recover the UDG
-    if( source.distance(dest) > 100.0 ) return false;
 
     // Get angle
     double deltaX = dest.getX() - source.getX();
@@ -1532,6 +1567,9 @@ public class ChannelModel {
         pathLengths[i] += subPathLength;
       }
 
+//if(pathLengths[i] > 100) System.out.println("");
+//return new double[] {Math.log10(0), accumulatedVariance};
+
       // Add FSPL from last rays (if FSPL on individual rays)
       if (!getParameterBooleanValue(Parameter.rt_fspl_on_total_length) && accumulatedStraightLength > 0) {
         pathGain[i] += getFSPL(accumulatedStraightLength);
@@ -1623,6 +1661,8 @@ public class ChannelModel {
     }
 
     double receivedPower = outputPower + systemGain + transmitterGain + totalPathGain;
+    
+    //System.out.println("\nReceived signal strength: " + String.format("%2.3f", receivedPower) + " dB (variance " + accumulatedVariance + ")\n");    
     if (logMode) {
         logInfo.append("\nReceived signal strength: " + String.format("%2.3f", receivedPower) + " dB (variance " + accumulatedVariance + ")\n");
     }
@@ -1631,7 +1671,7 @@ public class ChannelModel {
       return new double[] {delaySpread, delaySpreadRMS};
     }
 
-    return new double[] {receivedPower, accumulatedVariance};
+    return new double[] {receivedPower, accumulatedVariance};       
   }
 
   public class TrackedSignalComponents {
@@ -1756,11 +1796,11 @@ public class ChannelModel {
       threshold = rxSensitivity + snrMean - signalStrength;
     }
 
-    // If not random varianble, probability is either 1 or 0
+    // If not random variable, probability is either 1 or 0
     if (snrVariance == 0) {
       return new double[] {
         threshold - snrMean > 0 ? 0:1, signalStrength
-    };
+      };
     }
     double snrStdDev = Math.sqrt(snrVariance);
 
@@ -1929,6 +1969,7 @@ public class ChannelModel {
      */
     public abstract double getRxGain();
   }
+
   public static abstract class RadioPair extends TxPair {
     public abstract Radio getFromRadio();
     public abstract Radio getToRadio();

@@ -37,7 +37,7 @@ class CSCgen {
 //------------------------------------------------------------------------------------//
 			br = new BufferedReader(new FileReader(sensor_filename));
 			Integer N = Integer.parseInt(br.readLine());
-			Integer sensor = 1;
+			Integer sensor = 0;
 			System.out.println(N);
 			while ((sCurrentLine = br.readLine()) != null) {
 				StringTokenizer st = new StringTokenizer(sCurrentLine);

@@ -102,8 +102,9 @@ PROCESS_THREAD(broadcast_process, ev, data)
 
   while(1) {
 
-    /* Send a broadcast every CLOCK_SECOND */
-    etimer_set(&et, CLOCK_SECOND);
+    /* Send a broadcast every 1 - 2 seconds */
+    etimer_set(&et, CLOCK_SECOND * 1 + random_rand() % (CLOCK_SECOND * 1));
+
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
     
     msg.seqno = seqno;

@@ -82,6 +82,9 @@ public class UDGO extends UDGM {
   public final static boolean WITH_NOISE = true; /* NoiseSourceRadio */
   public final static boolean WITH_DIRECTIONAL = true; /* DirectionalAntennaRadio */
   private Observer channelModelObserver = null;
+  private boolean WITH_CAPTURE_EFFECT;
+  private double CAPTURE_EFFECT_THRESHOLD;
+  private double CAPTURE_EFFECT_PREAMBLE_DURATION;
 
   private Simulation sim;
   private Random random = null;
@@ -92,6 +95,20 @@ public class UDGO extends UDGM {
     super(simulation);
     sim = simulation;
     random = simulation.getRandomGenerator();
+
+    currentChannelModel = new ChannelModel(sim);
+
+    WITH_CAPTURE_EFFECT = currentChannelModel.getParameterBooleanValue(ChannelModel.Parameter.captureEffect);
+    CAPTURE_EFFECT_THRESHOLD = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectSignalTreshold);
+    CAPTURE_EFFECT_PREAMBLE_DURATION = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectPreambleDuration);
+   
+    currentChannelModel.addSettingsObserver(channelModelObserver = new Observer() {
+      public void update(Observable o, Object arg) {
+        WITH_CAPTURE_EFFECT = currentChannelModel.getParameterBooleanValue(ChannelModel.Parameter.captureEffect);
+        CAPTURE_EFFECT_THRESHOLD = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectSignalTreshold);
+        CAPTURE_EFFECT_PREAMBLE_DURATION = currentChannelModel.getParameterDoubleValue(ChannelModel.Parameter.captureEffectPreambleDuration);
+      }
+    });
 
     currentChannelModel = new ChannelModel(sim);
 
@@ -152,7 +169,7 @@ public class UDGO extends UDGM {
       final Position recvPos = recvFinal.getPosition();
       double distance = senderPos.getDistanceTo(recvPos);      
 
-      if (distance <= TRANSMITTING_RANGE) {      
+      if (distance <= TRANSMITTING_RANGE) {
 
         /* Calculate receive probability */
         TxPair txPair = new RadioPair() {
@@ -163,16 +180,22 @@ public class UDGO extends UDGM {
             return recvFinal;
           }
         };
+
         double[] probData = currentChannelModel.getProbability(
             txPair,
             -Double.MAX_VALUE
         );
         double recvProb = probData[0];
-        double recvSignalStrength = probData[1];      
+        double recvSignalStrength = probData[1];    
+
 
         if (recvProb == 1.0 || random.nextDouble() < recvProb) {
           if (recv.isRadioOn()) {
             newConnection.addDestination(recv, recvSignalStrength);
+            //System.out.println("connected: "+distance);
+            //System.out.println(senderPos.getXCoordinate()+","+senderPos.getYCoordinate()+" --> "+
+              //recvPos.getXCoordinate()+","+recvPos.getYCoordinate());
+            //System.out.println("-------------------------");
           }
         }
       }

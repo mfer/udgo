@@ -12,7 +12,7 @@ class CTRgen {
 		String testlog_filename = "test.testlog";
 		String sensor_filename = "test.sensor";
 		String ctr ="\n";
-		Integer s1, s2, zeroFlag=0;
+		Integer s1, s2;
 		Double TRANSMITTING_RANGE=100000.0;
 
 		try { 			
@@ -22,7 +22,7 @@ class CTRgen {
 			Point3d sensors[] = new Point3d[N];
 			Integer sensor = 0;
 			Integer link[][] = new Integer[N+1][N+1];
-			int links = 0, Nm1=N-1;
+			int links = 0;
 
 			while ((sCurrentLine = br.readLine()) != null) {
 				StringTokenizer st = new StringTokenizer(sCurrentLine);
@@ -48,7 +48,6 @@ class CTRgen {
 					s1 = Integer.parseInt(st.nextToken());
 					s2 = Integer.parseInt(st.nextToken());
 
-					if(s1==0 || s2==0) zeroFlag=1;
 					if (link[s2][s1] == 0 && link[s1][s2] == 0){
 						link[s1][s2]=1;
 						link[s2][s1]=1;
@@ -57,25 +56,14 @@ class CTRgen {
 			}
 
 			//our output should there in [0-N)
-			for (int i=0; i <= N; i++){
-				for (int j=i+1; j <= N; j++){					
+			for (int i=0; i < N; i++){
+				for (int j=i+1; j < N; j++){					
 					if (link[i][j] == 1) {
-					if (zeroFlag == 0) {
-						//cooja expected (0-N]
-						s1=i-1; s2=j-1;
-						if(sensors[s1].distance(sensors[s2])<=TRANSMITTING_RANGE){
-							ctr += s1+" "+s2+" "+sensors[s1].distance(sensors[s2])+"\n";
+						//cooja expected [0-N)
+						if(sensors[i].distance(sensors[j])<=TRANSMITTING_RANGE){
+							ctr += i+" "+j+" "+sensors[i].distance(sensors[j])+"\n";
 							links++;
 						}
-					}else{
-						//there are cases that cooja give us [0-N) instead of (0-N]
-						if (i<N && j<N) {
-							if(sensors[i].distance(sensors[j])<=TRANSMITTING_RANGE){
-								ctr += i+" "+j+" "+sensors[i].distance(sensors[j])+"\n";
-								links++;
-							}
-						}
-					}
 					}
 				}
 			}
