@@ -6,7 +6,7 @@
 void main(){
 	int g,mu;
 	double gd, mud;
-	for (g=4;g<=12;g=g+2){
+	for (g=2;g<=12;g=g+1){
 	for (mu=4;mu<=18;mu=mu+2){
 
 		printf("  %d"  ,g);
