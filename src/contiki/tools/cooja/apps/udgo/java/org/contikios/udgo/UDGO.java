@@ -169,7 +169,7 @@ public class UDGO extends UDGM {
       final Position recvPos = recvFinal.getPosition();
       double distance = senderPos.getDistanceTo(recvPos);      
 
-      if (distance <= TRANSMITTING_RANGE) {
+      if (distance > 0.0 && distance <= TRANSMITTING_RANGE) {
 
         /* Calculate receive probability */
         TxPair txPair = new RadioPair() {
