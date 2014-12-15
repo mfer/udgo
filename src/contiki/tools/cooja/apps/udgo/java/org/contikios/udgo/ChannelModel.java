@@ -1444,8 +1444,11 @@ public class ChannelModel {
 
     // Calculate all paths from source to destination, using above calculated tree
     Vector<RayPath> allPaths = getConnectingPaths(source, dest, visibleLinesTree);
-
-  if(dest.getX()== 0.0 && dest.getY() == 21.628579305026065){
+/*
+  if(   dest.getX() == 292.95968778003896 &&   dest.getY() == 0.0   ||
+      source.getX() == 354.29184964565314 && source.getY() == 400.0 ||
+      source.getX() == 292.95968778003896 && source.getY() == 0.0   ||
+        dest.getX() == 354.29184964565314 &&   dest.getY() == 400.0){
     logger.info(source + " --> " + dest);
     Enumeration<RayPath> pathsEnum = allPaths.elements();
     while (pathsEnum.hasMoreElements()) {
@@ -1453,7 +1456,7 @@ public class ChannelModel {
       logger.info("* " + currentPath);
     }
   }
-
+*/
     // - Extract length and losses of each path -
     double[] pathLengths = new double[allPaths.size()];
     double[] pathGain = new double[allPaths.size()];
@@ -1560,6 +1563,8 @@ public class ChannelModel {
 
         double pathLengthDiff = Math.abs(pathLengths[i] - pathLengths[bestSignalNr]);
 
+	if ( pathLengths[i] > 100 ) logger.info(pathLengthDiff + " " + pathLengths[i]);
+
         // Update delay spread TODO Now considering best signal, should be first or mean?
         if (pathLengthDiff > delaySpread) {
           delaySpread = pathLengthDiff;
@@ -1581,6 +1586,16 @@ public class ChannelModel {
     }
     //logger.info("tpg: "+totalPathGain);
     //totalPathGain = 0; //this line eliminate connections considering that for the case studied (outputPower + systemGain + transmitterGain) is zero.
+
+  if(   dest.getX() == 292.95968778003896 &&   dest.getY() == 0.0   ||
+      source.getX() == 354.29184964565314 && source.getY() == 400.0 ||
+      source.getX() == 292.95968778003896 && source.getY() == 0.0   ||
+        dest.getX() == 354.29184964565314 &&   dest.getY() == 400.0){
+	logger.info("Total path gain made zero");
+        //totalPathGain = 0;
+    }
+
+
 
     // Calculate resulting RMS delay spread
     delaySpread /= speedOfLight;
