@@ -148,29 +148,105 @@ public class UDGO extends UDGM {
         }
   }
 
-    private static int getPoissonRandom(double mean) {
-        Random r = new Random();
-        double L = Math.exp(-mean);
-        int k = 0;
-        double p = 1.0;
-        do {
-            p = p * r.nextDouble();
-            k++;
-        } while (p > L);
-        return k - 1;
+
+  public RadioConnection createConnections(Radio sender) {
+    RadioConnection newConnection = new RadioConnection(sender);
+
+    /* Fail radio transmission randomly - no radios will hear this transmission */
+    if (getTxSuccessProbability(sender) < 1.0 && random.nextDouble() > getTxSuccessProbability(sender)) {
+      return newConnection;
     }
-  
+
+    /* Calculate ranges: grows with radio output power */
+    double moteTransmissionRange = TRANSMITTING_RANGE
+    * ((double) sender.getCurrentOutputPowerIndicator() / (double) sender.getOutputPowerIndicatorMax());
+    double moteInterferenceRange = INTERFERENCE_RANGE
+    * ((double) sender.getCurrentOutputPowerIndicator() / (double) sender.getOutputPowerIndicatorMax());
+
+    /* Get all potential destination radios */
+    DestinationRadio[] potentialDestinations = dgrm.getPotentialDestinations(sender);
+    if (potentialDestinations == null) {
+      return newConnection;
+    }
+
+    /* Loop through all potential destinations */
+    Position senderPos = sender.getPosition();
+    for (DestinationRadio dest: potentialDestinations) {
+      Radio recv = dest.radio;
+
+      /* Fail if radios are on different (but configured) channels */ 
+      if (sender.getChannel() >= 0 &&
+          recv.getChannel() >= 0 &&
+          sender.getChannel() != recv.getChannel()) {
+        continue;
+      }
+      Position recvPos = recv.getPosition();
+
+      /* Fail if radio is turned off */
+//      if (!recv.isReceiverOn()) {
+//        /* Special case: allow connection if source is Contiki radio, 
+//         * and destination is something else (byte radio).
+//         * Allows cross-level communication with power-saving MACs. */
+//        if (sender instanceof ContikiRadio &&
+//            !(recv instanceof ContikiRadio)) {
+//          /*logger.info("Special case: creating connection to turned off radio");*/
+//        } else {
+//          recv.interfereAnyReception();
+//          continue;
+//        }
+//      }
+
+      double distance = senderPos.getDistanceTo(recvPos);
+      if (distance <= moteTransmissionRange) {
+        /* Within transmission range */
+
+        if (!recv.isRadioOn()) {
+          newConnection.addInterfered(recv);
+          recv.interfereAnyReception();
+        } else if (recv.isInterfered()) {
+          /* Was interfered: keep interfering */
+          newConnection.addInterfered(recv);
+        } else if (recv.isTransmitting()) {
+          newConnection.addInterfered(recv);
+        } else if (recv.isReceiving() ||
+            (random.nextDouble() > getRxSuccessProbability(sender, recv))) {
+          /* Was receiving, or reception failed: start interfering */
+          newConnection.addInterfered(recv);
+          recv.interfereAnyReception();
+
+          /* Interfere receiver in all other active radio connections */
+          for (RadioConnection conn : getActiveConnections()) {
+            if (conn.isDestination(recv)) {
+              conn.addInterfered(recv);
+            }
+          }
+
+        } else {
+          /* Success: radio starts receiving */
+          newConnection.addDestination(recv);
+        }
+      } else if (distance <= moteInterferenceRange) {
+        /* Within interference range */
+        newConnection.addInterfered(recv);
+        recv.interfereAnyReception();
+      }
+    }
+
+    return newConnection;
+  }
+
+/*  
   public UDGORadioConnection createConnections(final Radio sender) { 
     UDGORadioConnection newConnection = new UDGORadioConnection(sender);
     final Position senderPos = sender.getPosition();
 
-    /* Loop through all potential destinations */
+    // Loop through all potential destinations
     for (Radio recv: getRegisteredRadios()) {
       if (sender == recv) {
         continue;
       }
 
-      /* Fail if radios are on different (but configured) channels */ 
+      // Fail if radios are on different (but configured) channels 
       if (sender.getChannel() >= 0 &&
           recv.getChannel() >= 0 &&
           sender.getChannel() != recv.getChannel()) {
@@ -183,7 +259,7 @@ public class UDGO extends UDGM {
 
       if (distance > 0.0 && distance <= TRANSMITTING_RANGE) {
 
-        /* Calculate receive probability */
+        // Calculate receive probability
         TxPair txPair = new RadioPair() {
           public Radio getFromRadio() {
             return sender;
@@ -193,106 +269,103 @@ public class UDGO extends UDGM {
           }
         };
 
-//        double[] probData = currentChannelModel.getProbability(
-//            txPair,
-//            -Double.MAX_VALUE
-//        );
-        double recvProb = 1.0; //(double) getPoissonRandom(100)/200.0;//probData[0];
-        double recvSignalStrength = -80;//probData[1];    
+        double[] probData = currentChannelModel.getProbability(
+            txPair,
+            -Double.MAX_VALUE
+        );
+        double recvProb = probData[0];
+        double recvSignalStrength = probData[1];
 
       if (recvProb == 1.0 || random.nextDouble() < recvProb) {
-        /* Yes, the receiver *may* receive this packet (it's strong enough) */
+        // Yes, the receiver *may* receive this packet (it's strong enough)
         if (!recv.isRadioOn()) {
           newConnection.addInterfered(recv);
           recv.interfereAnyReception();
         } else if (recv.isInterfered()) {
           if (WITH_CAPTURE_EFFECT) {
-            /* XXX TODO Implement me:
-             * If the new transmission is both stronger and the SFD has not
-             * been received by the weaker transmission, then this new
-             * transmission should be received.
-             *
-             * When this is implemented, also implement
-             * RadioConnection.java:getReceptionStartTime()
-             */
+            // XXX TODO Implement me:
+            //  If the new transmission is both stronger and the SFD has not
+            // been received by the weaker transmission, then this new
+            // transmission should be received.
+            //
+            // When this is implemented, also implement
+            // RadioConnection.java:getReceptionStartTime()
+            
 
-            /* Was interfered: keep interfering */
+            // Was interfered: keep interfering 
             newConnection.addInterfered(recv, recvSignalStrength);
           } else {
-            /* Was interfered: keep interfering */
+            // Was interfered: keep interfering
             newConnection.addInterfered(recv, recvSignalStrength);
           }
         } else if (recv.isTransmitting()) {
           newConnection.addInterfered(recv, recvSignalStrength);
         } else if (recv.isReceiving()) {
-          /* Was already receiving: start interfering.
-           * Assuming no continuous preambles checking */
+          // Was already receiving: start interfering.
+          // Assuming no continuous preambles checking
 
           if (!WITH_CAPTURE_EFFECT) {
             newConnection.addInterfered(recv, recvSignalStrength);
             recv.interfereAnyReception();
 
-            /* Interfere receiver in all other active radio connections */
+            // Interfere receiver in all other active radio connections
             for (RadioConnection conn : getActiveConnections()) {
               if (conn.isDestination(recv)) {
                 conn.addInterfered(recv);
               }
             }
           } else {
-            /* CAPTURE EFFECT */
+            // CAPTURE EFFECT
             double currSignal = recv.getCurrentSignalStrength();
-            /* Capture effect: recv-radio is already receiving.
-             * Are we strong enough to interfere? */
+            // Capture effect: recv-radio is already receiving.
+            // Are we strong enough to interfere?
 
-            if (recvSignalStrength < currSignal - CAPTURE_EFFECT_THRESHOLD /* config */) {
-              /* No, we are too weak */
+            if (recvSignalStrength < currSignal - CAPTURE_EFFECT_THRESHOLD ) {
+              // No, we are too weak
             } else {
-              /* New signal is strong enough to either interfere with ongoing transmission,
-               * or to be received/captured */
+              // New signal is strong enough to either interfere with ongoing transmission,
+              // or to be received/captured 
               long startTime = newConnection.getReceptionStartTime();
-              boolean interfering = (sim.getSimulationTime()-startTime) >= CAPTURE_EFFECT_PREAMBLE_DURATION; /* us */
+              boolean interfering = (sim.getSimulationTime()-startTime) >= CAPTURE_EFFECT_PREAMBLE_DURATION;
               if (interfering) {
                 newConnection.addInterfered(recv, recvSignalStrength);
                 recv.interfereAnyReception();
 
-                /* Interfere receiver in all other active radio connections */
+                // Interfere receiver in all other active radio connections
                 for (RadioConnection conn : getActiveConnections()) {
                   if (conn.isDestination(recv)) {
                     conn.addInterfered(recv);
                   }
                 }
               } else {
-                /* XXX Warning: removing destination from other connections */
+                // XXX Warning: removing destination from other connections
                 for (RadioConnection conn : getActiveConnections()) {
                   if (conn.isDestination(recv)) {
                     conn.removeDestination(recv);
                   }
                 }
 
-                /* Success: radio starts receiving */
+                // Success: radio starts receiving
                 newConnection.addDestination(recv, recvSignalStrength);
               }
             }
           }
 
         } else {
-          /* Success: radio starts receiving */
+          // Success: radio starts receiving
           newConnection.addDestination(recv, recvSignalStrength);
         }
       } else if (recvSignalStrength > currentChannelModel.getParameterDoubleValue(Parameter.bg_noise_mean)) {
-        /* The incoming signal is strong, but strong enough to interfere? */
+        // The incoming signal is strong, but strong enough to interfere?
 
         if (!WITH_CAPTURE_EFFECT) {
                 newConnection.addInterfered(recv, recvSignalStrength);
                 recv.interfereAnyReception();
         } else {
-                /* TODO Implement new type: newConnection.addNoise()?
-         * Currently, this connection will never disturb this radio... */
+                // TODO Implement new type: newConnection.addNoise()?
+                // Currently, this connection will never disturb this radio...
         }
       }
-
-
-
 
       }
 
@@ -300,21 +373,89 @@ public class UDGO extends UDGM {
 
     return newConnection;
   }
-
-
-
-
+*/
 
   public void updateSignalStrengths() {
+    /* Override: uses distance as signal strength factor */
+    
+    /* Reset signal strengths */
+    for (Radio radio : getRegisteredRadios()) {
+      radio.setCurrentSignalStrength(getBaseRssi(radio));
+    }
 
-    /* Reset: Background noise */
+    /* Set signal strength to below strong on destinations */
+    RadioConnection[] conns = getActiveConnections();
+    for (RadioConnection conn : conns) {
+      if (conn.getSource().getCurrentSignalStrength() < SS_STRONG) {
+        conn.getSource().setCurrentSignalStrength(SS_STRONG);
+      }
+      for (Radio dstRadio : conn.getDestinations()) {
+        if (conn.getSource().getChannel() >= 0 &&
+            dstRadio.getChannel() >= 0 &&
+            conn.getSource().getChannel() != dstRadio.getChannel()) {
+          continue;
+        }
+
+        double dist = conn.getSource().getPosition().getDistanceTo(dstRadio.getPosition());
+
+        double maxTxDist = TRANSMITTING_RANGE
+        * ((double) conn.getSource().getCurrentOutputPowerIndicator() / (double) conn.getSource().getOutputPowerIndicatorMax());
+        double distFactor = dist/maxTxDist;
+
+        double signalStrength = SS_STRONG + distFactor*(SS_WEAK - SS_STRONG);
+        if (dstRadio.getCurrentSignalStrength() < signalStrength) {
+          dstRadio.setCurrentSignalStrength(signalStrength);
+        }
+      }
+    }
+
+    /* Set signal strength to below weak on interfered */
+    for (RadioConnection conn : conns) {
+      for (Radio intfRadio : conn.getInterfered()) {
+        if (conn.getSource().getChannel() >= 0 &&
+            intfRadio.getChannel() >= 0 &&
+            conn.getSource().getChannel() != intfRadio.getChannel()) {
+          continue;
+        }
+
+        double dist = conn.getSource().getPosition().getDistanceTo(intfRadio.getPosition());
+
+        double maxTxDist = TRANSMITTING_RANGE
+        * ((double) conn.getSource().getCurrentOutputPowerIndicator() / (double) conn.getSource().getOutputPowerIndicatorMax());
+        double distFactor = dist/maxTxDist;
+
+        if (distFactor < 1) {
+          double signalStrength = SS_STRONG + distFactor*(SS_WEAK - SS_STRONG);
+          if (intfRadio.getCurrentSignalStrength() < signalStrength) {
+            intfRadio.setCurrentSignalStrength(signalStrength);
+          }
+        } else {
+          intfRadio.setCurrentSignalStrength(SS_WEAK);
+          if (intfRadio.getCurrentSignalStrength() < SS_WEAK) {
+            intfRadio.setCurrentSignalStrength(SS_WEAK);
+          }
+        }
+
+        if (!intfRadio.isInterfered()) {
+          /*logger.warn("Radio was not interfered: " + intfRadio);*/
+          intfRadio.interfereAnyReception();
+        }
+      }
+    }
+  }
+
+
+/*
+  public void updateSignalStrengths() {
+
+    /// Reset: Background noise
         double background =
                 currentChannelModel.getParameterDoubleValue((Parameter.bg_noise_mean));
     for (Radio radio : getRegisteredRadios()) {
       radio.setCurrentSignalStrength(background);
     }
 
-    /* Active radio connections */
+    // Active radio connections
     RadioConnection[] conns = getActiveConnections();
     for (RadioConnection conn : conns) {
       for (Radio dstRadio : ((UDGORadioConnection) conn).getDestinations()) {
@@ -330,7 +471,7 @@ public class UDGO extends UDGM {
       }
     }
 
-    /* Interfering/colliding radio connections */
+    // Interfering/colliding radio connections
     for (RadioConnection conn : conns) {
       for (Radio intfRadio : ((UDGORadioConnection) conn).getInterfered()) {
         double signalStrength = ((UDGORadioConnection) conn).getInterferenceSignalStrength(intfRadio);
@@ -344,13 +485,13 @@ public class UDGO extends UDGM {
         }
 
         if (!intfRadio.isInterfered()) {
-          /*logger.warn("Radio was not interfered: " + intfRadio);*/
+          //logger.warn("Radio was not interfered: " + intfRadio);
                 intfRadio.interfereAnyReception();
         }
       }
     }
 
-    /* Check for noise sources */
+    // Check for noise sources
     if (!WITH_NOISE) return;
     for (Radio noiseRadio: getRegisteredRadios()) {
       if (!(noiseRadio instanceof NoiseSourceRadio)) {
@@ -363,13 +504,13 @@ public class UDGO extends UDGM {
         continue;
       }
 
-      /* Calculate how noise source affects surrounding radios */
+      // Calculate how noise source affects surrounding radios
       for (Radio affectedRadio : getRegisteredRadios()) {
         if (noiseRadio == affectedRadio) {
           continue;
         }
 
-        /* Update noise levels */
+        // Update noise levels
         final Radio toRadio = affectedRadio;
         TxPair txPair = new RadioPair() {
           public Radio getFromRadio() {
@@ -385,18 +526,18 @@ public class UDGO extends UDGM {
           continue;
         }
 
-        /* TODO Additive signals strengths? */
-        /* TODO XXX Consider radio channels */
-        /* TODO XXX Potentially interfere even when signal is weaker (~3dB)...
-* (we may alternatively just use the getSINR method...) */
+        // TODO Additive signals strengths? 
+        // TODO XXX Consider radio channels
+        // TODO XXX Potentially interfere even when signal is weaker (~3dB)... 
+        //   (we may alternatively just use the getSINR method...)
         if (affectedRadio.getCurrentSignalStrength() < signal) {
           affectedRadio.setCurrentSignalStrength(signal);
 
-          /* TODO Interfere with radio connections? */
+          // TODO Interfere with radio connections?
           if (affectedRadio.isReceiving() && !affectedRadio.isInterfered()) {
             for (RadioConnection conn : conns) {
               if (conn.isDestination(affectedRadio)) {
-                /* Intefere with current reception, mark radio as interfered */
+                // Intefere with current reception, mark radio as interfered
                 conn.addInterfered(affectedRadio);
                 if (!affectedRadio.isInterfered()) {
                   affectedRadio.interfereAnyReception();
@@ -408,6 +549,7 @@ public class UDGO extends UDGM {
       }
     }
   }
+*/
 
   public Collection<Element> getConfigXML() {
     return currentChannelModel.getConfigXML();
