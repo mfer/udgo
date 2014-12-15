@@ -238,6 +238,7 @@ public class UDGM extends AbstractRadioMedium {
         } else {
           /* Success: radio starts receiving */
           newConnection.addDestination(recv);
+          //logger.info("new connection");
         }
       } else if (distance <= moteInterferenceRange) {
         /* Within interference range */

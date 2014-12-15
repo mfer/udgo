@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simconf>
-  <project EXPORT="discard">[APPS_DIR]/udgo</project>
+  <project EXPORT="discard">[APPS_DIR]/mrm</project>
   <project EXPORT="discard">[APPS_DIR]/mspsim</project>
+  <project EXPORT="discard">[APPS_DIR]/avrora</project>
+  <project EXPORT="discard">[APPS_DIR]/serial_socket</project>
+  <project EXPORT="discard">[APPS_DIR]/collect-view</project>
+  <project EXPORT="discard">[APPS_DIR]/powertracker</project>
   <simulation>
-    <title>test</title>
+    <title>My simulation</title>
     <randomseed>123456</randomseed>
     <motedelay_us>1000000</motedelay_us>
     <radiomedium>
-      org.contikios.udgo.UDGO
-      <obstacles>
+      org.contikios.cooja.radiomediums.UDGM
+      <transmitting_range>100.0</transmitting_range>
+      <interference_range>100.0</interference_range>
+      <success_ratio_tx>1.0</success_ratio_tx>
+      <success_ratio_rx>1.0</success_ratio_rx>

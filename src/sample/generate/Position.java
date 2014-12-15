@@ -52,7 +52,7 @@ class Position {
 		        for(int street_state = 0; street_state < g-1; street_state++){
 		        	x = seg_size*street_state + eps;
 		        	y = seg_size*street_indian + eps;
-		        	pw_obstacle.println(x+" "+y+" "+sig+" "+sig);
+		        	//pw_obstacle.println(x+" "+y+" "+sig+" "+sig);
 		        }
 		    }
 		    pw_obstacle.close();
