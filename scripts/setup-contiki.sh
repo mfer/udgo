@@ -17,7 +17,7 @@ if [ $# -eq 3 ]
   	cd ../build/localcopy
   	git clone https://github.com/contiki-os/contiki.git
   	cd contiki
-  	git submodule update --init  	
+  	git submodule update --init
   	cd ../../../scripts
 	fi
 
@@ -38,7 +38,7 @@ if [ $# -eq 3 ]
 			mkdir tools/cooja/apps/udgo
 			cd tools/cooja/apps/udgo
 			ln -s ../../../../../../../src/contiki/tools/cooja/apps/udgo/* .
-		fi  	
+		fi
 	fi
 
 

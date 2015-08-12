@@ -13,7 +13,7 @@ if [ ! -d "../build/localcopy" ]; then
     cd ../build/localcopy
     git clone https://github.com/contiki-os/contiki.git
     cd contiki
-    git submodule update --init     
+    git submodule update --init
     cd ../../../scripts
 fi
 if [ ! -d "../build/$dirname" ]; then
@@ -44,4 +44,4 @@ java -cp . CSCgen
 cp test.csc  ../../../../build/$dirname/contiki/tools/cooja/
 cp test.sensor ../analize/
 cd ../../../../build/$dirname/contiki/tools/cooja/
-ant run_nogui -Dargs=$(pwd)/test.csc > /dev/null 2>&1 &
+ant run_nogui -Dargs=$(pwd)/test.csc #> /dev/null 2>&1 &

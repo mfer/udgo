@@ -4,8 +4,8 @@
     <width>280</width>
     <z>4</z>
     <height>160</height>
-    <location_x>152</location_x>
-    <location_y>595</location_y>
+    <location_x>400</location_x>
+    <location_y>0</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.Visualizer
@@ -14,16 +14,14 @@
       <skin>org.contikios.cooja.plugins.skins.IDVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.GridVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.TrafficVisualizerSkin</skin>
-      <skin>org.contikios.udgo.UDGOVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.UDGMVisualizerSkin</skin>
-      <viewport>15.18540864960725 0.0 0.0 15.18540864960725 110.10311787431888 94.08315879091218</viewport>
-      <hidden />
+      <viewport>3.2007921845305782 0.0 0.0 3.2007921845305782 16.6345108963833 11.375148464364683</viewport>
     </plugin_config>
-    <width>509</width>
-    <z>5</z>
-    <height>529</height>
-    <location_x>139</location_x>
-    <location_y>13</location_y>
+    <width>400</width>
+    <z>0</z>
+    <height>400</height>
+    <location_x>1</location_x>
+    <location_y>1</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.LogListener
@@ -32,11 +30,11 @@
       <formatted_time />
       <coloring />
     </plugin_config>
-    <width>248</width>
+    <width>678</width>
     <z>3</z>
-    <height>796</height>
-    <location_x>1550</location_x>
-    <location_y>12</location_y>
+    <height>240</height>
+    <location_x>400</location_x>
+    <location_y>160</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.TimeLine
@@ -47,39 +45,28 @@
       <showLEDs />
       <zoomfactor>500.0</zoomfactor>
     </plugin_config>
-    <width>1920</width>
+    <width>1078</width>
     <z>2</z>
     <height>166</height>
     <location_x>0</location_x>
-    <location_y>832</location_y>
+    <location_y>1041</location_y>
   </plugin>
   <plugin>
-    org.contikios.udgo.AreaViewer
+    org.contikios.cooja.plugins.Notes
     <plugin_config>
-      <selected mote="5" />
-      <controls_visible>false</controls_visible>
-      <zoom_x>12.653449466076644</zoom_x>
-      <zoom_y>12.653449466076644</zoom_y>
-      <pan_x>7.0670987351537855</pan_x>
-      <pan_y>7.483451151258729</pan_y>
-      <show_background>true</show_background>
-      <show_obstacles>true</show_obstacles>
-      <show_channel>true</show_channel>
-      <show_radios>true</show_radios>
-      <show_arrow>true</show_arrow>
-      <vis_type>signalStrengthButton</vis_type>
-      <resolution>100</resolution>
+      <notes>Enter notes here</notes>
+      <decorations>true</decorations>
     </plugin_config>
-    <width>500</width>
+    <width>398</width>
     <z>1</z>
-    <height>500</height>
-    <location_x>720</location_x>
-    <location_y>20</location_y>
+    <height>160</height>
+    <location_x>680</location_x>
+    <location_y>0</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.ScriptRunner
     <plugin_config>
-      <script>TIMEOUT(30000);&#xD;
+      <script>TIMEOUT(100000);&#xD;
 &#xD;
 while (true) {&#xD;
   log.log(time + ":" + id + ":" + msg + "\n");&#xD;
@@ -94,3 +81,4 @@ while (true) {&#xD;
     <location_y>571</location_y>
   </plugin>
 </simconf>
+
